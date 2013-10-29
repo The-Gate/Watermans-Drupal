@@ -1,0 +1,8 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+/* footer blocks */
+.block-block-2,.block-block-3{display:inline-block;vertical-align: middle;}
+.block-block-3{text-align:right;}
+.block-block-3 p{display:inline;}
+.block-block-3 p a{margin-right:15px;}
+.block-block-3 p a.footer_linkedin_icon{margin-right:5px;}
