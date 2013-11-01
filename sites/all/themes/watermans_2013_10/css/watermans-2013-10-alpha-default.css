@@ -1,5 +1,12 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
 
+/* featured menu */
+.block-block-4 div.menu-item {vertical-align: top;width:33.33333%;display:inline-block;}
+.block-block-4 div.item-2,.block-block-4 div.item-3 {margin-left:-4px;}
+/* home CTA */
+.cta{display:inline-block; vertical-align: top;margin-right:20px;}
+.cta.c-4{margin-right:0;}
+.region-postscript-first-inner .cta .cta-content {min-height: 89px;}
 /* footer blocks */
 .block-block-2,.block-block-3{display:inline-block;vertical-align: middle;}
 .block-block-3{text-align:right;}
