@@ -519,15 +519,12 @@ function media_form_field_ui_field_edit_form_alter(&$form, &$form_state) {
   if ($form['#field']['type'] == 'file' && $form['instance']['widget']['type']['#value'] == 'media_generic') {
     $form['field']['settings']['display_field']['#access'] = FALSE;
     $form['field']['settings']['display_default']['#access'] = FALSE;
-    $form['instance']['settings']['description_field']['#access'] = FALSE;
     $form['instance']['settings']['file_extensions']['#title'] = t('Allowed file extensions for uploaded files');
     $form['instance']['settings']['file_extensions']['#maxlength'] = 255;
   }
 
   // On image fields using the media widget we remove the alt/title fields
   if ($form['#field']['type'] == 'image' && $form['instance']['widget']['type']['#value'] == 'media_generic') {
-    $form['instance']['settings']['alt_field']['#access'] = FALSE;
-    $form['instance']['settings']['title_field']['#access'] = FALSE;
     $form['instance']['settings']['file_extensions']['#title'] = t('Allowed file extensions for uploaded files');
     // Do not increase maxlength of file extensions for image fields, since
     // presumably they will not need a long list of extensions.
@@ -928,14 +925,6 @@ function media_element_process(&$element, &$form_state, $form) {
   $file = file_load($fid);
   $path = drupal_get_path('module', 'media');
 
-  $element['title'] = array(
-    '#type' => 'item',
-    '#title' => $element['#title'],
-    '#markup' => '',
-    '#description' => $element['#description'],
-    '#required' => $element['#required'],
-  );
-
   //@TODO: This should be loaded from the JS in case of a failed form submission.
   $markup = '';
   if (!empty($file)) {
@@ -1000,8 +989,18 @@ function media_element_process(&$element, &$form_state, $form) {
   module_load_include('inc', 'media', 'includes/media.browser');
   media_attach_browser_js($element);
 
+  $element += array(
+    '#pre_render' => array('media_pre_render_fieldset', 'form_pre_render_fieldset'),
+  );
+  $element['#theme_wrappers'] = array('fieldset');
+  if (!$element['#value']) unset($element['#value']);
   return $element;
   // @todo: make this work for file and image fields
+}
+
+function media_pre_render_fieldset(&$v) {
+  unset($v['#value']);
+  return $v;
 }
 
 /**

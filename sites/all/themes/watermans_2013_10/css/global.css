@@ -3,11 +3,11 @@
 
 /* see also editor.css for styles that can be added through the WYSIWYG editor */
 /* general tag setup */
-body{margin-top:20px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.2;}
+body{margin-top:20px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.2;color:#5f5f5f;}
 a:link, a:visited  {text-decoration:none;}
 li {list-style: none;}
 /*font*/
-.view-banner p,.view-banner h3,.cta .cta-content li a,.cta h3,.block-block-4 div.menu-item a,.header.phone h3{font-family: 'Quattrocento Sans';}
+.region-postscript-fourth-inner h3, .region-postscript-third-inner h3,.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,.view-banner p,.view-banner h3,.cta .cta-content li a,.cta h3,.block-block-4 div.menu-item a,.header.phone h3{font-family: 'Quattrocento Sans';}
 /* font sizes*/
 /* 12px */
 .block-block-2 p,.header.button{font-size:.75em;}
@@ -16,7 +16,9 @@ li {list-style: none;}
 /* 15 px */
 .view-banner p,.region-postscript-second-inner .cta p{font-size:0.938em;}
 /* 17px */
-.block-block-4 div.menu-item a {font-size:1.063em}
+.block-block-4 div.menu-item a {font-size:1.063em;}
+/* 18px */
+.region-postscript-fourth-inner h3, .region-postscript-third-inner h3 {font-size:1.125em;}
 /* 20px */
 .region-postscript-second-inner .cta h3{font-size:1.250em;}
 /* 32 px */
@@ -27,9 +29,10 @@ li {list-style: none;}
 
 /* colours */
 .green{color:#73c9bd;}
-
+/* red */
+.region-postscript-fourth-inner h3 a, .region-postscript-third-inner h3 a{color:#ee2842;}
 .view-banner p{color:#003766;}
-.region-postscript-second-inner .cta a,.block-block-2 p,.block-block-2 p a, .header.button a{color:#fff;}
+.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,.region-postscript-second-inner .cta a,.block-block-2 p,.block-block-2 p a, .header.button a{color:#fff;}
 .region-postscript-first-inner .cta .cta-content li a,.block-block-4 div.menu-item a{color:#000;}
 .region-postscript-first-inner .cta h3 a{color:#c51f3c;}
 
@@ -50,6 +53,8 @@ li {list-style: none;}
 .block-block-4 div.menu-item.item-3 a{background-position:0 -245px;}
 
 /* content */
+/* side blocks - only show for wide screens */
+.block-13, .block-14{display:none;}
 
 /* home banner */
 .view-banner h3{font-weight: 500;line-height: .9;}
@@ -85,6 +90,26 @@ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#70c7
 /* postscript region 2 */
 .region-postscript-second-inner{margin-bottom:25px;}
 
+/* postscript region 3 */
+.region-postscript-third-inner{margin-bottom:25px;}
+.region-postscript-third-inner .content *:last-child{margin-bottom:0;}
+
+/* postscript region 4 */
+.region-postscript-fourth-inner{margin-bottom:25px;}
+.region-postscript-fourth-inner .content *:last-child{margin-bottom:0;}
+
+
+/* postscript region 3 & 4 */
+.region-postscript-fourth-inner h2, .region-postscript-third-inner h2{background:url(../images/title-bar.png) no-repeat left 50% #077a99; padding: 10px 0 8px 45px; margin-bottom: 25px;}
+.block-blog-listing-block ul li{margin-left:0; padding:10px 18px;}
+.block-blog-listing-block ul li{border-bottom: 2px solid #9b9b9b}
+.block-blog-listing-block ul li:first-child{padding-top:0;}
+.block-blog-listing-block ul li:last-child{padding-bottom:0;border-bottom:none;}
+.block-blog-listing-block ul li .left-col,.block-blog-listing-block ul li .right-col{display: inline-block; vertical-align: top;}
+.block-blog-listing-block ul li .left-col{width:100px;}
+.block-blog-listing-block ul li .right-col{padding-left:15px;width:305px}
+.region-postscript-fourth-inner h3, .region-postscript-third-inner h3{margin:0;}
+
 /* footer */
 .region-footer-second{background-color:#ee2842;}
 .region-footer-second-inner{padding:10px;}
@@ -99,4 +124,10 @@ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#70c7
 @media screen and (max-width: 979px) and (min-width: 1px) {
 .block-block-2 p a{display:block;}
 .block-block-2 p a.footer-email{margin:10px 0 0;padding:0; border:none;}
+.cta{margin-bottom:25px;}
+
+
+.block-blog-listing-block ul li .left-col{width:50px;}
+.block-blog-listing-block ul li .left-col img{width:100%; height:auto;}
+.block-blog-listing-block ul li .right-col{width:195px}
 }
