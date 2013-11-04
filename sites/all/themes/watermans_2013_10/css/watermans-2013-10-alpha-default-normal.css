@@ -4,15 +4,16 @@
 /* 1 col = 60px + 20px margin */
 
 /* 3cols */
-/* home CTA */
-.cta{width:220px;}
 
+.region-footer-first .block-menu-block,.cta{width:220px;}
+.region-footer-first .block-menu-block{width:220px;margin-left:16px;}
+.region-footer-first .block-menu-block:first-child{width:200px;}
 
 /* footer has 10px padding*/
 /* 5 cols */
-.block-block-3{width:370px; margin-left:16px;}
+.block-block-3{width:360px; margin-left:16px;}
 /* 7 cols */
-.block-block-2{width:530px;}
+.block-block-2{width:520px;}
 
 
 /* side blocks - only show for wide screens */
