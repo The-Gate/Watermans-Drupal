@@ -11,12 +11,14 @@ ul li.leaf,li {margin:0; list-style: none;}
 /*font*/
 h2, h3, h4, h5, h6,.region-footer-first-inner h2{font-family:Arial, Helvetica, sans-serif;}
 .field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label,.block-field-job-title,.om-maximenu-middle-right .block.last h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner h2,h1,.view-news-listing h3,.region-postscript-fourth-inner h3, .region-postscript-third-inner h3,.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,.view-banner p,.view-banner h3,.cta .cta-content li a,.cta h3,.block-block-4 div.menu-item a,.header.phone h3{font-family: 'Quattrocento Sans';}
-/*.group-person-contact h3{font-family: 'Quattrocento Sans';}*/
+/*.group-person-contact h3{font-family: 'Quattrocento Sans';} THIS DETROYS THE FONTS ON THE REST OF THE PAGE!!*/
 /* font sizes*/
+/* 10px */
+.people-job{font-size:0.625em;}
 /* 12px */
 .region-footer-first-inner li,.region-footer-first-inner h2,.block-block-2 p,.button{font-size:.75em;}
 /* 14 px */
-.block-field-job-title,.breadcrumb li,.region-postscript-first-inner .cta .cta-content li a{font-size:0.875em;}
+.people-title,.block-field-job-title,.breadcrumb li,.region-postscript-first-inner .cta .cta-content li a{font-size:0.875em;}
 /* 15 px */
 .om-maximenu-middle-right .block.last h2,.block-17 h2,.block--exp-news-listing-page-1 h2,.view-banner p,.region-postscript-second-inner .cta p{font-size:0.938em;}
 /* 17px */
@@ -56,7 +58,7 @@ h2, h3, h4, h5, h6,.region-footer-first-inner h2{font-family:Arial, Helvetica, s
 .breadcrumb li,.breadcrumb li a{color:#5f5f5f;}
 
 /* white */
-.block--exp-news-listing-page-1 h2,.block-block-16 h1,.region-sidebar-second .block-menu-block .menu li a:hover,.region-sidebar-second .block-menu-block .menu li.active-trail a,.region-footer-first-inner li a,.region-footer-first-inner h2,.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,.region-postscript-second-inner .cta a,.block-block-2 p,.block-block-2 p a, .button a{color:#fff;}
+.view-people-listing .people-title-wrapper,.view-people-listing .people-title-wrapper a,.block--exp-news-listing-page-1 h2,.block-block-16 h1,.region-sidebar-second .block-menu-block .menu li a:hover,.region-sidebar-second .block-menu-block .menu li.active-trail a,.region-footer-first-inner li a,.region-footer-first-inner h2,.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,.region-postscript-second-inner .cta a,.block-block-2 p,.block-block-2 p a, .button a{color:#fff;}
 /* black */
 .om-maximenu-middle-right .block.last h2,.block-17 h2,.region-postscript-first-inner .cta .cta-content li a,.block-block-4 div.menu-item a{color:#000;}
 
@@ -111,6 +113,15 @@ h1{text-transform: capitalize;border-bottom:2px solid #929292;}
 .view-banner h3 .red{margin-left:105px; font-weight: 700;}
 
 /* people */
+.block-people-listing-block{margin-top:1em;}
+.view-people-listing ul { overflow:hidden; margin-right:-20px;}
+.view-people-listing ul li {list-style: none !important; float:left; margin:0 20px 20px 0 !important; }
+.view-people-listing .views-field-field-thumbnail{background:#929292;}
+.view-people-listing .people-list-title{padding:7px 10px; display:block;background: #1e5799; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZDk0OTVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjOGMyMzI3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzg0MTMxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  #1e5799 0%, #d9495e 0%, #8c2327 75%, #841313 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#d9495e), color-stop(75%,#8c2327), color-stop(100%,#841313)); background: -webkit-linear-gradient(top,  #1e5799 0%,#d9495e 0%,#8c2327 75%,#841313 100%); background: -o-linear-gradient(top,  #1e5799 0%,#d9495e 0%,#8c2327 75%,#841313 100%); background: -ms-linear-gradient(top,  #1e5799 0%,#d9495e 0%,#8c2327 75%,#841313 100%); background: linear-gradient(to bottom,  #1e5799 0%,#d9495e 0%,#8c2327 75%,#841313 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#841313',GradientType=0 );}
+.view-people-listing a {display:block;}
+.view-people-listing .people-title-wrapper{ border-left:4px solid #fff;padding-left:9px;}
+.item-list h3{display:none;}
 .block-field-job-title{text-transform: uppercase;font-weight:700;}
 .field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label{border-bottom:1px solid #929292;margin-bottom:15px;}
 .group-person-contact{padding:17px 17px 20px;border:1px solid #929292;}

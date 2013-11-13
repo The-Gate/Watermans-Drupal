@@ -16,6 +16,15 @@
              //console.log(leftpos.left);
              $(this).css({'left':'-' + leftpos.left +'px'});
             });
+            // team page add padding to sidebar
+            if ($('.block-people-listing-block').length){
+              var thisBlock = $('.block-people-listing-block').offset().top;
+              var sidebar = $('.region-sidebar-second').offset().top;
+              var blockPadding = thisBlock - sidebar;
+              if (blockPadding > 0){
+                $('.region-sidebar-second').css({'padding-top':blockPadding+'px'});
+              }
+            }
             // move the side blocks to the outer wrapper
             $('.block-13, .block-14').appendTo('#zone-content-wrapper');
           }
