@@ -10,6 +10,10 @@
             $('#node_person_full_group_person_contact h3 span').append(' ').append($('h1#page-title').text());
           }
           if (d.to == 'normal' ) {
+            // move news thumnbail to first para of body copy
+            if ($('.node-type-news-item').length > 0){
+              $('.field-name-field-image img').css({'float':'right','margin':'0 0 10px 10px'}).prependTo($('.field-name-body p:first'));
+            }
             // set up the main menu sub menu content positions
             $('#om-menu-main-menu > li > .om-maximenu-content').each(function(){
              var leftpos = $(this).parent().position();

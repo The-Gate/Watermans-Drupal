@@ -10,7 +10,7 @@ ul li.leaf,li {margin:0; list-style: none;}
 #zone-content .region-content-inner li {list-style: disc; margin-left:1em;}
 /*font*/
 h2, h3, h4, h5, h6,.region-footer-first-inner h2{font-family:Arial, Helvetica, sans-serif;}
-.field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label,.block-field-job-title,.om-maximenu-middle-right .block.last h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner h2,h1,.view-news-listing h3,.region-postscript-fourth-inner h3, .region-postscript-third-inner h3,.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,.view-banner p,.view-banner h3,.cta .cta-content li a,.cta h3,.block-block-4 div.menu-item a,.header.phone h3{font-family: 'Quattrocento Sans';}
+.views-exposed-form label,.field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label,.block-field-job-title,.om-maximenu-middle-right .block.last h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner h2,h1,.view-news-listing h3,.region-postscript-fourth-inner h3, .region-postscript-third-inner h3,.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,.view-banner p,.view-banner h3,.cta .cta-content li a,.cta h3,.block-block-4 div.menu-item a,.header.phone h3{font-family: 'Quattrocento Sans';}
 /*.group-person-contact h3{font-family: 'Quattrocento Sans';} THIS DETROYS THE FONTS ON THE REST OF THE PAGE!!*/
 /* font sizes*/
 /* 10px */
@@ -20,7 +20,7 @@ h2, h3, h4, h5, h6,.region-footer-first-inner h2{font-family:Arial, Helvetica, s
 /* 14 px */
 .people-title,.block-field-job-title,.breadcrumb li,.region-postscript-first-inner .cta .cta-content li a{font-size:0.875em;}
 /* 15 px */
-.om-maximenu-middle-right .block.last h2,.block-17 h2,.block--exp-news-listing-page-1 h2,.view-banner p,.region-postscript-second-inner .cta p{font-size:0.938em;}
+.block-views-exp-people-listing-page-1 form label,.block-views-id--exp-people_listing-page_1 form label,.om-maximenu-middle-right .block.last h2,.block-17 h2,.block--exp-news-listing-page-1 h2,.view-banner p,.region-postscript-second-inner .cta p{font-size:0.938em;}
 /* 17px */
 .block-block-4 div.menu-item a {font-size:1.063em;}
 /* 18px */
@@ -36,7 +36,7 @@ h2, h3, h4, h5, h6,.region-footer-first-inner h2{font-family:Arial, Helvetica, s
 /* 32 px */
 .header.phone h3{font-size:2em;}
 /* 34 px */
-.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,h1{font-size:2.125em;}
+.block-block-20 h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,h1{font-size:2.125em;}
 /* 54 */
 .view-banner h3{font-size:3.375em;}
 
@@ -58,10 +58,12 @@ h2, h3, h4, h5, h6,.region-footer-first-inner h2{font-family:Arial, Helvetica, s
 .breadcrumb li,.breadcrumb li a{color:#5f5f5f;}
 
 /* white */
-.view-people-listing .people-title-wrapper,.view-people-listing .people-title-wrapper a,.block--exp-news-listing-page-1 h2,.block-block-16 h1,.region-sidebar-second .block-menu-block .menu li a:hover,.region-sidebar-second .block-menu-block .menu li.active-trail a,.region-footer-first-inner li a,.region-footer-first-inner h2,.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,.region-postscript-second-inner .cta a,.block-block-2 p,.block-block-2 p a, .button a{color:#fff;}
+.block-views-exp-people-listing-page-1 form label,.block-views-id--exp-people_listing-page_1 form label,.leaf-our-team .om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-block-20 h2,.view-people-listing .people-title-wrapper,.view-people-listing .people-title-wrapper a,.block--exp-news-listing-page-1 h2,.block-block-16 h1,.region-sidebar-second .block-menu-block .menu li a:hover,.region-sidebar-second .block-menu-block .menu li.active-trail a,.region-footer-first-inner li a,.region-footer-first-inner h2,.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,.region-postscript-second-inner .cta a,.block-block-2 p,.block-block-2 p a, .button a{color:#fff;}
 /* black */
 .om-maximenu-middle-right .block.last h2,.block-17 h2,.region-postscript-first-inner .cta .cta-content li a,.block-block-4 div.menu-item a{color:#000;}
 
+/* drupal over rides */
+.views-exposed-form label {font-weight: normal; margin-bottom:10px;}
 
 /*header*/
 .header.phone h3{font-weight: 700; letter-spacing:-2px; margin-bottom:15px;line-height:1;margin-top:20px;}
@@ -85,8 +87,8 @@ h2, h3, h4, h5, h6,.region-footer-first-inner h2{font-family:Arial, Helvetica, s
 .block-block-4 div.menu-item.item-3 a{background-position:0 -245px;}
 
 /* sub menu */
-.om-maximenu-middle-right .block.last h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,.block-17 h2{text-transform: capitalize; border-bottom: 1px solid #b9baba;}
-.block-block-16 h1{border-bottom-color: #fff;}
+.block-block-20 h2, .om-maximenu-middle-right .block.last h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,.block-17 h2{text-transform: capitalize; border-bottom: 1px solid #b9baba;}
+.block-block-20 h2,.block-block-16 h1{border-bottom-color: #fff;}
 .om-maximenu-middle-right .block.last h2,.block-17 h2, .block--exp-news-listing-page-1 h2{line-height:1.8;}
 .block--exp-news-listing-page-1 h2{border-bottom:1px solid #fff;}
 .block-block-16,.block--exp-news-listing-page-1  {background: #0c7998; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBjNzk5OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ZGFmYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -121,7 +123,7 @@ h1{text-transform: capitalize;border-bottom:2px solid #929292;}
 background: -moz-linear-gradient(top,  #1e5799 0%, #d9495e 0%, #8c2327 75%, #841313 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#d9495e), color-stop(75%,#8c2327), color-stop(100%,#841313)); background: -webkit-linear-gradient(top,  #1e5799 0%,#d9495e 0%,#8c2327 75%,#841313 100%); background: -o-linear-gradient(top,  #1e5799 0%,#d9495e 0%,#8c2327 75%,#841313 100%); background: -ms-linear-gradient(top,  #1e5799 0%,#d9495e 0%,#8c2327 75%,#841313 100%); background: linear-gradient(to bottom,  #1e5799 0%,#d9495e 0%,#8c2327 75%,#841313 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#841313',GradientType=0 );}
 .view-people-listing a {display:block;}
 .view-people-listing .people-title-wrapper{ border-left:4px solid #fff;padding-left:9px;}
-.item-list h3{display:none;}
+.view-people-listing .item-list h3{display:none;}
 .block-field-job-title{text-transform: uppercase;font-weight:700;}
 .field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label{border-bottom:1px solid #929292;margin-bottom:15px;}
 .group-person-contact{padding:17px 17px 20px;border:1px solid #929292;}

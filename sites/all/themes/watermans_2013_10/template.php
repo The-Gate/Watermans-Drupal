@@ -23,3 +23,20 @@ function watermans_2013_10_breadcrumb($variables) {
     return $output;
   }
 }
+
+function watermans_2013_10_form_alter(&$form, $form_state, $form_id) {
+	if($form['#id'] == 'views-exposed-form-people-listing-page-1') {
+		foreach ($form['tid']['#options'] as $key => &$option) {
+			if ($key == 'All') {
+				$option = 'Select Department';
+			} 
+		}
+	}
+	if($form['#id'] == 'views-exposed-form-news-listing-page-1') {
+		foreach ($form['news-id']['#options'] as $key => &$option) {
+			if ($key == 'All') {
+				$option = 'Select Category';
+			} 
+		}
+	}
+}

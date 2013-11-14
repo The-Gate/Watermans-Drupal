@@ -19,11 +19,17 @@ background: -moz-linear-gradient(top,  #fafafa 0%, #d8d9da 100%); background: -w
 .om-menu li.om-leaf.active .om-maximenu-content {display:none !important;}
 .om-maximenu-no-style .om-maximenu-middle{background:transparent;}
 .om-maximenu-no-style .om-maximenu-middle-right {padding: 0;}
-.om-maximenu.om-maximenu-block .om-maximenu-content{border-right:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000; background: #d8d9da; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q4ZDlkYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(top,  #d8d9da 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8d9da), color-stop(100%,#ffffff)); background: -webkit-linear-gradient(top,  #d8d9da 0%,#ffffff 100%); background: -o-linear-gradient(top,  #d8d9da 0%,#ffffff 100%); background: -ms-linear-gradient(top,  #d8d9da 0%,#ffffff 100%); background: linear-gradient(to bottom,  #d8d9da 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d9da', endColorstr='#ffffff',GradientType=0 );}
+.om-maximenu.om-maximenu-block .om-maximenu-content{border-right:1px solid #000;border-left:1px solid #000;border-bottom:1px solid #000; background: #d8d9da; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q4ZDlkYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -moz-linear-gradient(top,  #d8d9da 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8d9da), color-stop(100%,#ffffff)); background: -webkit-linear-gradient(top,  #d8d9da 0%,#ffffff 100%); background: -o-linear-gradient(top,  #d8d9da 0%,#ffffff 100%); background: -ms-linear-gradient(top,  #d8d9da 0%,#ffffff 100%); background: linear-gradient(to bottom,  #d8d9da 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d9da', endColorstr='#ffffff',GradientType=0 );}
 
+/* sub menu other options block */
+.block-block-17 .button,.block-block-id-17 .button{margin-right:20px;}
+.block-block-17 .button.bluegrad, .block-block-id-17 .button.bluegrad {margin-top:10px; margin-bottom:5px;}
+.block-block-17 .button.redgrad,.block-block-id-17 .button.redgrad{margin-bottom:30px;}
 /* meet the team */
+.om-leaf.leaf-our-team .om-maximenu-content{background: #a5a6a7; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E1YTZhNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZjBmMGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #a5a6a7 0%, #0f0f0f 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5a6a7), color-stop(100%,#0f0f0f)); background: -webkit-linear-gradient(top,  #a5a6a7 0%,#0f0f0f 100%); background: -o-linear-gradient(top,  #a5a6a7 0%,#0f0f0f 100%); background: -ms-linear-gradient(top,  #a5a6a7 0%,#0f0f0f 100%); background: linear-gradient(to bottom,  #a5a6a7 0%,#0f0f0f 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a6a7', endColorstr='#0f0f0f',GradientType=0 );}
 .om-maximenu-middle .block-block-id-20 .block-title-wrapper{display: none;}
+
 
 /* home CTA */
 .cta{display:inline-block; vertical-align: top;margin-right:20px;}
@@ -59,16 +65,25 @@ background: -moz-linear-gradient(45deg,  #efefef 0%, #d6d8d6 100%); background: 
 .view-banner .views_slideshow_cycle_main{z-index:15;margin:0 70px;}
 
 /* sub menu */
-.om-maximenu-middle-right .block,.region-menu-sub-inner .block-menu-block,.region-menu-sub-inner .block-17,.block-block-16,.block--exp-news-listing-page-1  {display:inline-block;vertical-align: top;}
-.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,.block-block-16 h1{margin:21px 20px 0;}
+.block-views-exp-people-listing-page-1,.region-menu-sub-inner .block-block-20,.om-maximenu-middle-right .block,.region-menu-sub-inner .block-menu-block,.region-menu-sub-inner .block-17,.block-block-16,.block--exp-news-listing-page-1  {display:inline-block;vertical-align: top;}
+.block-block-20 h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,.block-block-16 h1{margin:21px 20px 0;}
 .om-maximenu-middle-right .block.last h2,.block-17 h2,.block--exp-news-listing-page-1 h2{margin:35px 20px 0 0;}
 .om-maximenu-middle-right .block.first .menu-block-wrapper,.region-menu-sub-inner .menu-block-wrapper{margin:15px 20px;}
 .om-maximenu-middle-right .block.first .menu-block-wrapper li,.region-menu-sub-inner .menu-block-wrapper li{display:inline-block; vertical-align: top;margin-right:-4px; padding:0;}
 
-/* right sidebar */
-.region-sidebar-second .block-block-18{margin-top:10px;}
+.block-views-exp-people-listing-page-1,.block-views-id--exp-people_listing-page_1{margin:10px 0px 10px 2px; background: #ee2841; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlMjg0MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4NDEzMTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ee2841 0%, #841313 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee2841), color-stop(100%,#841313)); background: -webkit-linear-gradient(top,  #ee2841 0%,#841313 100%); background: -o-linear-gradient(top,  #ee2841 0%,#841313 100%); background: -ms-linear-gradient(top,  #ee2841 0%,#841313 100%); background: linear-gradient(to bottom,  #ee2841 0%,#841313 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee2841', endColorstr='#841313',GradientType=0 ); }
+.block-views-exp-people-listing-page-1 form,.block-views-id--exp-people_listing-page_1 form{padding:15px;}
+.leaf-our-team .block-views-id--exp-people_listing-page_1 h2{display:none;}
 /* right sub menu */
 .region-sidebar-second .block-menu-block .block-title-wrapper{height:115px;position:relative;}
 .region-sidebar-second .block-menu-block .block-title-wrapper h2{position:absolute;bottom:0;}
+/* right sidebar */
+.node-type-person .region-sidebar-second {padding-top:20px;}
+.region-sidebar-second .block-block-18{margin-top:10px;}
+/* content CTA*/
+.block-block-23 .phone,.block-block-23 .button{display:inline-block;vertical-align: middle;}
+.block-block-23 .phone h5{margin:0 15px 0 0;}
+.block-block-23 .phone{line-height:32px;}
 /* footer */
 .region-footer-first .block-menu-block{display:inline-block; vertical-align: top;}
