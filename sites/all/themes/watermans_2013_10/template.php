@@ -39,4 +39,11 @@ function watermans_2013_10_form_alter(&$form, $form_state, $form_id) {
 			} 
 		}
 	}
+	if($form['#id'] == 'views-exposed-form-faq-page-1') {
+		foreach ($form['faqid']['#options'] as $key => &$option) {
+			if ($key == 'All') {
+				$option = 'Select Category';
+			} 
+		}
+	}
 }

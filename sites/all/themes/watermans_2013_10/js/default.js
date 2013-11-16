@@ -4,11 +4,25 @@
     attach: function(context) {
       $('body', context).once('sitesetup', function () {
         $('body').bind('responsivelayout', function (e, d) {	
-          // desktop version
           // for all
+          
+          // FAQs
+          if ($('.context-frequently-asked-questions').length > 0){
+              $('.view-faq .views-field-body').each(function(){$(this).hide();});  
+              $('.view-faq .views-field-title a').click(function(e){
+                e.preventDefault();
+                $('.faq-active').parent().parent().next().hide();
+                $('.faq-active').removeClass('faq-active');
+                $(this).parent().parent().next().show();
+                $(this).addClass('faq-active');
+              });      
+          }
+          
+          // add the category to the people search results
           if ($('#node_person_full_group_person_contact').length > 0){
             $('#node_person_full_group_person_contact h3 span').append(' ').append($('h1#page-title').text());
           }
+          
           if (d.to == 'normal' ) {
             // move news thumnbail to first para of body copy
             if ($('.node-type-news-item').length > 0){
