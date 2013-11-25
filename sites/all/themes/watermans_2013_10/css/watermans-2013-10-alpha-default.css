@@ -1,5 +1,8 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
 
+/* forms */
+/* search */
+.region-branding-second-inner {margin:70px 15px 0 15px;}
 /* featured menu */
 .menu-block-11 li {vertical-align: top;width:33.29%;display:inline-block;margin:0;}
 .menu-block-11 li{margin-left:-4px !important;}
@@ -57,7 +60,11 @@ background: -moz-linear-gradient(top,  #0c7998 0%, #5dafb2 100%); background: -w
 /* banner I have NO IDEA why changing the font family for the parent element makes this wirk in IE10, but it does?? */
 .view-banner{font-family:Georgia, "Times New Roman", Times, serif; width:100%;;border-top:2px solid #c1c4c5; position:relative; background: #efefef; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWZlZmVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q2ZDhkNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
 background: -moz-linear-gradient(45deg,  #efefef 0%, #d6d8d6 100%); background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#efefef), color-stop(100%,#d6d8d6)); background: -webkit-linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%); background: -o-linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%); background: -ms-linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%); background: linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#d6d8d6',GradientType=1 ); margin-bottom:25px; height:345px; padding-top:65px;}
+
+.context-total-care .view-banner{background: url(../images/total-care-slideshow-bg.jpg);}
+
 .view-banner .views-field-field-content-left, .view-banner .views-field-field-content-right {font-family:Arial, Helvetica, sans-serif; position:relative; display: inline-block; width:375px; height:240px; margin:0; vertical-align:top;}
+.context-total-care .view-banner .views-field-field-content-left{width:415px;}
 .view-banner .views-field-field-content-left p:last-child, .view-banner .views-field-field-content-right p:last-child{margin-bottom: 0;}
 .view-banner .views-field-field-content-left{padding:0 15px 0 10px;}
 .view-banner .views-field-field-content-right {padding:0 10px 0 15px; margin-left:-4px;}
@@ -75,6 +82,11 @@ background: -moz-linear-gradient(45deg,  #efefef 0%, #d6d8d6 100%); background: 
 .view-banner .views-slideshow-controls-bottom .views-slideshow-pager-field-item .views-field-counter .views-content-counter{display:block;	background:#FFF;	text-indent:-9999px;display:block; width:12px; height:12px; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px;}
 .view-banner .views-slideshow-controls-bottom .views-slideshow-pager-field-item.active .views-field-counter .views-content-counter{background:#ee2842;}
 .view-banner .views_slideshow_cycle_main{z-index:15;margin:0 70px;}
+.view-banner p.left-border {margin-left: 110px;}
+.context-total-care .view-banner .views_slideshow_cycle_main{margin:0 50px;}
+.context-total-care .view-banner h3 .blue{margin-left:60px;}
+.context-total-care .view-banner p.left-border{margin-left:75px;}
+
 
 /* sub menu */
 .block--exp-faq-page-1,.block-block-24,.block-views-exp-people-listing-page-1,.region-menu-sub-inner .block-block-20,.om-maximenu-middle-right .block,.region-menu-sub-inner .block-menu-block,.region-menu-sub-inner .block-17,.block-block-16,.block--exp-news-listing-page-1  {display:inline-block;vertical-align: top;}

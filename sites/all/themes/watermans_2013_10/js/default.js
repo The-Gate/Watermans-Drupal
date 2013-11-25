@@ -78,7 +78,7 @@
               }
             }
             // move the side blocks to the outer wrapper
-            $('.block-13, .block-14').appendTo('#zone-content-wrapper');
+            $('.block-13.widepage-sides, .block-14.widepage-sides').appendTo('#zone-content-wrapper');
           }
           if (d.to == 'mobile') {
           }	

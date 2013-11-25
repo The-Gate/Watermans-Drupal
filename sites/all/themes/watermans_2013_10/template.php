@@ -46,4 +46,11 @@ function watermans_2013_10_form_alter(&$form, $form_state, $form_id) {
 			} 
 		}
 	}
+  
+  
+  if ($form_id == 'search_block_form') {
+    $form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/button-search.gif');
+  }
+  
+  
 }

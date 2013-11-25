@@ -5,11 +5,11 @@
 
 /* 3cols */
 .block--exp-news-listing-page-1,.om-maximenu-middle-right .block.first .menu-block-wrapper li,.region-menu-sub-inner .menu-block-wrapper li,.region-footer-first .block-menu-block,.cta,.block--exp-news-listing-page-1{width:220px;}
-.region-footer-first .block-menu-block{width:220px;margin-left:16px;}
-.region-footer-first .block-menu-block:first-child{width:200px;}
+.region-footer-first .block-menu-block{width:199px;margin-left:20px;padding-left:20px;}
+.region-footer-first .block-menu-block:first-child{margin-left:0;}
 
 /* reduce to allow for wrapper border size */
-.block--exp-faq-page-1,.region-menu-sub-inner .block-17,.region-footer-first .block-menu-block,.cta,.om-maximenu-middle-right .last{width:219px;}
+.block--exp-faq-page-1,.region-menu-sub-inner .block-17,.cta,.om-maximenu-middle-right .last{width:219px;}
 /* reduced for margin */
 .block-views-exp-people-listing-page-1,.om-maximenu-middle-right .block-views-id--exp-people_listing-page_1.last{width:209px;}
 .om-maximenu-middle-right .block.last{margin-left:-4px;}
@@ -49,16 +49,16 @@
 
 /* side blocks - only show for wide screens */
 @media screen and (min-width: 1160px) {
-.block-13, .block-14{display:block; position:fixed; top:40%;width:100px;}
-.block-13{left:0; background-color: #ee2842;}
-.block-13 p{color: #fff; border-left:4px solid #fff;margin:10px;}
-.block-13 p a{font-weight:700;color: #fff; display:block; width:100%; padding:5px 5px 60px;}
-.block-14{right:0; background-color: #077a99;}
-.block-14 p {color: #fff; display:block; padding:5px; border-left:4px solid #fff;margin:10px;font-weight:700;}
-.block-14 p:last-child {margin-top:-10px;padding-bottom:0;}
-.block-14 p a{display:block; height:30px; width:30px;background: url(../images/icon_social.gif); text-indent: -9999px;}
-.block-14 p a.icon_facebook{background-position: 0 0;}
-.block-14 p a.icon_youtube{background-position: 0 -41px;}
-.block-14 p a.icon_trustpilot{background-position: 0 -83px;}
-.block-14 p a.icon_twitter{background-position: 0 -125px;}
+.block-13.widepage-sides, .block-14.widepage-sides{display:block; position:fixed; top:40%;width:100px;}
+.block-13.widepage-sides{left:0; background-color: #ee2842;}
+.block-13.widepage-sides p{color: #fff; border-left:4px solid #fff;margin:10px;}
+.block-13.widepage-sides p a{font-weight:700;color: #fff; display:block; width:100%; padding:5px 5px 60px;}
+.block-14.widepage-sides{right:0; background-color: #077a99;}
+.block-14.widepage-sides p {color: #fff; display:block; padding:5px; border-left:4px solid #fff;margin:10px;font-weight:700;}
+.block-14.widepage-sides p:last-child {margin-top:-10px;padding-bottom:0;}
+.block-14.widepage-sides p a{display:block; height:30px; width:30px;background: url(../images/icon_social.gif); text-indent: -9999px;}
+.block-14.widepage-sides p a.icon_facebook{background-position: 0 0;}
+.block-14.widepage-sides p a.icon_youtube{background-position: 0 -41px;}
+.block-14.widepage-sides p a.icon_trustpilot{background-position: 0 -83px;}
+.block-14.widepage-sides p a.icon_twitter{background-position: 0 -125px;}
 }
