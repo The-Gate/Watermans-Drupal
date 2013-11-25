@@ -12,10 +12,12 @@ ul li.leaf,li {margin:0; list-style: none;}
 h2, h3, h4, h5, h6,.region-footer-first-inner h2{font-family:Arial, Helvetica, sans-serif;letter-spacing: 0;}
 h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spacing: -0.05em;}
 
-.node-type-news-item h1,.node-type-news-item h2,.node-type-news-item h3,.view-faq h2,.view-news-listing h2,.view-faq h3,.view-news-listing h3,.view-faq a,.view-news-listing a,.views-exposed-form label,.field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,
-.field-name-field-hobbies-interests .field-label,.block-field-job-title,.om-maximenu-middle-right .block.last h2,.om-maximenu-middle-right .block.first h2,
-.region-menu-sub-inner h2,h1,.view-news-listing h3,.region-postscript-fourth-inner h3, .region-postscript-third-inner h3,.region-postscript-fourth-inner h2,
-.region-postscript-third-inner h2,.view-banner p,.view-banner h3,.cta .cta-content li a,.cta h3,.menu-block-11 li a,.header.phone h3,.block-block-16 h2
+.askquestion_modal h2,.block-block-30  h2,.node-type-news-item h1,.node-type-news-item h2,.node-type-news-item h3,.view-faq h2,.view-news-listing h2,
+.view-faq h3,.view-news-listing h3,.view-faq a,.view-news-listing a,.views-exposed-form label,.field-name-field-about-me .field-label,
+.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label,.block-field-job-title,.om-maximenu-middle-right .block.last h2,
+.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner h2,h1,.view-news-listing h3,.region-postscript-fourth-inner h3, .region-postscript-third-inner h3,
+.region-postscript-fourth-inner h2,.region-postscript-third-inner h2,.view-banner p,.view-banner h3,.cta .cta-content li a,.cta h3,.menu-block-11 li a,
+.header.phone h3,.block-block-16 h2, #webform-component-ask-a-personal-injury-solicitor label
 {font-family: 'Quattrocento Sans';}
 /*.group-person-contact h3{font-family: 'Quattrocento Sans';} THIS DETROYS THE FONTS ON THE REST OF THE PAGE!!*/
 /* font sizes*/
@@ -24,7 +26,7 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 /* 12px */
 .region-footer-first-inner li,.region-footer-first-inner h2,.block-block-2 p,.button{font-size:12px;}
 /* 14 px */
-.people-title,.block-field-job-title,.breadcrumb li,.region-postscript-first-inner .cta .cta-content li a{font-size:14px;}
+.askquestion_close p,.people-title,.block-field-job-title,.breadcrumb li,.region-postscript-first-inner .cta .cta-content li a{font-size:14px;}
 /* 15 px */
  .block-views-id--exp-faq-page_1 .views-exposed-widget label,.block--exp-faq-page-1 form label,.block-views-exp-people-listing-page-1 form label,.block-views-id--exp-people_listing-page_1 form label,.om-maximenu-middle-right .block.last h2,.block-17 h2,
 .block--exp-news-listing-page-1 h2,.view-banner p,.region-postscript-second-inner .cta p{font-size:15px;}
@@ -37,11 +39,11 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 /* 22px */
 .region-sidebar-second .block-block-19 a,.region-sidebar-second .block-block-21 a,.region-sidebar-second .block-block-22 a,.region-sidebar-second .block-block-25 a,.group-person-contact h3{font-size:22px}
 /* 24px */
-.block-block-23 .phone h5,.field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label{font-size:24px;}
+.block-block-30  h2,.block-block-23 .phone h5,.field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label{font-size:24px;}
 /* 26px */
 .view-faq h3,.view-news-listing h3,.view-news-listing h3{font-size:26px;}
 /* 32 px */
-.header.phone h3{font-size:32px;}
+#webform-component-ask-a-personal-injury-solicitor label,.header.phone h3{font-size:32px;}
 /* 34 px */
 .view-faq h2,.view-news-listing h2,.block-block-24 h2,.block-block-16 h2,.block-block-20 h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,h1{font-size:34px;}
 /* 48*/
@@ -57,8 +59,8 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 .group-person-contact h3,.read-more a,.region-postscript-fourth-inner h3 a, .region-postscript-third-inner h3 a{color:#ee2842;}
 /* dark red */
 .region-postscript-first-inner .cta h3 a{color:#c51f3c;}
-/* dark red - people section */
-.node-type-person h1#page-title,.block-field-job-title{color:#841313;}
+/* dark red - people section / ask a question */
+#webform-component-ask-a-personal-injury-solicitor label,.askquestion_modal h2,.block-block-30  h2,.node-type-person h1#page-title,.block-field-job-title{color:#841313;}
 /* blue */
 .om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,.view-banner p{color:#003766;}
 /* lighter blue */
@@ -85,6 +87,7 @@ li.expanded, li.collapsed, li.leaf {padding:0;}
 .views-exposed-widget{width:100%;}
 .views-exposed-form label {font-weight: normal; margin-bottom:10px;}
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;}
+.form-item, .form-actions{margin:0;}
 
 /*header*/
 .header.phone h3{font-weight: 700; letter-spacing:-2px; margin-bottom:15px;line-height:1;margin-top:20px;}
@@ -192,9 +195,19 @@ background: -moz-linear-gradient(top,  #4ba9ae 0%, #0b7997 100%); background: -w
 .block-faq-block h2{font-weight: 700;border-bottom:1px solid #929292;padding-bottom:5px;}
 .view-faq .views-field-body{margin:15px 0;}
 
+/* ask a question form */
+.context-ask-question .block-system-main {background: #ebebeb;padding:30px 25px;}
+#webform-component-ask-a-personal-injury-solicitor label{margin-bottom:25px;}
 /* search results */
 #zone-content .region-content-inner .search-results li{list-style-type: none;}
 /* right sidebar */
+/* ask a question right block */
+.block-block-30 h2{margin-bottom:10px;}
+.askquestion_open {padding-left:25px; background: url(../images/quote-open.png) no-repeat 0 0;}
+.askquestion_close {padding-right:25px; background: url(../images/quote-close.png) no-repeat 100% 95%;}
+.askquestion_close p {padding-top:5px;}
+.askquestion_close p a{font-weight:700;text-decoration: underline;}
+
 /* people - deptment buttons */
 .region-sidebar-second .block-block-19,.region-sidebar-second .block-block-21,.region-sidebar-second .block-block-22,.region-sidebar-second .block-block-25{margin-bottom:40px;height:155px;background: #a9a9a9; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E5YTlhOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -moz-linear-gradient(top,  #a9a9a9 0%, #f2f2f2 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9a9a9), color-stop(100%,#f2f2f2)); background: -webkit-linear-gradient(top,  #a9a9a9 0%,#f2f2f2 100%); background: -o-linear-gradient(top,  #a9a9a9 0%,#f2f2f2 100%); background: -ms-linear-gradient(top,  #a9a9a9 0%,#f2f2f2 100%); background: linear-gradient(to bottom,  #a9a9a9 0%,#f2f2f2 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a9a9', endColorstr='#f2f2f2',GradientType=0 ); }
 .region-sidebar-second .block-block-25{margin:50px 0 20px;}
