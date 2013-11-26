@@ -5,7 +5,31 @@
       $('body', context).once('sitesetup', function () {
         $('body').bind('responsivelayout', function (e, d) {	
           // for all
-          
+          // ask a question web form add the descrition to the textarea, add the step count
+          if ($('#webform-client-form-29').length > 0){
+            // build form step counter
+            var stepCounter = '<p class="form-steps">Click here to complete step ' + $( "input[name='details[page_num]']" ).val() + ' of ' + $( "input[name='details[page_count]']" ).val() + '</p>';
+            $('.webform-client-form .form-actions.form-wrapper').prepend(stepCounter);
+            // add textarea description
+            if($('#edit-submitted-ask-a-personal-injury-solicitor').length > 0){
+              var askQuestionText = $('#webform-component-ask-a-personal-injury-solicitor .description').text();
+              $('#webform-component-ask-a-personal-injury-solicitor .description').hide();
+              $("#edit-submitted-ask-a-personal-injury-solicitor").focus(function(srcc) {
+                if ($(this).val() == askQuestionText) {
+                  $(this).val('');
+                }
+              }).blur(function(){
+                if ($(this).val() == ''){
+                  $(this).val(askQuestionText);
+                }
+              }).blur();     
+              $('.webform-client-form').submit(function(){
+                 if ($('#edit-submitted-ask-a-personal-injury-solicitor').val() == askQuestionText) {
+                  $('#edit-submitted-ask-a-personal-injury-solicitor').val('');
+                }
+              });
+            }
+          }
           // FAQs
           if ($('.context-frequently-asked-questions').length > 0){
             $('.view-faq .views-field-body').each(function(){
@@ -39,13 +63,19 @@
                   //console.log(section);
                   switch (section) { 
                     case 'Court Department':
-                      $('.region-sidebar-second .block-block-19').css({'height':sectionHeight+'px'}).show();
+                      $('.region-sidebar-second .block-block-19').css({
+                        'height':sectionHeight+'px'
+                      }).show();
                       break;
                     case 'RTA Department':
-                      $('.region-sidebar-second .block-block-21').css({'height':sectionHeight+'px'}).show();
+                      $('.region-sidebar-second .block-block-21').css({
+                        'height':sectionHeight+'px'
+                      }).show();
                       break;
                     case 'Business Development':
-                      $('.region-sidebar-second .block-block-22').css({'height':sectionHeight+'px'}).show();
+                      $('.region-sidebar-second .block-block-22').css({
+                        'height':sectionHeight+'px'
+                      }).show();
                       break;
                   }
                 });
