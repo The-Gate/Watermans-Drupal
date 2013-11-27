@@ -24,7 +24,7 @@
                 }
               }).blur();     
               $('.webform-client-form').submit(function(){
-                 if ($('#edit-submitted-ask-a-personal-injury-solicitor').val() == askQuestionText) {
+                if ($('#edit-submitted-ask-a-personal-injury-solicitor').val() == askQuestionText) {
                   $('#edit-submitted-ask-a-personal-injury-solicitor').val('');
                 }
               });
@@ -111,6 +111,24 @@
             $('.block-13.widepage-sides, .block-14.widepage-sides').appendTo('#zone-content-wrapper');
           }
           if (d.to == 'mobile') {
+            // build the mobile menu
+            $('.region-branding-second-inner .block-search-form').prependTo($('.block-menu-block-14 .content'));
+            $('.menu-mlid-588,.menu-mlid-528').removeClass('expanded').addClass('leaf');
+            $('.block-menu-block-14 > .block-inner > .content > .menu-block-14 > .menu li.expanded').each(function(){
+              $(this).children('ul.menu li.first').removeClass('first');
+              $(this).children('ul.menu').prepend($(this).children('a').clone().wrap('<li class="leaf first"></li>').parent());
+            });
+            $('.block-menu-block-14 h2.block-title').click(function(){
+              $('.block-menu-block-14 > .block-inner > .content').toggleClass('openMenu');
+              $('.block-menu-block-14 h2.block-title').toggleClass('close');
+              $('.block-menu-block-14 h2.block-title').text('menu');
+              $('.block-menu-block-14 h2.block-title.close').text('close');
+            });
+            $('.block-menu-block-14 > .block-inner > .content > .menu-block-14 > .menu li.expanded > a').click(function(e){
+              e.preventDefault();
+              $('.block-menu-block-14 > .block-inner > .content > .menu-block-14 > .menu li.expanded > .menu').removeClass('open');
+              $(this).next($('.menu')).addClass('open');
+            });
           }	
         });
       });

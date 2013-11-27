@@ -1,5 +1,8 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+body{margin-top:20px;}
 
+.block-menu-block-14{display:none;}
+.block-om-maximenu-om-maximenu-1 {display:block;}
 /* forms */
 /* search */
 .region-branding-second-inner {margin:70px 15px 0 15px;}
