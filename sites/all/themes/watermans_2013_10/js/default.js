@@ -5,6 +5,8 @@
       $('body', context).once('sitesetup', function () {
         $('body').bind('responsivelayout', function (e, d) {	
           // for all
+          // add video wrapper
+          $('.youtube-player, .vimeo-player').wrap('<div class="video-container" />')
           // ask a question web form add the descrition to the textarea, add the step count
           if ($('#webform-client-form-29').length > 0){
             // build form step counter
@@ -58,7 +60,7 @@
                 function(){
                   var section = $(this).find('h3').text();
                   // -20 for the top & bottom padding in the block
-                  var sectionHeight = ($(this).height() - liMarginBottom) - 20;
+                  var sectionHeight = ($(this).height() - liMarginBottom);
                   // console.log(sectionHeight);
                   //console.log(section);
                   switch (section) { 

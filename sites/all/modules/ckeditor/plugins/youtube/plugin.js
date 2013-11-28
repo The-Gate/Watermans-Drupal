@@ -262,7 +262,7 @@
 
 								url += 'hl=pt_BR&amp;version=3';
 
-								content = '<object width="' + width + '" height="' + height + '">';
+								content = '<object class="youtube-player" width="' + width + '" height="' + height + '">';
 								content += '<param name="movie" value="' + url + '"></param>';
 								content += '<param name="allowFullScreen" value="true"></param>';
 								content += '<param name="allowscriptaccess" value="always"></param>';
@@ -278,7 +278,7 @@
 								}
 
 								content = '<iframe width="' + width + '" height="' + height + '" src="' + url + '" ';
-								content += 'frameborder="0" allowfullscreen></iframe>';	
+								content += 'frameborder="0" allowfullscreen class="youtube-player"></iframe>';	
 							}
 						}
 
