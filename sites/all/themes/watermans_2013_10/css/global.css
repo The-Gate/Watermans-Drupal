@@ -17,7 +17,7 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 .field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label,.block-field-job-title,.om-maximenu-middle-right .block.last h2,
 .om-maximenu-middle-right .block.first h2,.region-menu-sub-inner h2,h1,.view-news-listing h3,.region-postscript-fourth-inner h3, .region-postscript-third-inner h3,
 .region-postscript-fourth-inner h2,.region-postscript-third-inner h2,.view-banner p,.view-banner h3,.cta .cta-content li a,.cta h3,.menu-block-11 li a,
-.header.phone h3,.block-block-16 h2, #webform-component-ask-a-personal-injury-solicitor label,.block-block-31 .number, .context-contact-us .block-system-main h2,.block-block-33 h3, .context-contact-us .contact-map p a,.block-block-33 .blue
+.header.phone h3,.block-block-16 h2, #webform-component-ask-a-personal-injury-solicitor label,.block-block-31 .number, .context-contact-us .block-system-main h2,.block-block-33 h3, .context-contact-us .contact-map p a,.block-block-33 .blue, .block--exp-videos-page-1 label,.block-views-id--exp-videos-page_1 label, .context-confidence h2.block-title
 {font-family: 'Quattrocento Sans';}
 /*.group-person-contact h3{font-family: 'Quattrocento Sans';} THIS DETROYS THE FONTS ON THE REST OF THE PAGE!!*/
 /* font sizes*/
@@ -28,8 +28,9 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 /* 14 px */
 .context-ask-question .form-actions.form-wrapper p,.askquestion_close p,.people-title,.block-field-job-title,.breadcrumb li,.region-postscript-first-inner .cta .cta-content li a{font-size:14px;}
 /* 15 px */
-.block-views-id--exp-faq-page_1 .views-exposed-widget label,.block--exp-faq-page-1 form label,.block-views-exp-people-listing-page-1 form label,.block-views-id--exp-people_listing-page_1 form label,.om-maximenu-middle-right .block.last h2,.block-17 h2,
-.block--exp-news-listing-page-1 h2,.view-banner p,.region-postscript-second-inner .cta p{font-size:15px;}
+.block-views-id--exp-faq-page_1 .views-exposed-widget label,.block--exp-faq-page-1 form label,.block-views-exp-people-listing-page-1 form label,
+.block-views-id--exp-people_listing-page_1 form label,.om-maximenu-middle-right .block.last h2,.block-17 h2,
+.block--exp-news-listing-page-1 h2,.view-banner p,.region-postscript-second-inner .cta p, .block--exp-videos-page-1 label,.block-views-id--exp-videos-page_1 label {font-size:15px;}
 /* 17px */
 .question-details h3,.menu-block-11 li a {font-size:17px;}
 /* 18px */
@@ -60,7 +61,7 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 /* dark red */
 .block-block-33 h3,.region-postscript-first-inner .cta h3 a{color:#c51f3c;}
 /* dark red - people section / ask a question */
-#webform-component-ask-a-personal-injury-solicitor label,.askquestion_modal h2,.block-block-30  h2,.node-type-person h1#page-title,.block-field-job-title{color:#841313;}
+.context-confidence h1,.context-confidence h2.block-title,#webform-component-ask-a-personal-injury-solicitor label,.askquestion_modal h2,.block-block-30  h2,.node-type-person h1#page-title,.block-field-job-title{color:#841313;}
 /* blue */
 .block-block-34 h2,.block-block-31 h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,.view-banner p{color:#003766;}
 /* lighter blue */
@@ -81,7 +82,7 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 .block-block-16 h2,.region-sidebar-second .block-menu-block .menu li a:hover,.region-sidebar-second .block-menu-block .menu li.active-trail a,
 .region-footer-first-inner li a,.region-footer-first-inner h2,.region-postscript-fourth-inner h2, .region-postscript-third-inner h2,
 .region-postscript-second-inner .cta a,.block-block-2 p,.block-block-2 p a,.button a,.context-ask-question .block-block-32 h2,.context-contact-us .contact-map p a,
-.context-total-care .region-postscript-second-inner .cta a h3
+.context-total-care .region-postscript-second-inner .cta a h3, .block--exp-videos-page-1 label,.block-views-id--exp-videos-page_1 label 
 {color:#fff;}
 /* black */
 .node-type-person .block-person-contact-block h2.block-title,.om-maximenu-content .block-menu_block li a,.om-maximenu-middle-right .block.last h2,.block-17 h2,.region-postscript-first-inner .cta .cta-content li a,.region-menu-sub .block-menu-block li a,.menu-block-11 li a,.block-menu-block-14 h2.block-title{color:#000;}
@@ -206,7 +207,7 @@ background: -moz-linear-gradient(top,  #ee2841 0%, #841313 100%); background: -w
 .region-sidebar-second .block-menu-block .menu li.active-trail,.region-sidebar-second .block-menu-block .menu li:hover{background-color:#6ba5b9;}
 
 /* green / blue BG - ask a question,total care, faq & news */
-.context-ask-question .block-block-32,.context-total-care .region-menu-sub,.om-leaf.leaf-faq .om-maximenu-content, .context-frequently-asked-questions .region-menu-sub,  .context-news .region-menu-sub {background: #0c7998; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBjNzk5OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ZGFmYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+.block-views-id--exp-videos-page_1,.block--exp-videos-page-1,.context-ask-question .block-block-32,.context-total-care .region-menu-sub,.om-leaf.leaf-faq .om-maximenu-content, .context-frequently-asked-questions .region-menu-sub,  .context-news .region-menu-sub {background: #0c7998; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBjNzk5OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ZGFmYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 background: -moz-linear-gradient(top,  #0c7998 0%, #5dafb2 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0c7998), color-stop(100%,#5dafb2)); background: -webkit-linear-gradient(top,  #0c7998 0%,#5dafb2 100%); background: -o-linear-gradient(top,  #0c7998 0%,#5dafb2 100%); background: -ms-linear-gradient(top,  #0c7998 0%,#5dafb2 100%); background: linear-gradient(to bottom,  #0c7998 0%,#5dafb2 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c7998', endColorstr='#5dafb2',GradientType=0 );}
 
 /* faq */
@@ -238,6 +239,9 @@ background: -moz-linear-gradient(top,  #0c7998 0%, #5dafb2 100%); background: -w
 /* search results */
 #zone-content .region-content-inner .search-results li{list-style-type: none;}
 /* right sidebar */
+/* video */
+.region-sidebar-second-inner .video-container {position: relative;padding-bottom: 56.25%;padding-top: 30px;height: 0;overflow: hidden;}
+.region-sidebar-second-inner .video-container iframe,.region-sidebar-second-inner  .video-container object,.region-sidebar-second-inner .video-container embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 /* ask a question right block */
 .block-block-30{margin-top:30px;}
 .block-block-30 h2{margin-bottom:10px;}

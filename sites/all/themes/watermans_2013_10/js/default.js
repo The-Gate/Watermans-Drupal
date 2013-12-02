@@ -99,16 +99,28 @@
               });
             });
             // team page add padding to sidebar
-            if ($('.block-people-listing-block').length){
-              var thisBlock = $('.block-people-listing-block').offset().top;
-              var sidebar = $('.region-sidebar-second').offset().top;
-              var blockPadding = thisBlock - sidebar;
-              if (blockPadding > 0){
-                $('.region-sidebar-second').css({
-                  'padding-top':blockPadding+'px'
-                });
+            if (($('.block-people-listing-block').length > 0) || ($('.block-views-videos-block').length > 0)){
+              // team page add padding to sidebar
+              var thisBlock = 0;
+              if ($('.block-people-listing-block').length > 0){
+                thisBlock = $('.block-people-listing-block').offset().top;
+              }
+              // confidence video results page 
+              if ($('.block-views-videos-block').length > 0){
+                thisBlock = $('h1#page-title').offset().top;
+              }
+              if (thisBlock > 0){
+                // add padding to sidebar
+                var sidebar = $('.region-sidebar-second').offset().top;
+                var blockPadding = thisBlock - sidebar;
+                if (blockPadding > 0){
+                  $('.region-sidebar-second').css({
+                    'padding-top':blockPadding+'px'
+                  });
+                }
               }
             }
+            
             // move the side blocks to the outer wrapper
             $('.block-13.widepage-sides, .block-14.widepage-sides').appendTo('#zone-content-wrapper');
           }
