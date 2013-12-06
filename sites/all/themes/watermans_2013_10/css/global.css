@@ -5,7 +5,7 @@
 /* general tag setup */
 body{font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.2;color:#5f5f5f;}
 a:link, a:visited  {text-decoration:none;color:#0c7998;}
-ul li.leaf,li {margin:0; list-style: none;}
+ul li.collapsed,ul li.leaf,li {margin:0; list-style: none;}
 .view-news-listing ul li, .block-blog-listing-block ul li,ul li.expanded {margin:0 !important; list-style: none !important;}
 #zone-content .region-content-inner li {list-style: disc; margin-left:1em;}
 /*font*/
@@ -17,7 +17,7 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 .field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label,.block-field-job-title,.om-maximenu-middle-right .block.last h2,
 .om-maximenu-middle-right .block.first h2,.region-menu-sub-inner h2,h1,.view-news-listing h3,.region-postscript-fourth-inner h3, .region-postscript-third-inner h3,
 .region-postscript-fourth-inner h2,.region-postscript-third-inner h2,.view-banner p,.view-banner h3,.cta .cta-content li a,.cta h3,.menu-block-11 li a,
-.header.phone h3,.block-block-16 h2, #webform-component-ask-a-personal-injury-solicitor label,.block-block-31 .number, .context-contact-us .block-system-main h2,.block-block-33 h3, .context-contact-us .contact-map p a,.block-block-33 .blue, .block--exp-videos-page-1 label,.block-views-id--exp-videos-page_1 label, .context-confidence h2.block-title
+.header.phone h3,.block-block-16 h2, #webform-component-ask-a-personal-injury-solicitor label,.block-block-31 .number, .context-contact-us .block-system-main h2,.block-block-33 h3, .context-contact-us .contact-map p a,.block-block-33 .blue, .block--exp-videos-page-1 label,.block-views-id--exp-videos-page_1 label, .context-confidence h2.block-title,.block-views-vacancies-block h2.block-title,.block-client-block-48 h2.block-title
 {font-family: 'Quattrocento Sans';}
 /*.group-person-contact h3{font-family: 'Quattrocento Sans';} THIS DETROYS THE FONTS ON THE REST OF THE PAGE!!*/
 /* font sizes*/
@@ -46,7 +46,7 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 /* 32 px */
 .block-block-31 .number,#webform-component-ask-a-personal-injury-solicitor label,.header.phone h3{font-size:32px;}
 /* 34 px */
-.block-block-34 h2,.context-ask-question .block-block-32 h2,.block-block-31 h2,.view-faq h2,.view-news-listing h2,.block-block-24 h2,.block-block-16 h2,.block-block-20 h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,h1{font-size:34px;}
+ .block-35 h2,.block-block-34 h2,.context-ask-question .block-block-32 h2,.block-block-31 h2,.view-faq h2,.view-news-listing h2,.block-block-24 h2,.block-block-16 h2,.block-block-20 h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,h1{font-size:34px;}
 /* 48*/
 .context-total-care .view-banner h3{font-size:48px;}
 /* 54 */
@@ -59,11 +59,11 @@ h1,h2, h3, h4, h5, h6,label{font-family:Arial, Helvetica, sans-serif;letter-spac
 /* red */
 .group-person-contact h3,.read-more a,.region-postscript-fourth-inner h3 a, .region-postscript-third-inner h3 a{color:#ee2842;}
 /* dark red */
-.block-block-33 h3,.region-postscript-first-inner .cta h3 a{color:#c51f3c;}
+.block-client-block-48 h2.block-title,.block-views-vacancies-block h2.block-title,.block-block-33 h3,.region-postscript-first-inner .cta h3 a{color:#c51f3c;}
 /* dark red - people section / ask a question */
 .context-confidence h1,.region-sidebar-second-inner .block-views-videos-block h2.block-title,#webform-component-ask-a-personal-injury-solicitor label,.askquestion_modal h2,.block-block-30  h2,.node-type-person h1#page-title,.block-field-job-title{color:#841313;}
 /* blue */
-.block-block-34 h2,.block-block-31 h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,.view-banner p{color:#003766;}
+.node-type-vacancy h1#page-title, .block-35 h2,.block-block-34 h2,.block-block-31 h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,.view-banner p{color:#003766;}
 /* lighter blue */
 .context-contact-us .block-system-main h2,.context-total-care h1,.context-total-care h2,.context-total-care h3,.context-total-care h4,.context-total-care h5,.context-total-care h6,.region-sidebar-second .block-menu-block .menu li a{color:#077a99;}
 /* green blue */
@@ -111,6 +111,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 /* forms */
 .block-search-form .form-text{width:90%;border:#818181 solid 1px; border-right:0;height:28px;margin-right:0;}
 .block-search-form .form-submit{margin:0 0 0 -10px;border:#818181 solid 1px; border-left:0;}
+
+
 /* menu */
 /* hide main menu for non moibile */
 .block-menu-block-14{display:block;}
@@ -126,7 +128,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .menu-block-11 li.last a{background-position:0 -245px;}
 
 /* sub menu */
-.block-block-34 h2,.context-ask-question .block-block-32 h2,.block-block-24 h2,.block-block-20 h2, .om-maximenu-middle-right .block.last h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,
+ .block-35 h2,.block-block-34 h2,.context-ask-question .block-block-32 h2,.block-block-24 h2,.block-block-20 h2, .om-maximenu-middle-right .block.last h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,
 .block-17 h2,.block-block-16 h2{text-transform: capitalize; border-bottom: 1px solid #b9baba;}
 .context-ask-question .block-block-32 h2,.context-total-care .region-menu-sub h2, .om-maximenu-middle-right .block-block-id-24.block.first h2,.block-block-24 h2,.block-block-20 h2,.block-block-16 h2{border-bottom-color: #fff;}
 .block-views-id--exp-faq-page_1 .views-exposed-widget label,.block--exp-faq-page-1 form label,.om-maximenu-middle-right .block.last h2,.block-17 h2, .block--exp-news-listing-page-1 h2{line-height:1.8;}
@@ -213,25 +215,28 @@ background: -moz-linear-gradient(top,  #0c7998 0%, #5dafb2 100%); background: -w
 /* faq */
 .block-faq-block h2{font-weight: 700;border-bottom:1px solid #929292;padding-bottom:5px;}
 .view-faq .views-field-body{margin:15px 0;}
-/* contact us */
-.context-contact-us .block-system-main h2{margin-bottom:0;}
-.context-contact-us .webform-component{margin-bottom:15px;}
-.context-contact-us .webform-component input{width:100%;calc( 100% - 6px);}
+/* contact us & careers contact us [page-node-48] & vacancies */
+.page-node-48 .block-system-main h2,.context-contact-us .block-system-main h2{margin-bottom:0;}
+.block-client-block-48 .webform-component,.page-node-48 .webform-component,.context-contact-us .webform-component{margin-bottom:15px;}
+.block-client-block-48 .webform-component-textfield input,.block-client-block-48 .webform-component-email input,.page-node-48 .webform-component-textfield input,.page-node-48 .webform-component-email input,.context-contact-us .webform-component input{width:100%;calc( 100% - 6px);}
 .context-contact-us .contact-map{width:90%; position:relative;margin-top:35px;}
 .context-contact-us .contact-map p{background: #0c7998;}
 .context-contact-us .contact-map p a{display: block;padding:9px 14px;}
 .context-contact-us .contact-map .contact-map-icon{display:block; width:80px; height:70px;position: absolute; right:-10px;top:-20px;background: url(../images/icon-map.png) no-repeat;}
 .context-contact-us .contact-map .contact-map-icon a{display: block; height:100%; width:100%; text-indent: -9999px;}
 .block-block-33 .blue{font-weight: 700;}
+.block-client-block-48 h2.node-title{display:none;}
+.block-client-block-48 h2.block-title{margin-bottom:1em;}
+.webform-component-managed_file input[type="submit"]{float:right;}
 /* ask a question form */
 .context-ask-question .block-system-main {background: #ebebeb;padding:30px 25px;}
 #webform-component-ask-a-personal-injury-solicitor label{margin-bottom:25px;}
-.context-contact-us  .block-system-main .form-actions.form-wrapper,.context-ask-question .block-system-main .form-actions.form-wrapper{text-align: right;margin-top:25px;}
+.node-type-vacancy .block-client-block-48 .form-actions.form-wrapper,.page-node-48  .block-system-main .form-actions.form-wrapper,.context-contact-us  .block-system-main .form-actions.form-wrapper,.context-ask-question .block-system-main .form-actions.form-wrapper{text-align: right;margin-top:25px;}
 .context-ask-question .block-system-main .form-actions.form-wrapper p,.context-ask-question .block-system-main .form-actions.form-wrapper  .form-submit{display: inline-block;vertical-align: middle;}
 .context-ask-question .block-system-main .form-actions.form-wrapper p {margin:0 20px 0 0; font-weight: 700;}
-.context-contact-us  .block-system-main input[type="submit"], .context-ask-question .block-system-main input[type="submit"]{-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; background: #58a4ba; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU4YTRiYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzA5N2E5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=); background: -moz-linear-gradient(top,  #58a4ba 0%, #097a99 50%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58a4ba), color-stop(50%,#097a99)); background: -webkit-linear-gradient(top,  #58a4ba 0%,#097a99 50%); background: -o-linear-gradient(top,  #58a4ba 0%,#097a99 50%); background: -ms-linear-gradient(top,  #58a4ba 0%,#097a99 50%); background: linear-gradient(to bottom,  #58a4ba 0%,#097a99 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58a4ba', endColorstr='#097a99',GradientType=0 );
+.node-type-vacancy .block-client-block-48 input[type="submit"],.page-node-48  .block-system-main input[type="submit"],.context-contact-us .block-system-main input[type="submit"], .context-ask-question .block-system-main input[type="submit"]{-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; background: #58a4ba; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU4YTRiYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzA5N2E5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=); background: -moz-linear-gradient(top,  #58a4ba 0%, #097a99 50%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#58a4ba), color-stop(50%,#097a99)); background: -webkit-linear-gradient(top,  #58a4ba 0%,#097a99 50%); background: -o-linear-gradient(top,  #58a4ba 0%,#097a99 50%); background: -ms-linear-gradient(top,  #58a4ba 0%,#097a99 50%); background: linear-gradient(to bottom,  #58a4ba 0%,#097a99 50%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58a4ba', endColorstr='#097a99',GradientType=0 );
                                                                                                                             border:0; color: #fff; padding: 3px 15px 4px; text-shadow: none;}
-.context-contact-us  .block-system-main input[type="submit"]:last-child, .context-ask-question .block-system-main input[type="submit"]:last-child{margin-right:0;}
+.node-type-vacancy .block-client-block-48 input[type="submit"],.page-node-48  .block-system-main input[type="submit"],.context-contact-us  .block-system-main input[type="submit"]:last-child, .context-ask-question .block-system-main input[type="submit"]:last-child{margin-right:0;}
 .context-ask-question .block-system-main .webform-component-textfield label,.context-ask-question .block-system-main .webform-component-textfield input,.context-ask-question .block-system-main .webform-component-email input,.context-ask-question .block-system-main .webform-component-email label{display:inline-block; vertical-align: top;}
 .context-ask-question .block-system-main .webform-component-textfield{margin-bottom:20px;}
 .context-ask-question .block-system-main .webform-component-textfield label,.context-ask-question .block-system-main .webform-component-email label{width:30%;}
@@ -269,7 +274,7 @@ background: -moz-linear-gradient(top,  #0c7998 0%, #5dafb2 100%); background: -w
 .cta *:last-child{margin-bottom:0}
 .region-postscript-first-inner .cta .cta-content li{border-bottom:1px solid #a4a4a4; padding:15px 0 10px;}
 .region-postscript-first-inner .cta .cta-content li:last-child{border-bottom:none;}
-.region-postscript-first-inner .cta .cta-content li a{font-weight: 700;padding:0 25px;}
+.region-postscript-first-inner .cta .cta-content li a{font-weight: 700;padding:0 5px 0 25px;}
 .region-postscript-first-inner .cta .cta-content li a:before{content:'\00BB'; display:inline;margin-right:5px;} 
 
 .region-postscript-second-inner .cta{background: #70c7bc; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNzBjN2JjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA5N2E5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=); background: -moz-linear-gradient(45deg,  #70c7bc 0%, #097a99 100%); /* FF3.6+ */

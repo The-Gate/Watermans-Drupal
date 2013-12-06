@@ -1,0 +1,5 @@
+name = Webform Block Page Title
+description = Watermans Custom Module: adds the current page title to the hidden field in teh vacancy application form.
+dependencies[] = webform
+package = Webform
+core = 7.x

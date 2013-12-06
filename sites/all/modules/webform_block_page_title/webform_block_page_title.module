@@ -1,0 +1,14 @@
+<?php
+/**
+ *  when the webform is in a block, the webform title rather than the page title is used in the hidden field. This will add the page title instead.
+ * @param type $form
+ * @param type $form_state
+ * @param type $form_id 
+ */
+function webform_block_page_title_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'webform_client_form_48') {
+    if ($node = menu_get_object()) {
+      $form['submitted']['vacancy']['#value'] = $node->title;
+    }
+  }
+}
