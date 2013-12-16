@@ -6,6 +6,14 @@
         $('body').bind('responsivelayout', function (e, d) {	
           // for all
           // add video wrapper
+          $('iframe').each(function() {
+            var url = $(this).attr("src");
+            var qschar = "?";
+            if(url.indexOf("?") != -1)
+              var qschar = "&";
+
+            $(this).attr("src",url+qschar+"wmode=transparent");
+          });
           $('.youtube-player, .vimeo-player').wrap('<div class="video-container" />')
           // ask a question web form add the descrition to the textarea, add the step count
           if ($('#webform-client-form-29').length > 0){

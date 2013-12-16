@@ -50,3 +50,12 @@ function watermans_2013_10_form_alter(&$form, $form_state, $form_id) {
     $form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/button-search.gif');
   }
 }
+
+/**
+ * add IE conditional CSS 
+ */
+
+function watermans_2013_10_preprocess_html(&$vars) {
+  // add IE only CSS
+  drupal_add_css(path_to_theme() . '/css/ie-lte-9.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
+}
