@@ -4,7 +4,7 @@ body{margin-top:20px;}
 .section-header{z-index:1000;}
 .section-content{z-index:500;}
 .block-menu-block-14{display:none;}
-.block-om-maximenu-om-maximenu-1 {display:block;z-index:1000;}
+.block-om-maximenu-om-maximenu-1 {display:block;z-index:500;}
 /* forms */
 /* search */
 .region-branding-second-inner {margin:70px 15px 0 15px;}
