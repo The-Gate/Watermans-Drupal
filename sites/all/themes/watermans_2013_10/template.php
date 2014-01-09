@@ -60,11 +60,13 @@ function watermans_2013_10_preprocess_html(&$vars) {
 
 function watermans_2013_10_preprocess_page(&$vars) {
   // add css for PI calc
-  if ($vars['node']->nid == 16) {
-    drupal_add_js('http://code.jquery.com/jquery-1.9.1.js', 'external');
-    drupal_add_js('http://code.jquery.com/ui/1.10.3/jquery-ui.js', 'external');   
-    drupal_add_js(path_to_theme() . '/js/pi-calc.js');   
-    drupal_add_css('http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css', array('type' => 'external', 'group' => CSS_THEME, 'weight' => 300, 'preprocess' => FALSE));
-    drupal_add_css(path_to_theme() . '/css/pi-calc.css', array('group' => CSS_THEME, 'weight' => 301, 'preprocess' => FALSE));
+  if (isset($vars['node'])) {
+    if ($vars['node']->nid == 16) {
+//    drupal_add_js('http://code.jquery.com/jquery-1.9.1.js', 'external');
+//    drupal_add_js('http://code.jquery.com/ui/1.10.3/jquery-ui.js', 'external');   
+//    drupal_add_js(path_to_theme() . '/js/pi-calc.js');   
+//    drupal_add_css('http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css', array('type' => 'external', 'group' => CSS_THEME, 'weight' => 300, 'preprocess' => FALSE));
+//    drupal_add_css(path_to_theme() . '/css/pi-calc.css', array('group' => CSS_THEME, 'weight' => 301, 'preprocess' => FALSE));
+    }
   }
 }
