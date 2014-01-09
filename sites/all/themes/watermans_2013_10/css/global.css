@@ -8,6 +8,7 @@ a:link, a:visited  {text-decoration:none;color:#0c7998;}
 a:hover {text-decoration:underline;}
 ul li.collapsed,ul li.leaf,li {margin:0; list-style: none;}
 .view-news-listing ul li, .block-blog-listing-block ul li,ul li.expanded {margin:0 !important; list-style: none !important;}
+.page-node-132 ul li.expanded,.page-node-133 ul li.expanded  {margin-left:1em !important;list-style: disc !important;}
 #zone-content .region-content-inner li {list-style: disc; margin-left:1em;}
 /*font*/
 h2, h3, h4, h5, h6,.region-footer-first-inner h2{font-family:Arial, Helvetica, sans-serif;letter-spacing: 0;}
