@@ -69,21 +69,24 @@
                   var section = $(this).find('h3').text();
                   // -20 for the top & bottom padding in the block
                   var sectionHeight = ($(this).height() - liMarginBottom);
-                  // console.log(sectionHeight);
-                  //console.log(section);
                   switch (section) { 
                     case 'Court Department':
                       $('.region-sidebar-second .block-block-19').css({
                         'height':sectionHeight+'px'
                       }).show();
                       break;
-                    case 'RTA Department':
+                    case 'Accident Team':
                       $('.region-sidebar-second .block-block-21').css({
                         'height':sectionHeight+'px'
                       }).show();
                       break;
-                    case 'Business Development':
+                    case 'RTA Team':
                       $('.region-sidebar-second .block-block-22').css({
+                        'height':sectionHeight+'px'
+                      }).show();
+                      break;
+                    case 'Firm Management':
+                      $('.region-sidebar-second .block-block-37').css({
                         'height':sectionHeight+'px'
                       }).show();
                       break;
