@@ -36,5 +36,5 @@ $email = strip_tags($fields['field_email']->content);
 <p><a href="mailto:<?php echo $email; ?>">Email <?php echo $title[0]; ?></a></p>
 </div>
 <div class="button redgrad gradient">
-<p><a href="/how-claim/start-your-claim-now">Ask A Question</a></p>
+<p><a href="/contact-us">Ask A Question</a></p>
 </div>

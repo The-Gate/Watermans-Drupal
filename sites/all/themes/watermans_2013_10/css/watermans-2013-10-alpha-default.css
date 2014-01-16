@@ -104,16 +104,13 @@ background: -moz-linear-gradient(45deg,  #efefef 0%, #d6d8d6 100%); background: 
 .region-menu-sub-inner .block-35,.block--exp-videos-page-1,.block-block-34,.block--exp-faq-page-1,.block-block-24,.block-views-exp-people-listing-page-1,.region-menu-sub-inner .block-block-20,.om-maximenu-middle-right .block,.region-menu-sub-inner .block-menu-block,.region-menu-sub-inner .block-17,.block-block-16,.block--exp-news-listing-page-1  {display:inline-block;vertical-align: top;}
  .block-35 h2,.block-block-34 h2,.block-block-24 h2,.block-block-20 h2,.om-maximenu-middle-right .block.first h2,.region-menu-sub-inner .block-menu-block h2,.block-block-16 h2{margin:21px 20px 0;}
 .context-ask-question .block-block-32 .block-inner{padding:21px 20px 0;}
-.block--exp-faq-page-1 label,.block-views-id--exp-faq-page_1 .views-exposed-widget label,.om-maximenu-middle-right .block.last h2,.block-17 h2,.block--exp-news-listing-page-1 h2{margin:35px 20px 0 0;}
- .block-views-id--exp-faq-page_1 .views-exposed-widget label,.block--exp-faq-page-1 form label,.block-block-20 h2,.block--exp-news-listing-page-1 h2{margin-bottom:10px;}
+.block-views-id--exp-people_listing-page_1 form label,.block-views-id--exp-videos-page_1 label,.block--exp-videos-page-1 label,.block-views-exp-people-listing-page-1 label,.block--exp-faq-page-1 label,.block-views-id--exp-faq-page_1 .views-exposed-widget label,.om-maximenu-middle-right .block.last h2,.block-17 h2,.block--exp-news-listing-page-1 h2{margin:35px 20px 0 0;}
+.block-views-id--exp-people_listing-page_1 form label,.block-views-exp-people-listing-page-1 label{margin-top:26px;}
+ .block-views-id--exp-people_listing-page_1 form label,.block-views-id--exp-videos-page_1 label, .block--exp-videos-page-1 label,.block-views-exp-people-listing-page-1 label, .block-views-id--exp-faq-page_1 .views-exposed-widget label,.block--exp-faq-page-1 form label,.block-block-20 h2,.block--exp-news-listing-page-1 h2{margin-bottom:10px;}
 .om-maximenu-middle-right .block.first .menu-block-wrapper,.region-menu-sub-inner .menu-block-wrapper{margin:15px 20px;}
 .om-maximenu-middle-right .block.first .menu-block-wrapper li,.region-menu-sub-inner .menu-block-wrapper li{display:inline-block; vertical-align: top;margin-right:-4px; padding:0;}
-
-
-.block-views-id--exp-videos-page_1 form,.block--exp-videos-page-1 form,.block-views-exp-people-listing-page-1 form,.block-views-id--exp-people_listing-page_1 form{padding:15px;}
 .leaf-our-team .block-views-id--exp-people_listing-page_1 h2{display:none;}
-.block--exp-videos-page-1{margin: 10px 0px 10px 2px;}
-.block-views-id--exp-videos-page_1{margin: 10px 0px 10px -2px;}
+
 /*contact us [20] & careers contact [48] & vacancy */
 .node-type-vacancy .block-client-block-48,.node-type-vacancy .block-system-main,.page-node-20 .block-system-main,.page-node-20 .block-block-33,.page-node-48 .block-system-main,.page-node-48 .block-views-vacancies-block  {display: inline-block; vertical-align: top;}
 .node-type-vacancy .block-system-main,.page-node-48 .block-system-main,.page-node-20 .block-system-main{width:430px;margin-right:30px; }

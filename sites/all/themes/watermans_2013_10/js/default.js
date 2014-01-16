@@ -62,7 +62,7 @@
           if (d.to == 'normal' ) {
             // people section match the rhs col boxes to the height of the users
             if ($('.view-people-listing').length > 0){
-              $('.region-sidebar-second .block-block-19,.region-sidebar-second .block-block-21,.region-sidebar-second .block-block-22').hide();
+              $('.region-sidebar-second .block-block-19,.region-sidebar-second .block-block-21,.region-sidebar-second .block-block-22,.region-sidebar-second .block-block-37').hide();
               var liMarginBottom = parseInt($('.view-people-listing ul li').css('marginBottom'));
               $('.view-people-listing .item-list').each(
                 function(){
@@ -134,6 +134,25 @@
             
             // move the side blocks to the outer wrapper
             $('.block-13.widepage-sides, .block-14.widepage-sides').appendTo('#zone-content-wrapper');
+            if ( $.browser.msie ) {
+              if ($( window ).width() > 1159){
+                var url = '/sites/all/themes/watermans_2013_10/css/ie.css'
+                if(document.createStyleSheet) {
+                  try {
+                    document.createStyleSheet(url);
+                  } catch (e) { }
+                }
+                else {
+                  var css;
+                  css         = document.createElement('link');
+                  css.rel     = 'stylesheet';
+                  css.type    = 'text/css';
+                  css.media   = "all";
+                  css.href    = url;
+                  document.getElementsByTagName("head")[0].appendChild(css);
+                }
+              }
+            }
           }
           if (d.to == 'mobile') {
             // build the mobile menu
@@ -146,14 +165,20 @@
             });
             $('.block-menu-block-14 h2.block-title').click(function(){
               $('.block-menu-block-14 > .block-inner > .content').toggleClass('openMenu');
+              
+              $('body').toggleClass('noscroll');
               $('.block-menu-block-14 h2.block-title').toggleClass('close');
               $('.block-menu-block-14 h2.block-title').html('&#9776;&nbsp;menu');
               $('.block-menu-block-14 h2.block-title.close').html('&#9776;&nbsp;close');
             });
             $('.block-menu-block-14 > .block-inner > .content > .menu-block-14 > .menu li.expanded > a').click(function(e){
               e.preventDefault();
-              $('.block-menu-block-14 > .block-inner > .content > .menu-block-14 > .menu li.expanded > .menu').removeClass('open');
-              $(this).next($('.menu')).addClass('open');
+              if ($(this).next($('.menu')).hasClass('open')){
+                $(this).next($('.menu')).removeClass('open');
+              } else {
+                $('.block-menu-block-14 > .block-inner > .content > .menu-block-14 > .menu li.expanded > .menu').removeClass('open');
+                $(this).next($('.menu')).addClass('open');
+              }
             });
           }	
         });
