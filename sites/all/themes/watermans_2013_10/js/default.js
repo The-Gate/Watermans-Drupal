@@ -59,7 +59,7 @@
             $('#node_person_full_group_person_contact h3 span').append(' ').append($('h1#page-title').text());
           }
           
-          if (d.to == 'normal' ) {
+          if (d.to == 'normal' || (d.to == 'mobile' && ($.browser.msie== true) && ($.browser.version < 8)) ) {
             // people section match the rhs col boxes to the height of the users
             if ($('.view-people-listing').length > 0){
               $('.region-sidebar-second .block-block-19,.region-sidebar-second .block-block-21,.region-sidebar-second .block-block-22,.region-sidebar-second .block-block-37').hide();
@@ -154,7 +154,7 @@
               }
             }
           }
-          if (d.to == 'mobile') {
+          if (d.to == 'mobile' &&((!($.browser.msie== true)) )) {
             // build the mobile menu
             $('.block-menu-block-14 > .block-inner > .block-title-wrapper > .block-title').prepend("&#9776;&nbsp;");
             $('.region-branding-second-inner .block-search-form').prependTo($('.block-menu-block-14 .content'));

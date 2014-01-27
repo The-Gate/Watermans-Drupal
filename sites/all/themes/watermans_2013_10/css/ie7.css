@@ -1,0 +1,16 @@
+.om-maximenu-middle-right .block.first .menu-block-wrapper li, .region-menu-sub-inner .menu-block-wrapper li,.menu-block-11 li,.header.button,.view-banner .views-field-field-content-left, .view-banner .views-field-field-content-right,.cta,.left-col, .right-col,.view-banner .views-slideshow-controls-bottom .views-slideshow-pager-field-item,.block-block-2, .block-block-3,.region-menu-sub-inner .block-35, .block--exp-videos-page-1, .block-block-34, .block--exp-faq-page-1, .block-block-24, .block-views-exp-people-listing-page-1, .region-menu-sub-inner .block-block-20, .om-maximenu-middle-right .block, .region-menu-sub-inner .block-menu-block, .region-menu-sub-inner .block-17, .block-block-16, .block--exp-news-listing-page-1,.block-block-23 .phone, .block-block-23 .button,.block-search-form .form-text,.block-search-form .form-submit {display:inline;zoom:1;}
+.view-banner h3 {font-size: 48px;}
+.view-banner .views-slideshow-controls-top .views-slideshow-controls-text-previous{left:-70px;}
+.view-banner .views-slideshow-controls-top .views-slideshow-controls-text-next{left:800px;}
+.region-menu-sub { position: relative; z-index: 100;}
+ .zone-menu-wrapper,.region-menu { position: relative; z-index: 200;}
+ .om-leaf .om-maximenu-content{width:940px !important;}
+.om-maximenu-middle-right,.om-maximenu-middle-left, .om-maximenu-middle {width:940px !important;}
+ .om-maximenu-content .block-menu_block, .om-maximenu-content .block-block,.block-views-id--exp-videos-page_1.last, .block--exp-videos-page-1, .block-views-exp-people-listing-page-1, .om-maximenu-middle-right .block-views-id--exp-people_listing-page_1.last  {margin-left:-20px;}
+.view-people-listing .people-list-title {background:#d9495e !important;}
+.header.button.redgrad { margin-top:-32px !important;}
+.button.bluegrad {background: #58a4ba;}
+.button.redgrad {background: #edb8c2;}
+.block-search-form {margin-top:-10px;}
+.block-search-form .form-text{width:86%;height:26px;}
+.region-footer-first-inner li.expanded, .region-footer-first-inner li.collapsed, .region-footer-first-inner li.leaf{list-style-image:none !important;}

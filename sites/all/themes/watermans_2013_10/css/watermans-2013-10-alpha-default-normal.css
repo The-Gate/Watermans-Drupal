@@ -16,9 +16,9 @@
 
 /* footer has 10px padding*/
 /* 5 cols */
-.block-block-3{width:360px; margin-left:16px;}
+.block-block-2{width:360px;}
 /* 7 cols */
-.block-block-2{width:520px;}
+.block-block-3{width:520px; margin-left:16px;}
 /* 9cols + margin */
 .block-block-16{width:720px;}
 /* 9cols + margin - outer border width*/

@@ -13,6 +13,10 @@
     }
   </style>
 <![endif]-->
+  <!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="/sites/all/themes/watermans_2013_10/css/ie7.css" media="all" />
+<![endif]-->
+
   <script type="text/javascript">
 
   var _gaq = _gaq || [];
