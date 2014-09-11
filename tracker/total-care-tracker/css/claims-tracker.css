@@ -1,0 +1,151 @@
+@charset "UTF-8";
+body{
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+#claim-wrapper {
+	margin: 0 auto;
+	padding: 0px;
+	width:100%;
+	max-width:940px;
+	min-width:480px;
+	background:#C8E7E2;
+}
+.content {
+	width:100%;
+	min-height: 335px;
+	padding:10px 0;
+	margin:0;
+	display:inline-block;
+}
+#intro{
+	background:#ccc;	
+}
+#line{
+	width:10%;
+	margin:200px auto 0 auto;
+	background:url(../img/line.gif)	repeat-y center;
+	position:relative;
+	height:3000px;
+	display:none;
+}
+.contentIcon {
+	width:50%;
+	height:76px;
+	position:relative;
+	z-index:9;
+	top:125px;
+	float:left;
+}
+.contentBlock{
+	width:40%;
+	margin:20px 0px 20px 20px;
+	
+}
+#intro .contentBlock{
+	width:70% !important;
+}
+.blockLeft{
+	float:left;	
+}
+.blockRight{
+	float:right;
+	margin-right:20px;	
+}
+
+h3{
+	font-weight:400;
+	margin:0;	
+}
+.smallHeader{
+	color:#841212;
+	font-size:1.45em;	
+}
+.largeHeader{
+	color:#0A7A99;	
+	display:block;
+	clear:both;
+	font-size:2.6em;
+	line-height:1em;
+	margin-left:10%;
+	font-weight:700;
+}
+
+.contentBlock p{
+	font-size:0.9em;
+	margin-left:10%;
+	border-left: #900 4px solid;
+	padding-left:10px; 	
+	float:left;
+}
+a.claimButton{
+	padding:5px;
+	display:block;
+	background:#7A000F url(../img/claimButtonBk.gif) no-repeat top right; 	
+	margin-left:10%;
+	width:50%;
+	color:white;
+	text-decoration:none;
+	clear:both;
+	font-weight:700;
+}
+a.claimButton:hover{
+
+	background:#005A63 url(../img/claimButtonBk-over.gif) no-repeat top right; 	
+
+}
+a.startButton{
+	padding:5px;
+	display:block;
+	color:white;
+	text-decoration:none;
+	clear:both;
+	text-align:center;
+	top: 314px;
+	padding-left:3%;
+	min-width:125px;
+}
+.startButton img{
+	margin-right:250px;
+	
+}
+.contentBackground{
+	position:absolute;
+	height:600px;
+	background-color:#000;	
+}
+#intro{
+	background:url(../img/intro.fw.png) no-repeat bottom center;	
+}
+#stepOne{
+		background:url(../img/stepOne.png) no-repeat bottom center;
+}
+#stepTwo{
+		background:url(../img/stepTwo.png) no-repeat bottom center;
+}
+#stepThree{
+		background:url(../img/stepThree.png) no-repeat bottom center;
+}
+#stepFour{
+		background:url(../img/stepFour.png) repeat-y top center;
+}
+#stepFive{
+		background:url(../img/stepFive.png) no-repeat bottom center;
+}
+#stepSix{
+		background:url(../img/endStep.png) no-repeat top center;
+}
+#stepSix img{
+	display:block;
+	position:relative;
+	
+	margin-top:80px;
+	
+}
+#stepSix .contentBlock{
+	margin:80px 10px 0 25px;	
+}
+@media only screen and (max-width: 481px) {
+	.content{
+		/* background-position: top left !important;	*/
+	}
+}

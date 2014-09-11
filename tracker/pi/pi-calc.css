@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* CSS Document */
+body{font-family: 'Quattrocento Sans', sans-serif;}
+#piWrapper, .thankyou{
+	background:url(images/PI-bk.jpg) repeat-x;	
+	height:800px;
+	padding:20px;
+}
+#piWrapper h2, .thankyou h2{
+	color:white;
+	font-weight:normal;	
+}
+#formWrapper{
+	width:100%;
+	float:left;
+	border:2px solid #C00;
+	padding:0;
+	position:relative;
+	min-width:280px;
+	overflow:hidden;
+	background-color:#fff;
+	z-index:999;
+	}
+#formWrapper h3{
+	margin:0;
+	padding:10px;
+	text-transform:uppercase;
+	font-size:1em;
+	}
+#instText{
+	color:white;
+	font-size:1.3em;
+	position:absolute;
+	z-index:999;
+	top:300px;
+	text-align:center;
+	display:block;
+	width:79%;
+	background:url(images/popUpBk.png);
+	padding:10px;
+	border:#FFF 1px solid;
+}
+#instText a{
+	display:inline-block !important;
+	padding:10px;
+	text-decoration:none;
+	font-size:0.75em;
+	background-color:#7FC8BB;
+	color:#fff;	
+	width:50px;
+}
+#instText a:hover{
+	background-color:#C00;
+}
+
+#formWrapper .ui-accordion button{
+	display:inline-block;
+	text-align:left;	
+	width:100%;
+	border:0;
+	color:#ccc;
+	background-image:url(images/PI-arrow.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	background-color:#535362;
+	padding:5px 30px 5px 5px;
+	border-bottom:1px solid #666;
+	margin:0;
+}
+#formWrapper .ui-accordion button:hover{
+	color:#fff;
+	background-image:url(images/PI-arrow-hover.png);
+	cursor:pointer;
+}
+#formWrapper #endForm{
+	background-color:#fff;
+	/*position:absolute;
+	top:0;*/
+
+	padding:10px;
+}
+
+.formCall{
+	display:inline-block;
+	width:40%;
+	
+}
+#endForm{
+	padding:5px;	
+}
+#sendForm{
+	padding:10px;
+	background-color:#603;
+	margin:10px 0 0 0;
+	color:#fff;
+}
+#sendForm input{
+width:96%;
+	margin:5px 0;
+	border:0;
+	padding:5px;
+}
+#sendForm .submitButton{
+width:40%;
+	float:right;
+	background:url(images/button-tex.png);
+	color:white;
+	border:0;
+	padding:5px;
+	margin-top:5px;
+}
+#sendForm .submitButton:hover{
+	cursor:pointer;
+
+}
+#sendForm #InjuryField{
+	display:none;
+}
+#sendForm .subHead2{
+	font-size:1.5em;
+	display:block;
+	margin-bottom:5px;
+}
+#endForm .saveText{
+		color:#C00;
+		font-size:1.75em;
+		margin:10px 0;
+		
+}
+#endForm .subHead{
+	color:#333;
+	font-size:1em;	
+}
+#endForm p{
+	font-size:0.75em;
+	color:#999;
+	margin:5px 0;	
+}
+.reset{
+	float:right;
+	margin:10px;
+	text-decoration:none;
+	color:#666;
+	text-transform:uppercase;
+	font-size:0.8em;
+	background:url(images/reset-button.png) no-repeat right center;
+	padding:0 20px;
+	position:relative;
+	z-index:999;	
+}
+
+/*Right Body */
+
+#rightBody{
+	width:50%;
+	float:left;
+	min-width:250px;
+	position:relative;
+}
+#rightBody a{
+	position:absolute;
+	text-decoration:none;
+	text-transform:uppercase;
+	display:block;
+	color:#ccc;
+	padding:5px 0px 5px 60px;
+	z-index:99;	
+	background:url(images/man/man_button.png) no-repeat left center;
+	font-size:0.9em;
+	width:100px;
+}
+#rightBody a:hover{
+	cursor:default;
+}
+
+#rightBody a.head{
+	top:10px;
+	left:122px;
+}
+#rightBody a.upperBody{
+	top:90px;
+	left:122px;
+}
+#rightBody a.arm{
+	top:220px;
+	left:182px;
+}
+#rightBody a.hand{
+	top:320px;
+	left:182px;
+}
+#rightBody a.foot{
+	top:640px;
+	left:162px;
+}
+#rightBody a.lowerBody{
+	top:490px;
+	left:162px;
+}
+#manback{
+	background:url(images/man-bk.png) no-repeat left top;
+	height:686px;
+	width:206px;
+	position:absolute;
+	left:0;
+}
+#manbackfixed{
+	height:686px;
+	width:206px;
+	position:absolute;
+	left:0;
+}
+
+#manback div, #manbackfixed div{
+	position:absolute;
+}
+#manback div:hover{
+	cursor:pointer;
+}
+#manhead, #manheadFixed{
+	background:url(images/man/man_head.png) no-repeat left top;	
+	width:80px;
+	height:113px;
+	left:67px;	
+}
+#manupperBody, #manupperBodyFixed{
+	background:url(images/man/man_body.png) no-repeat left top;	
+	width:176px;
+	height:295px;
+	top:93px;	
+}
+#manarm, #manarmFixed{
+	background:url(images/man/man_arm.png) no-repeat left top;	
+	width:59px;
+	height:296px;
+	top:106px;
+	left:146px;	
+}
+#manhand, #manhandFixed{
+	background:url(images/man/man_hand.png) no-repeat left top;	
+	width:33px;
+	height:105px;
+	top:302px;
+	left:172px;	
+}
+#manlowerBody, #manlowerBodyFixed{
+	background:url(images/man/man_legs.png) no-repeat left top;	
+	width:174px;
+	height:414px;
+	top:272px;
+	left:17px;	
+}
+#manfoot, #manfootFixed{
+	background:url(images/man/man_foot.png) no-repeat left top;	
+	width:64px;
+	height:60px;
+	top:626px;
+	left:127px;	
+}
+
+/* Accordian Override */
+
+.ui-accordion .ui-accordion-content{
+	padding:0;
+	border-radius:0;
+	border:0;
+	background-color:black;
+}
+.ui-widget, .ui-widget button {
+font-family: 'Quattrocento Sans', sans-serif;	
+}
+.ui-accordion .ui-accordion-icons{
+	margin-top:0;
+	border:0;
+	border-radius:0;
+	background:none;
+	border-top:1px solid #900;
+	color: #C00;
+}
+.ui-accordion .ui-accordion-header{
+
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon{
+	display:none;
+}
+
+.ui-state-default .ui-icon{
+	
+}
+
+.ui-accordion .ui-accordion-icons{
+	padding:5px 10px;
+	background: url(images/PI-arrow-default.png) no-repeat right center;	
+}
+
+.ui-accordion .ui-accordion-header-active {
+	background: url(images/PI-arrow-active.png) no-repeat right center;		
+}
+
+.thankyou h2{
+	width:50%;
+	margin:80px auto auto auto;
+	text-align:center;
+}
+.thankyou .sub{
+	font-size:1em !important;
+	color:white;
+	width:50%;
+	text-align:center;
+	margin:20px auto;
+	display:block;
+}
+@media only screen and (min-width: 940px) {
+		#rightBody{
+	float:right;
+		}
+		#formWrapper{
+	width:40%;
+	}
+	#instText{
+	width:280px;
+}
+
+}

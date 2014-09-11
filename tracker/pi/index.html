@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PI Calculator</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="pi-calc.css" />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.5.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+ 
+  <script>
+ 
+		
+		
+		
+  
+  
+	$(function() {
+		//Set up jquery UI elements
+		$( ".injuryList" ).accordion({ active: 99, heightStyle: "content" });
+		//Hide elements
+		$("#formWrapper, #head, #hand, #arm, #foot, #lowerBody, #upperBody, #endForm,#rightBody,#rightBody a, #instText, #manbackfixed div, #manbackfixed").hide();
+		$( "#manback div" ).fadeTo("slow",0);
+		//Show stuff
+		$("#rightBody").fadeIn(2000, function(){
+			$("#instText").fadeIn("slow");
+			
+		});
+	
+	
+
+  
+ 
+		
+		
+		//Button clicks and set form
+		$( ".InjuryType" ).click(function(){
+		  //Set text of form field with name of button
+			var text = $( this ).text();
+ 		 	$( "#InjuryField" ).val( text );
+		//Set Claim amount from Button Value	
+			 var domElement = $( this ).get( 0 );
+			 $(".saveText").text(domElement.value );
+		//Show form	 
+			$("#formLists").fadeOut(function(){
+				$("#endForm").fadeIn("slow");
+				});
+			
+		}); 
+		//Pop up
+		$( "#instText a" ).click(function(){
+		  $("#rightBody a").fadeIn("slow","swing");
+		  $("#instText").fadeOut("slow", function(){
+			  //Show hide Body parts
+$( "#manback div" )
+  .mouseenter(function() {
+	  var myClass = $(this).attr("class");
+	  var myId = $(this).attr("id");
+    $("#manback #" + myId).fadeTo("slow",1);
+	$("#rightBody ." + myClass).css("color","#fff");
+    
+	
+  })
+  .mouseleave(function() {
+	  var myId = $(this).attr("id");
+	  var myClass = $(this).attr("class");
+	  $("#manback #" + myId).fadeTo("slow",0);
+	  $("#rightBody ." + myClass).css("color","#ccc");
+	
+  })
+  .click(function() {
+	 
+	  var myClass = $(this).attr("class");
+	  var myId = $(this).attr("id");
+	$("#manbackfixed").show(0);  
+   	$("#" + myId + "Fixed").show(0);
+	$("#formWrapper").fadeIn("slow");
+	$("#formWrapper #" + myClass).fadeIn(function(){
+		$("#instText").hide();
+	});
+	
+	
+  });
+			  
+			  
+			  });
+			
+		}); 
+		//Reset button
+		$( ".reset" ).click(function() {
+         location.reload(true);
+		});
+		
+		});
+		
+		
+		
+	
+		</script>
+</head>
+
+<body>
+<div id="piWrapper">
+<div id="title"><h2>Find out how much you<br/>could claim for now</h2></div>
+<div id="instText">
+  <p>Click on the part of your <br/>body which was injured</p>
+  <p><a href="#">OK</a></p>
+</div>
+<div id="rightBody">
+<a href="#" class="head">head</a>
+<a href="#" class="upperBody">upper body</a>
+<a href="#" class="arm">arm</a>
+<a href="#" class="hand">hand</a>
+<a href="#" class="lowerBody">lower body</a>
+<a href="#" class="foot">foot</a>
+<div id="manback">
+<div id="manhead" class="head"></div>
+<div id="manupperBody" class="upperBody"></div>
+<div id="manarm" class="arm"></div>
+<div id="manhand" class="hand"></div>
+<div id="manlowerBody" class="lowerBody"></div>
+<div id="manfoot" class="foot"></div>
+</div>
+<div id="manbackfixed">
+<div id="manheadFixed" ></div>
+<div id="manupperBodyFixed" ></div>
+<div id="manarmFixed" ></div>
+<div id="manhandFixed"></div>
+<div id="manlowerBodyFixed"></div>
+<div id="manfootFixed"></div>
+</div>
+</div>
+<div id="formWrapper">
+<a href="#" class="reset">Reset</a>
+<div id="formLists">
+<!-- Head List-->
+<div id="head">
+<h3>Head</h3>
+<div class="injuryList">
+  <h3>Head Injury</h3>
+  <div>
+   <button class="InjuryType" value="£1,500 - £7,000">Minor head injury  </button>
+   <button  class="InjuryType" value="£8,500 - £23,500">Minor brain damage  </button>
+   <button  class="InjuryType" value=" £155,000 - £220,000">Severe brain damage</button>
+  </div>
+  <h3>Eye Injury</h3>
+  <div>
+    <button class="InjuryType" value="Around £155,250">Total blindness </button>
+   <button  class="InjuryType" value="£37,150 - £38,175">Loss of sight in One Eye with Reduced Sight in the other Eye  </button>
+   <button  class="InjuryType" value="£28,750 - £32,000">Total Loss of Sight in One Eye    </button>
+    <button  class="InjuryType" value="£2,300 - £5,100">Minor Eye Injuries </button>
+  </div>
+  <h3>Nose Injury</h3>
+  <div>
+   <button class="InjuryType" value="£750 - £3,000">Simple undisplaced with full recovery </button>
+   <button  class="InjuryType" value="£1,250 - £7,500">Displaced requiring manipulation  </button>
+   <button  class="InjuryType" value="£1,850 - £10,000">Displaced recovery after surgery </button>
+  </div>
+  <h3>Cheekbone Injury</h3>
+  <div>
+   <button class="InjuryType" value="£2,000 - £7,500">Simple fracture, minor surgery </button>
+   <button  class="InjuryType" value="£5,000 - £20,000">Serious fracture with some permanent damage</button>
+   <button  class="InjuryType" value="£8,500 - £25,000">Serious fracture with permanent damage </button>
+  </div>
+   <h3>Jaw Injury</h3>
+  <div>
+   <button class="InjuryType" value="£3,000 - £8,500">Simple fracture, some immobilisation, full recovery </button>
+   <button  class="InjuryType" value="£8,500 - £20,000">Serious fracture with some permanent damage </button>
+   <button  class="InjuryType" value="£14,000 - £50,000">Very serious fracture with permanent damage </button>
+  </div>
+  
+  <h3>Ear Injury</h3>
+  <div>
+   <button class="InjuryType" value="£63,625 - £81,500">Total Deafness and Loss of Speech </button>
+   <button  class="InjuryType" value="£52,950 - £63,625">Total Deafness </button>
+   <button  class="InjuryType" value="£18,325 - £26,500">Total Loss of Hearing in One Ear </button>
+   <button  class="InjuryType" value="£4,300 - £26,500">Hearing loss and/or Tinnitus </button>
+  </div>
+  </div>
+</div>
+<!-- End Head List -->
+<!-- Upper Body List-->
+<div id="upperBody">
+<h3>Upper body</h3>
+<div class="injuryList">
+  <h3>Neck Injury</h3>
+  <div>
+   <button class="InjuryType" value="£1,000 - £7,000">Minor Whiplash </button>
+   <button  class="InjuryType" value="£3,500 - £25,000">Moderate Whiplash </button>
+    <button  class="InjuryType" value="£12,000 - £250,000">Severe Fracture</button>
+  </div>
+  <h3>Back Injury</h3>
+  <div>
+    <button class="InjuryType" value="£4,250 - £7,500">Minor Strain</button>
+   <button  class="InjuryType" value="£15,250 - £21,500">Moderate Strain</button>
+    <button  class="InjuryType" value="£55,000 - £93,000">Severe Strain</button>
+    </div>
+  <h3>Shoulder Injury</h3>
+  <div>
+    <button class="InjuryType" value="£1,000 - £3,500">Minor, full recovery </button>
+   <button  class="InjuryType" value="£5,000 - £8,000">Moderate injury, full recovery </button>
+    <button  class="InjuryType" value="£8,000 - £15,000">Serious injury with permanent damage </button>
+  </div>
+  <h3>Lungs Injury</h3>
+  <div>
+    <button class="InjuryType" value="£58,000 - £79,000">Lung disease in a young person </button>
+   <button  class="InjuryType" value="£45,000 - £58,500">Lung cancer  </button>
+    <button  class="InjuryType" value="£6,100 - £12,200">Breathlessness</button>
+    <button  class="InjuryType" value="£1,300 - £3,175">Temporary Chest Problems </button>
+    <button  class="InjuryType" value="£25,000 - £38, 175">Severe and permanent disabling asthma </button>
+    <button  class="InjuryType" value="£6,100 - £11,200">Mild Asthma-like symptoms </button>
+  </div>
+  </div>
+</div>
+<!-- Upper Body List -->
+<!-- Arm List-->
+<div id="arm">
+<h3>Arm</h3>
+<div class="injuryList">
+  <h3>Arm Injury</h3>
+  <div>
+   <button class="InjuryType" value="£3,000 - £35,000">Forearm fracture with some deformity </button>
+   <button  class="InjuryType" value="£9,000 - £75,000">Moderate injury </button>
+   <button class="InjuryType" value="£18,000 - £150,000">Severe injury with permanent disability </button>
+   <button  class="InjuryType" value="£42,000 - £200,000">Loss of arm below the elbow </button>
+   <button class="InjuryType" value="£48,000 - £250,000">Above the elbow </button>
+   <button  class="InjuryType" value="£95,000 - £1,000,000">Loss of both arms </button>
+  </div>
+  <h3>Elbow Injury</h3>
+  <div>
+    <button class="InjuryType" value=" £1,500 - £3,000">Minor, full recovery </button>
+   <button  class="InjuryType" value="£3,000 - £8,000">Moderate injury, full recovery </button>
+   <button class="InjuryType" value="£8,000 - £75,000">Serious injury with permanent damage </button>
+  </div>
+  <h3>Wrist Injury</h3>
+  <div>
+    <button class="InjuryType" value="£1,500 - £3,000">Minor, full recovery </button>
+   <button  class="InjuryType" value="£3,000 - £8,000">Moderate injury, full recovery </button>
+   <button class="InjuryType" value="£8,000 - £75,000">Serious injury with permanent damage </button>
+  </div>
+ 
+  </div>
+</div>
+<!-- Arm List -->
+<!-- Hand List-->
+<div id="hand">
+<h3>Hand</h3>
+<div class="injuryList">
+  <h3>Hand Injury</h3>
+  <div>
+    <button class="InjuryType" value="£1,500 - £3,000">Minor, full recovery </button>
+   <button  class="InjuryType" value="£3,000 - £8,000">Moderate injury, full recovery </button>
+    <button class="InjuryType" value="£25,000 - £65,000">Severe injury with permanent disability  </button>
+   <button  class="InjuryType" value="£42,000 - £850,000">Effective loss of hand  </button>
+   <button  class="InjuryType" value="£60,000 - £1,000,000">Effective loss of both hands </button>
+  </div>
+  <h3>Finger Injury</h3>
+  <div>
+    <button  class="InjuryType" value="£1,000 - £75,000">Injury to fingers </button>
+  </div>
+  </div>
+</div>
+<!-- Hand List -->
+<!-- Lower Body List-->
+<div id="lowerBody">
+<h3>Lower Body</h3>
+<div class="injuryList">
+  <h3>Hip/Pelvis Injury</h3>
+  <div>
+   <button class="InjuryType" value="£1,000 - £10,000">Minor</button>
+   <button  class="InjuryType" value="£6,000 - £50,000">Moderate</button>
+   <button  class="InjuryType" value="£18,000 - £250,000">Severe</button>
+  </div>
+  <h3>Leg Injury</h3>
+  <div>
+    <button class="InjuryType" value="£1,000 - £3,000">Minor leg injury </button>
+   <button  class="InjuryType" value="£8,000">Fracture to tibula or fibula with full recovery </button>
+   <button  class="InjuryType" value="£8,000 - £12,000">Simple fracture to femur </button>
+   <button class="InjuryType" value="£8,000 - £15,000">Fracture with residual disability (left a gait, impaired mobility) </button>
+   <button  class="InjuryType" value="£25,000 - £75,000">Permanent disability, requiring crutches, limited walking ability </button>
+   <button  class="InjuryType" value="£42,000 - £100,000">Degloving injury, gross shortening </button>
+  </div>
+  <h3>Loss of leg</h3>
+  <div>
+    <button  class="InjuryType" value="£45,000 - £100,000">Below the knee</button>
+   <button  class="InjuryType" value="£47,000 - £150,000">Above the knee</button>
+  </div>
+  <h3>Knee Injury</h3>
+  <div>
+    <button  class="InjuryType" value="£1,000 - £6,000">Minor</button>
+   <button  class="InjuryType" value="£3,000 - £13,000">Moderate</button>
+   <button  class="InjuryType" value="£13,500 - £47,500">Severe</button>
+  </div>
+  <h3>Ankle Injury</h3>
+  <div>
+    <button  class="InjuryType" value="£1,000 - £6,000">Minor</button>
+   <button  class="InjuryType" value="£3,000 - £13,500">Moderate</button>
+   <button  class="InjuryType" value="£13,500 - £35,000">Severe</button>
+  </div>
+  </div>
+</div>
+<!-- Lower Body List -->
+<!-- Foot List-->
+<div id="foot">
+<h3>Foot</h3>
+<div class="injuryList">
+  <h3>Foot Injury</h3>
+  <div>
+   <button class="InjuryType" value="None">No details</button>
+   <button  class="InjuryType" value="None">No details</button>
+  </div>
+  <h3>Toe Injury</h3>
+  <div>
+    <button  class="InjuryType" value="£1,000 - £6,000">Minor</button>
+   <button  class="InjuryType" value="£3,000 - £6,750">Moderate</button>
+   <button  class="InjuryType" value="£4,500 - £40,000">Severe</button>
+  </div>
+  
+  </div>
+</div>
+</div>
+<!-- Foot List -->
+<div id="endForm">
+<p class="subHead">You can claim</p>
+<p class="saveText"></p>
+<p>The figures quoted are a rough guide to show you the amount you could receive as compensation for your injury. Our solicitors will advise you in more detail about your specific claim.</p>
+<form id="sendForm" name="contactform" method="post" action="send_form_email.php">
+<span class="subHead2">Start your claim now</span>
+<input name="Injury" type="text" id="InjuryField"/>
+<label for="full_name">Full name:</label>
+<input name="full_name" type="text" id="FullName" placeholder="Enter Full name"/>
+<label for="email">Email address:</label>
+<input name="email" type="text" id="email" placeholder="Enter Email address"/>
+<span class="formCall">Or call<br/>
+0303 0300 119</span>
+<button type="submit" class="submitButton" value="Submit"/>Submit</button>
+</form>
+</div>
+</div>
+</div>
+</body>
+</div>
+
+</html>
