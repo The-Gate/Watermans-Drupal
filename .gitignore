@@ -7,3 +7,4 @@ sites/*/private
 /nbproject/*
 /blog
 /sites/default/settings.php
+*.db

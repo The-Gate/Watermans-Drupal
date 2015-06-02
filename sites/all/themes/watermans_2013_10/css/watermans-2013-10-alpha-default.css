@@ -30,7 +30,7 @@ background: -moz-linear-gradient(top,  #fafafa 0%, #d8d9da 100%); background: -w
 .om-maximenu-no-style .om-maximenu-middle-right {padding: 0;}
 
 /* ask a question instruction block */
-.block-block-31{border:1px solid #000;margin-top:30px;padding:20px;}
+.block-block-31{border:1px solid #000;padding:20px;}
 .block-block-31 h2{margin-bottom:25px;}
 .block-block-31 .ask-q-bg-image{position:absolute; right:45px; bottom:0; height:186px; width:157px; display:block;background:url(../images/ask-a-question-bg.png) no-repeat 0 0;}
 .block-block-31 .question-block{width:210px; display:inline-block;vertical-align: top;margin-right:5px;}
@@ -112,10 +112,10 @@ background: -moz-linear-gradient(45deg,  #efefef 0%, #d6d8d6 100%); background: 
 .leaf-our-team .block-views-id--exp-people_listing-page_1 h2{display:none;}
 
 /*contact us [20] & careers contact [48] & vacancy */
-.node-type-vacancy .block-client-block-48,.node-type-vacancy .block-system-main,.page-node-20 .block-system-main,.page-node-20 .block-block-33,.page-node-48 .block-system-main,.page-node-48 .block-views-vacancies-block  {display: inline-block; vertical-align: top;}
-.node-type-vacancy .block-system-main,.page-node-48 .block-system-main,.page-node-20 .block-system-main{width:430px;margin-right:30px; }
-.node-type-vacancy .block-client-block-48,.page-node-48 .block-system-main,.page-node-20 .block-system-main{background:#ebebeb;}
-.node-type-vacancy .block-client-block-48 .block-inner,.page-node-48 .block-system-main .block-inner,.page-node-20 .block-system-main .block-inner{padding:25px 20px;}
+.node-type-vacancy .block-client-block-48,.node-type-vacancy .block-system-main,.page-node-178 .block-system-main,.page-node-178 .block-block-33,.page-node-48 .block-system-main,.page-node-48 .block-views-vacancies-block  {display: inline-block; vertical-align: top;}
+.node-type-vacancy .block-system-main,.page-node-48 .block-system-main,.page-node-178 .block-system-main{width:430px;margin-right:30px; }
+.node-type-vacancy .block-client-block-48,.page-node-48 .block-system-main,.page-node-178 .block-system-main{background:#ebebeb;}
+.node-type-vacancy .block-client-block-48 .block-inner,.page-node-48 .block-system-main .block-inner,.page-node-178 .block-system-main .block-inner{padding:25px 20px;}
 /* right sub menu */
 .region-sidebar-second .block-menu-block .block-title-wrapper{height:115px;position:relative;}
 .region-sidebar-second .block-menu-block .block-title-wrapper h2{position:absolute;bottom:0;}
@@ -129,3 +129,7 @@ background: -moz-linear-gradient(45deg,  #efefef 0%, #d6d8d6 100%); background: 
 .block-block-23 .phone{line-height:32px;}
 /* footer */
 .region-footer-first .block-menu-block{display:inline-block; vertical-align: top;}
+/* hubspot - ask a question form*/
+.hs-form #type_your_question-0994e525-c95b-499d-b18a-d39bba4f58aa{
+  height: 150px !important;
+}
