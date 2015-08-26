@@ -99,10 +99,6 @@ DirectoryIndex index.php index.html index.htm
   # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   # RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
 
-RewriteCond %{HTTP_HOST} ^watermans.ws [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.watermans.ws [NC]
-RewriteRule ^(.*)$ http://www.watermans.co.uk/$1 [L,R=301]
-
   # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
   # VirtualDocumentRoot and the rewrite rules are not working properly.
   # For example if your site is at http://example.com/drupal uncomment and
@@ -126,13 +122,11 @@ RewriteRule ^(.*)$ http://www.watermans.co.uk/$1 [L,R=301]
     # Serve gzip compressed CSS files if they exist and the client accepts gzip.
     RewriteCond %{HTTP:Accept-encoding} gzip
     RewriteCond %{REQUEST_FILENAME}\.gz -s
-	RewriteCond %{HTTP_USER_AGENT} !MSIE
     RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
 
     # Serve gzip compressed JS files if they exist and the client accepts gzip.
     RewriteCond %{HTTP:Accept-encoding} gzip
     RewriteCond %{REQUEST_FILENAME}\.gz -s
-	RewriteCond %{HTTP_USER_AGENT} !MSIE
     RewriteRule ^(.*)\.js $1\.js\.gz [QSA]
 
     # Serve correct content types, and prevent mod_deflate double gzip.
