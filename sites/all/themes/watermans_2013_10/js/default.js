@@ -55,8 +55,8 @@
           }
           
           // add the category to the people search results
-          if ($('#node_person_full_group_person_contact').length > 0){
-            $('#node_person_full_group_person_contact h3 span').append(' ').append($('h1#page-title').text());
+          if ($('#node-person-full-group-person-contact').length > 0){
+            $('#node-person-full-group-person-contact h3 span').append(' ').append($('h1#page-title').text());
           }
           
           if (d.to == 'normal' || (d.to == 'mobile' && ($.browser.msie== true) && ($.browser.version < 8)) ) {
