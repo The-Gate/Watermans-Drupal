@@ -31,7 +31,6 @@
 
 </script>
 </head>
-<script src="//cdn.optimizely.com/js/203086572.js"></script>
 <body<?php print $attributes;?>>
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
