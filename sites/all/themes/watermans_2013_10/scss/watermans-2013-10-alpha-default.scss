@@ -469,7 +469,16 @@ body{margin-top:20px;}
 .region-sidebar-second .block-menu-block .block-title-wrapper h2{position:absolute;bottom:0;}
 /* right sidebar */
 .node-type-person .region-sidebar-second {padding-top:20px;}
-.region-sidebar-second .block-block-18{margin-top:10px;}
+.region-sidebar-second .region-sidebar-second-inner{
+    & > .block-block-18:first-child,
+    & > .block-block-52:first-child,
+    & > .block-block-55:first-child,
+    & > .block-block-56:first-child,
+    & > .block-block-57:first-child,
+    & > .block-block-58:first-child    {
+        margin-top:20px;
+    }
+}
 .region-sidebar-second-inner .block-views-videos-block h2.block-title{line-height: 18px;border-bottom: 2px solid #929292;padding:15px 0 12px;margin-bottom: 20px;}
 /* content CTA*/
 .block-block-23 .phone,.block-block-23 .button{display:inline-block;vertical-align: middle;}
