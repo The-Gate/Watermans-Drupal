@@ -1,4 +1,23 @@
 (function ($) {
+    Drupal.behaviors.dl_list = {
+        attach: function (context) {
+            if ($('.ckeditor-tabber').length > 0) {
+                var all_content = $('.ckeditor-tabber dd').hide();
+                $('.ckeditor-tabber dt').live("click", function () {
+                    all_content.hide('fast');
+                    $(this).next('dd').slideToggle('fast', function () {
+                        //console.log('start check');
+                        if ($(this).offset().top < $(window).scrollTop()) {
+                            //console.log('this offset: ' + $(this).offset().top + ' scroll window: ' + $(window).scrollTop());
+                            var scrollTo = ($(this).offset().top) - 100;
+                            $(window).scrollTop(scrollTo);
+                            //console.log('this offset: ' + scrollTo + ' scroll window: ' + $(window).scrollTop());
+                        }
+                    })
+                });
+            }
+        }
+    }
     // modified from : http://ivanchaquea.com/creating-responsive-menu-omega-subthemes.html
     Drupal.behaviors.mobnav = {
         attach: function (context) {

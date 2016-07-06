@@ -1222,3 +1222,29 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     }
 
 }
+
+/* dl.ckeditor-tabber */
+dl.ckeditor-tabber{
+    border-bottom:1px solid #000;
+    dt,
+    dd{
+        border:none;
+    }
+    dt{
+        border-top:1px solid #000;
+        position:relative;
+        font-size:1.222em !important;
+        font-weight:700;
+        background:transparent;
+        width:100%;
+        text-align:left;
+        cursor: pointer;
+        padding:5px 0;
+    }
+    dd{
+        font-style:normal;
+        &.hide{
+            display:none;
+        }
+    }
+}
