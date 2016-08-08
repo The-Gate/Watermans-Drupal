@@ -1,17 +1,3 @@
-.block-13.widepage-sides, .block-14.widepage-sides{display:block; position:fixed; top:40%; width:100px;}
-.block-13.widepage-sides{left:0; background-color: #ee2842;}
-.block-13.widepage-sides:hover{background-color: #be1e34;}
-.block-13.widepage-sides p{color: #fff; border-left:4px solid #fff;margin:10px; position: relative;}
-.block-13.widepage-sides p a{font-weight:700;color: #fff; display:block; width:100%; padding:5px 5px 60px;position: relative;}
-.block-14.widepage-sides{right:0; background-color: #077a99;}
-.block-14.widepage-sides p {color: #fff; display:block; padding:5px; border-left:4px solid #fff;margin:10px;font-weight:700;;position: relative;}
-.block-14.widepage-sides p:last-child {margin-top:-10px;padding-bottom:0;}
-.block-14.widepage-sides p a{position: relative;display:block; height:30px; width:30px;background: url(/sites/all/themes/watermans_2013_10/images/icon_social.gif);text-indent: -9999px;}
-.block-14.widepage-sides p a.icon_facebook{background-position: 0 0;}
-.block-14.widepage-sides p a.icon_youtube{background-position: 0 -41px;}
-.block-14.widepage-sides p a.icon_trustpilot{background-position: 0 -83px;}
-.block-14.widepage-sides p a.icon_twitter{background-position: 0 -125px;}
-.block-14.widepage-sides p a.icon_facebook:hover{background-position: -40px 0;}
-.block-14.widepage-sides p a.icon_youtube:hover{background-position: -40px -41px;}
-.block-14.widepage-sides p a.icon_trustpilot:hover{background-position: -40px -83px;}
-.block-14.widepage-sides p a.icon_twitter:hover{background-position: -40px -125px;}
+.block-13.widepage-sides,.block-14.widepage-sides{display:block;position:fixed;top:40%;width:100px}.block-13.widepage-sides{left:0;background-color:#ee2842}.block-13.widepage-sides:hover{background-color:#be1e34}.block-13.widepage-sides p{color:#fff;border-left:4px solid #fff;margin:10px;position:relative}.block-13.widepage-sides p a{font-weight:700;color:#fff;display:block;width:100%;padding:5px 5px 60px;position:relative}.block-14{right:0;background-color:#077a99}.block-14.widepage-sides p{color:#fff;display:block;padding:5px;border-left:4px solid #fff;margin:10px;font-weight:700;position:relative}.block-14.widepage-sides p:last-child{margin-top:-10px;padding-bottom:0}.block-14.widepage-sides p a{position:relative;display:block;height:30px;width:30px;background:url(/sites/all/themes/watermans_2013_10/images/icon_social.gif);text-indent:-9999px}.block-14.widepage-sides p a.icon_facebook{background-position:0 0}.block-14.widepage-sides p a.icon_youtube{background-position:0 -41px}.block-14.widepage-sides p a.icon_trustpilot{background-position:0 -83px}.block-14.widepage-sides p a.icon_twitter{background-position:0 -125px}.block-14.widepage-sides p a.icon_facebook:hover{background-position:-40px 0}.block-14.widepage-sides p a.icon_youtube:hover{background-position:-40px -41px}.block-14.widepage-sides p a.icon_trustpilot:hover{background-position:-40px -83px}.block-14.widepage-sides p a.icon_twitter:hover{background-position:-40px -125px}
+
+/*# sourceMappingURL=ie.css.map */

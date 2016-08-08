@@ -18,6 +18,36 @@
             }
         }
     }
+    Drupal.behaviors.videopopup = {
+        attach: function (context) {
+            $('a.modalcontent').click(function (e) {
+                //var content = '';
+                e.preventDefault();
+                var video_id = $(this).attr('href').split('v=')[1];
+                init_popup('<div class="video"><iframe src="http://www.youtube.com/embed/' + video_id + '?wmode=opaque&autoplay=1" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>');
+
+            });
+            function init_popup(content) {
+                $('body').append('<div id="overlay"></div>');
+                $('body').append('<div id="popup"></div>');
+                $('#popup').html(content);
+                $('#popup').append('<div class="close"></div>');
+                $('#overlay').click(function () {
+                    pop_overlay();
+                });
+                $('#popup .close').click(function () {
+                    pop_overlay();
+                    return false;
+                });
+            }
+
+            function pop_overlay() {
+                $('#popup').remove();
+                $('#overlay').remove();
+            }
+
+        }
+    }
     // modified from : http://ivanchaquea.com/creating-responsive-menu-omega-subthemes.html
     Drupal.behaviors.mobnav = {
         attach: function (context) {
@@ -191,8 +221,12 @@
                         $('.region-branding-second-inner .block-search-form').prependTo($('.block-menu-block-14 .content'));
                         $('.menu-mlid-588,.menu-mlid-528').removeClass('expanded').addClass('leaf');
                         $('.block-menu-block-14 > .block-inner > .content > .menu-block-14 > .menu li.expanded').each(function () {
-                            $(this).children('ul.menu li.first').removeClass('first');
-                            $(this).children('ul.menu').prepend($(this).children('a').clone().wrap('<li class="leaf first"></li>').parent());
+                            if (!($(this).children('a').attr('href') == '/types-accident')) {
+                                $(this).children('ul.menu li.first').removeClass('first');
+                                $(this).children('ul.menu').prepend($(this).children('a').clone().wrap('<li class="leaf first"></li>').parent());
+                            } else {
+                                $(this).find('li.expanded').removeClass('expanded');
+                            }
                         });
                         $('.block-menu-block-14 h2.block-title').click(function () {
                             $('.block-menu-block-14 > .block-inner > .content').toggleClass('openMenu');
