@@ -1,1 +1,1 @@
-{"version":3,"file":"editor.css","sources":["../scss/editor.scss","../scss/_variables.scss"],"sourcesContent":[],"mappings":"AACA,IAAI,AAAA,CAEA,KAAK,CCHJ,OAAO,CDCP,AAIL,KAAK,AAAA,CAAC,KAAK,CAAC,OAAQ,CAAd,AAEL,CAAC,AAAA,YAAY,AAAD,CAAC,WAAW,CAAC,iBAAkB,CAAE,YAAY,CAAC,IAAK,CAAlD","names":[]}
+{"version":3,"file":"editor.css","sources":["../scss/editor.scss","../scss/_variables.scss"],"mappings":"AACA,IAAI,AAAA,CAEA,KAAK,CCHJ,OAAO,CDIX,AACD,KAAK,AAAA,CAAC,KAAK,CAAC,OAAQ,CAAG,AAEvB,CAAC,AAAA,YAAY,AAAA,CAAC,WAAW,CAAC,iBAAkB,CAAE,YAAY,CAAC,IAAK,CAAG","names":[]}
