@@ -56,6 +56,11 @@ function watermans_2013_10_form_alter(&$form, $form_state, $form_id) {
 function watermans_2013_10_preprocess_html(&$vars) {
   // add IE only CSS
   drupal_add_css(path_to_theme() . '/css/ie-lte-9.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
+  IF (arg(1) == 21) {
+    drupal_add_js(libraries_get_path('colorbox') . '/jquery.colorbox-min.js', array('group' => JS_THEME, 'every_page' => TRUE));
+    drupal_add_css(libraries_get_path('colorbox') . '/example3/colorbox.css', array('group' => CSS_THEME, 'preprocess' => TRUE));
+    drupal_add_js(path_to_theme() . '/js/how-to-claim.js', array('group' => JS_THEME, 'every_page' => TRUE));
+  }
 }
 
 function watermans_2013_10_preprocess_page(&$vars) {
