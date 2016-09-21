@@ -58,7 +58,8 @@ function watermans_2013_10_preprocess_html(&$vars) {
   drupal_add_css(path_to_theme() . '/css/ie-lte-9.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
   IF (arg(1) == 21) {
     drupal_add_js(libraries_get_path('colorbox') . '/jquery.colorbox-min.js', array('group' => JS_THEME, 'every_page' => TRUE));
-    drupal_add_css(libraries_get_path('colorbox') . '/example3/colorbox.css', array('group' => CSS_THEME, 'preprocess' => TRUE));
+    drupal_add_css(libraries_get_path('colorbox') . '/_watermans/colorbox.css', array('group' => CSS_THEME, 'preprocess' => TRUE));
+//    drupal_add_css(libraries_get_path('colorbox') . '/example5/colorbox.css', array('group' => CSS_THEME, 'preprocess' => TRUE));
     drupal_add_js(path_to_theme() . '/js/how-to-claim.js', array('group' => JS_THEME, 'every_page' => TRUE));
   }
 }
