@@ -144,6 +144,140 @@ function views_people_default_fe_block_settings() {
     'visibility' => 1,
   );
 
+  $export['block-team_listing_edinburgh'] = array(
+    'cache' => -1,
+    'css_class' => 'cta c-1',
+    'custom' => 0,
+    'machine_name' => 'team_listing_edinburgh',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => 'the-watermans-team/*/*',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'watermans_2013_10' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'watermans_2013_10',
+        'weight' => -65,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 1,
+  );
+
+  $export['block-team_listing_firm'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'machine_name' => 'team_listing_firm',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => 'the-watermans-team/*/*',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'watermans_2013_10' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'watermans_2013_10',
+        'weight' => -57,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 1,
+  );
+
+  $export['block-team_listing_glasgow'] = array(
+    'cache' => -1,
+    'css_class' => 'cta c-1',
+    'custom' => 0,
+    'machine_name' => 'team_listing_glasgow',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => 'the-watermans-team/*/*',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'watermans_2013_10' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'watermans_2013_10',
+        'weight' => -64,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 1,
+  );
+
+  $export['multiblock-1'] = array(
+    'cache' => 4,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 1,
+    'module' => 'multiblock',
+    'node_types' => array(
+      0 => 'person',
+    ),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'watermans_2013_10' => array(
+        'region' => 'menu_sub',
+        'status' => 1,
+        'theme' => 'watermans_2013_10',
+        'weight' => -74,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['views-people_listing-block'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -301,10 +435,10 @@ function views_people_default_fe_block_settings() {
         'weight' => 0,
       ),
       'watermans_2013_10' => array(
-        'region' => 'menu_sub',
+        'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'watermans_2013_10',
-        'weight' => -41,
+        'weight' => -66,
       ),
     ),
     'title' => '<none>',

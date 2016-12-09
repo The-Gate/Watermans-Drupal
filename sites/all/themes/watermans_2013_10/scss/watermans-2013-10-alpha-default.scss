@@ -147,16 +147,27 @@ body{margin-top:20px;}
 
 /* people sub menu */
 .node-type-person {
+    .block-multiblock-1,
     .block-field-image,
     .block-cck-blocks-field-thumbnail{
         display: inline-block;
         vertical-align: top;
+    }
+    .block-multiblock-1{
+        padding:15px 0 10px 30px;
+        width:510px;
+        h1{
+            border:0;
+            padding:0;
+            margin:0;
+        }
     }
     .block-field-image{
         width:540px;
     }
     .block-cck-blocks-field-thumbnail{
         width:399px;
+        float:right;
     }
     .view-person-contact {
        
@@ -319,9 +330,6 @@ body{margin-top:20px;}
                 margin-right:9px;
                 &:nth-child(3n+3){
                     margin-right:0;
-                }
-                .cta-content{
-                    position: relative;
                 }
             }
         }

@@ -41,6 +41,7 @@ h1,h2, h3, h4, h5, h6,label{
 .field-name-field-about-me .field-label,
 .field-name-field-best-part-of-the-job .field-label,
 .field-name-field-hobbies-interests .field-label,
+.view-client-testimonials .view-header p,
 .block-field-job-title,
 .om-maximenu-middle-right .block.last h2,
 .om-maximenu-middle-right .block.first h2,
@@ -166,7 +167,8 @@ h1,
 .block-block-23 .phone h5,
 .field-name-field-about-me .field-label,
 .field-name-field-best-part-of-the-job .field-label,
-.field-name-field-hobbies-interests .field-label{
+.field-name-field-hobbies-interests .field-label,
+.view-client-testimonials .view-header p{
     font-size:24px;
 }
 /* 26px */
@@ -217,11 +219,15 @@ h1,
 .group-person-contact h3,
 .read-more a,
 .region-postscript-fourth-inner h3 a, 
-.region-postscript-third-inner h3 a,
+.region-postscript-third-inner h3 a{
+    color:#ee2842;
+}
+/* another red??? */
 .field-name-field-about-me .field-label,
 .field-name-field-best-part-of-the-job .field-label,
-.field-name-field-hobbies-interests .field-label{
-    color:#ee2842;
+.field-name-field-hobbies-interests .field-label,
+.view-client-testimonials .view-header p{
+    color:$red;
 }
 /* dark red */
 .block-client-block-48 h2.block-title,.block-views-vacancies-block h2.block-title,.block-block-33 h3,.region-postscript-first-inner .cta h3 a{color:#c51f3c;}
@@ -745,13 +751,18 @@ h1{
 .block-block-15 img {max-width: 100%;width:100%; height: auto;}
 /* people */
 /* meet the team */
+.node-type-person .block-system-main{
+    padding-top:20px;
+}
 .block-field-job-title{
     text-transform: uppercase;
     font-weight:700;
 }
 .field-name-field-about-me .field-label,
 .field-name-field-best-part-of-the-job .field-label,
-.field-name-field-hobbies-interests .field-label{
+.field-name-field-hobbies-interests .field-label,
+.view-client-testimonials .view-header p{
+    font-weight:normal;
     border-bottom:1px solid #929292;
     margin-bottom:15px;
 }
@@ -795,7 +806,14 @@ h1{
     }
 
 }
-.node-type-person .block-person-contact-block h2.block-title{line-height: 1; margin-bottom: 20px;}
+.view-client-testimonials .views-row{
+    text-align: center;
+    color: $red;
+}
+.node-type-person .block-person-contact-block h2.block-title{
+    line-height: 1;
+    margin-bottom: 20px;
+}
 
 /* title listings - news & FAQ */
 .view-news-listing .views-row, .block-news-listing-block .views-row{border-bottom:1px solid #929292;padding:20px 0;margin-bottom:12px;}
@@ -1002,6 +1020,7 @@ h1{
         }
     }
     .cta{
+        position:relative;
         .cta-title-wrap {
             position:absolute;
             bottom:0;
@@ -1234,6 +1253,7 @@ h1{
     }
     .cta-content{
         z-index:10;
+        position: relative;
     }
 }
 .context-how-claim {
@@ -1535,6 +1555,31 @@ h1{
 .block-blog-listing-block ul li .left-col{width:50px;}
 .block-blog-listing-block ul li .right-col{width:195px}
 .region-postscript-fourth-inner h3, .region-postscript-third-inner h3{margin:0;}
+
+/* slideshow scroller */
+.skin-default{
+    .views-slideshow-controls-bottom{
+        text-align: center;     
+        margin-top:16px;   
+    }
+    .views-slideshow-pager-field-item{
+        display:inline-block;
+        .views-field-counter .views-content-counter{
+            display:block;
+            background:#99c7d6;
+            text-indent:-9999px;
+            display:block;
+            width:12px;
+            height:12px;
+            -webkit-border-radius:6px;
+            -moz-border-radius:6px;
+            border-radius:6px;
+        }
+        &.active .views-field-counter .views-content-counter{
+            background:#007398;
+        }
+    }
+}
 
 /* footer */
 .section-footer {

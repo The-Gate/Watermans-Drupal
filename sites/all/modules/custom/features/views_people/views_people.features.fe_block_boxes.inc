@@ -73,5 +73,40 @@ function views_people_default_fe_block_boxes() {
 
   $export['team_home_cta3'] = $fe_block_boxes;
 
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'People Listing - Edinburgh';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'team_listing_edinburgh';
+  $fe_block_boxes->body = '<div class="cta-content">
+<div class="cta-title-wrap">
+<h3><a href="/the-watermans-team/edinburgh">Edinburgh</a></h3>
+</div>
+</div>
+';
+
+  $export['team_listing_edinburgh'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'People Listing - Firm Management';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'team_listing_firm';
+  $fe_block_boxes->body = '<p><a href="/the-watermans-team/department?tid=27">Firm&nbsp;Management</a></p>
+';
+
+  $export['team_listing_firm'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'People Listing - Glasgow';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'team_listing_glasgow';
+  $fe_block_boxes->body = '<div class="cta-content">
+<div class="cta-title-wrap">
+<h3><a href="/the-watermans-team/glasgow">Glasgow</a></h3>
+</div>
+</div>
+';
+
+  $export['team_listing_glasgow'] = $fe_block_boxes;
+
   return $export;
 }

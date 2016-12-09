@@ -1719,9 +1719,7 @@ function menu_system_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Accidents At Work',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-footer-menu-1_accidents-at-work:node/14',
     ),
     'module' => 'menu',
@@ -1739,9 +1737,7 @@ function menu_system_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Road Traffic Accidents',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-footer-menu-1_road-traffic-accidents:node/13',
     ),
     'module' => 'menu',
@@ -1759,9 +1755,7 @@ function menu_system_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Slips & Trips',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-footer-menu-1_slips--trips:node/15',
     ),
     'module' => 'menu',
@@ -1779,9 +1773,7 @@ function menu_system_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'How To Claim',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-footer-menu-2_how-to-claim:node/21',
     ),
     'module' => 'menu',
@@ -1799,9 +1791,7 @@ function menu_system_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Injury Calculator',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-footer-menu-2_injury-calculator:node/16',
     ),
     'module' => 'menu',
@@ -1997,9 +1987,7 @@ function menu_system_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'EU Cookie Law',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'fragment' => 'cookies',
       'identifier' => 'menu-footer-menu-4_eu-cookie-law:node/7',
     ),
