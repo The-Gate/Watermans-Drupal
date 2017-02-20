@@ -26,5 +26,6 @@ features[image][] = fullwidth__mobile
 features[image][] = fullwidth__normal
 features[image][] = fullwidth_with_sidebar__mobile
 features[image][] = fullwidth_with_sidebar__normal
+features[image][] = person_with_overlay
 features[resp_img_suffix][] = mobile
 features[resp_img_suffix][] = normal

@@ -102,6 +102,51 @@ function ct_person_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-person-field_client_testimonials'.
+  $field_instances['node-person-field_client_testimonials'] = array(
+    'bundle' => 'person',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'cck_blocks' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_client_testimonials',
+    'label' => 'Client testimonials',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-person-field_department'.
   $field_instances['node-person-field_department'] = array(
     'bundle' => 'person',
@@ -119,7 +164,7 @@ function ct_person_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -159,9 +204,8 @@ function ct_person_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'email',
         'settings' => array(),
-        'type' => 'email_default',
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -255,7 +299,7 @@ function ct_person_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -319,7 +363,7 @@ function ct_person_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -359,9 +403,8 @@ function ct_person_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_label',
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'teaser' => array(
@@ -419,9 +462,8 @@ function ct_person_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'teaser' => array(
@@ -461,7 +503,7 @@ function ct_person_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '220x169__mobile',
+          'image_style' => 'person_with_overlay',
         ),
         'type' => 'image',
         'weight' => 2,
@@ -470,7 +512,7 @@ function ct_person_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -520,6 +562,7 @@ function ct_person_field_default_field_instances() {
   t('About Me');
   t('Banner Image');
   t('Best Part of the Job');
+  t('Client testimonials');
   t('Department');
   t('Email');
   t('Hobbies & Interests');

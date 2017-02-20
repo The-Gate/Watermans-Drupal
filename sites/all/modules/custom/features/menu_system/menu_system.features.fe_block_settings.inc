@@ -989,5 +989,38 @@ slips-trips/*',
     'visibility' => 1,
   );
 
+  $export['om_maximenu-om-maximenu-1'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'om-maximenu-1',
+    'module' => 'om_maximenu',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'watermans_2013_10' => array(
+        'region' => 'menu',
+        'status' => 1,
+        'theme' => 'watermans_2013_10',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   return $export;
 }

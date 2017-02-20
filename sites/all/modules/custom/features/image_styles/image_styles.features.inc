@@ -422,5 +422,41 @@ function image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: person_with_overlay.
+  $styles['person_with_overlay'] = array(
+    'label' => 'Person with overlay',
+    'effects' => array(
+      34 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 399,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => -10,
+      ),
+      36 => array(
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => 399,
+          'height' => 205,
+          'anchor' => 'right-center',
+        ),
+        'weight' => -9,
+      ),
+      33 => array(
+        'name' => 'canvasactions_file2canvas',
+        'data' => array(
+          'xpos' => 0,
+          'ypos' => 0,
+          'alpha' => 100,
+          'scale' => '',
+          'path' => 'sites/all/themes/watermans_2013_10/images/team/people-overlay.png',
+        ),
+        'weight' => -8,
+      ),
+    ),
+  );
+
   return $styles;
 }

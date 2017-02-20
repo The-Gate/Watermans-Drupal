@@ -48,6 +48,26 @@ function ct_person_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_client_testimonials'.
+  $field_bases['field_client_testimonials'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_client_testimonials',
+    'global_block_settings' => 2,
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_department'.
   $field_bases['field_department'] = array(
     'active' => 1,

@@ -243,6 +243,111 @@ function views_people_default_fe_block_settings() {
     'visibility' => 1,
   );
 
+  $export['cck_blocks-field_image'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'field_image',
+    'module' => 'cck_blocks',
+    'node_types' => array(
+      0 => 'person',
+    ),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'watermans_2013_10' => array(
+        'region' => 'menu_sub',
+        'status' => 1,
+        'theme' => 'watermans_2013_10',
+        'weight' => -72,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
+  $export['cck_blocks-field_job_title'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'field_job_title',
+    'module' => 'cck_blocks',
+    'node_types' => array(
+      0 => 'person',
+    ),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'watermans_2013_10' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'watermans_2013_10',
+        'weight' => -64,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
+  $export['cck_blocks-field_thumbnail'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'field_thumbnail',
+    'module' => 'cck_blocks',
+    'node_types' => array(
+      0 => 'person',
+    ),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'watermans_2013_10' => array(
+        'region' => 'menu_sub',
+        'status' => 1,
+        'theme' => 'watermans_2013_10',
+        'weight' => -73,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
   $export['multiblock-1'] = array(
     'cache' => 4,
     'css_class' => '',
@@ -275,6 +380,41 @@ function views_people_default_fe_block_settings() {
       ),
     ),
     'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-client_testimonials-block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'client_testimonials-block',
+    'module' => 'views',
+    'node_types' => array(
+      0 => 'person',
+    ),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'watermans_2013_10' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'watermans_2013_10',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
     'visibility' => 0,
   );
 
