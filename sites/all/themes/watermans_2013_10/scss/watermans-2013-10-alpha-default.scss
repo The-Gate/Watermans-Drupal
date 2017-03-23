@@ -170,7 +170,7 @@ body{margin-top:20px;}
         float:right;
     }
     .view-person-contact {
-       
+
     }
 }
 
@@ -320,10 +320,16 @@ body{margin-top:20px;}
         .view-people-listing{
             .view-header{
                 height:155px;
-                background:url(../images/team/banner-bg-edinburgh.png) no-repeat 100% 0 #007398;;
+                background:url(../images/team/banner-bg-edinburgh.png) no-repeat 100% 0 #007398;
                 p{
                     max-width:55%;
                 }
+            }
+            &.view-display-id-block_2{
+                .view-header{
+                    background:url(../images/team/banner-bg-glasgow.png) no-repeat 100% 0 #007398;
+                }
+
             }
             .cta{
                 margin-top:15px;

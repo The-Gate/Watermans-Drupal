@@ -369,8 +369,8 @@ function views_people_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<h1 class="red">Edinburgh</h1>
-<p>Nullam bibendum nisl enim, in varius lorem pulvinar vel. Morbi pretium velit, at porta dui dictum vitae. Ut tortor massa, imperdiet vitae risus eu, dapibus consectetur lectus. Ut tortor massa, imperdiet vitae risus eu, dapibus consectetur lectus.Ut tortor massa, imperdiet vitae risus eu, dapibus consectetur lectus.</p>';
+  $handler->display->display_options['header']['area']['content'] = '<h1>Edinburgh</h1>
+<p>Watermans have fast become one of the most successful personal injury solicitors in Edinburgh and Scotland. With their main office based in Edinburgh, Watermans have grown rapidly over the years, in order to provide a high level service throughout the whole of Scotland.</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Taxonomy terms on node */
@@ -454,7 +454,7 @@ function views_people_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="cta-bg-wrapper">[field_thumbnail]</div>
 <div class="cta-content">
 <div class="cta-title-wrap"><h3>[title]</h3></div>
-<p><a href="[path]">I\'m a [term_node_tid], find out more</a></p>
+<p><a href="[path]">I\'m a [term_node_tid],<br>find out more</a></p>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
@@ -511,8 +511,8 @@ function views_people_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<h1 class="red">Glasgow</h1>
-<p>Nullam bibendum nisl enim, in varius lorem pulvinar vel.<br>Morbi pretium velit, at porta dui dictum vitae. Ut tortor massa, imperdiet vitae risus eu, dapibus consectetur lectus.<br>Ut tortor massa, imperdiet vitae risus eu, dapibus consectetur lectus.Ut tortor massa, imperdiet vitae risus eu, dapibus consectetur lectus.</p>';
+  $handler->display->display_options['header']['area']['content'] = '<h1>Glasgow</h1>
+<p>Watermans have grown rapidly over the years, extending their reach throughout the whole of Scotland. Having gained the loyalty of the people of Glasgow, many have chosen Watermans to represent them as their Personal Injury Solicitor.</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Taxonomy terms on node */
@@ -596,7 +596,7 @@ function views_people_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="cta-bg-wrapper">[field_thumbnail]</div>
 <div class="cta-content">
 <div class="cta-title-wrap"><h3>[title]</h3></div>
-<p><a href="[path]">I\'m a [term_node_tid], find out more</a></p>
+<p><a href="[path]">I\'m a [term_node_tid],<br>find out more</a></p>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
@@ -653,8 +653,8 @@ function views_people_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<h1 class="red">Firm Management</h1>
-<p>Nullam bibendum nisl enim, in varius lorem pulvinar vel. Morbi pretium velit, at porta dui dictum vitae. Ut tortor massa, imperdiet vitae risus eu, dapibus consectetur lectus. Ut tortor massa, imperdiet vitae risus eu, dapibus consectetur lectus.Ut tortor massa, imperdiet vitae risus eu, dapibus consectetur lectus.</p>';
+  $handler->display->display_options['header']['area']['content'] = '<h1>Firm Management</h1>
+<p>Watermans employs an exceptional team of highly qualified solicitors, specialising in personal injury claims and using their expertise to help our clients win the compensation they deserve. Our combination of caring professionalism and specialist expertise has allowed Watermans to become established as one of Scotland\'s leading personal injury solicitors.</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Taxonomy terms on node */
@@ -738,7 +738,7 @@ function views_people_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="cta-bg-wrapper">[field_thumbnail]</div>
 <div class="cta-content">
 <div class="cta-title-wrap"><h3>[title]</h3></div>
-<p><a href="[path]">I\'m the [term_node_tid], find out more</a></p>
+<p><a href="[path]">I\'m a [term_node_tid],<br>find out more</a></p>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
@@ -810,6 +810,8 @@ function views_people_views_default_views() {
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_email']['alter']['text'] = '<a href="mailto:[field_email-email]">Email</a>';
   $handler->display->display_options['fields']['field_email']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_email']['element_label_class'] = 'email-title';
   $handler->display->display_options['fields']['field_email']['element_label_colon'] = FALSE;

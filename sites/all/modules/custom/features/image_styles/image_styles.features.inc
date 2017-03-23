@@ -340,8 +340,8 @@ function image_styles_image_default_styles() {
       31 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => 304,
-          'height' => '',
+          'width' => '',
+          'height' => 272,
           'upscale' => 1,
         ),
         'weight' => 1,
@@ -351,7 +351,7 @@ function image_styles_image_default_styles() {
         'data' => array(
           'width' => 304,
           'height' => 272,
-          'anchor' => 'center-top',
+          'anchor' => 'right-top',
         ),
         'weight' => 2,
       ),
@@ -426,14 +426,22 @@ function image_styles_image_default_styles() {
   $styles['person_with_overlay'] = array(
     'label' => 'Person with overlay',
     'effects' => array(
+      37 => array(
+        'name' => 'coloractions_convert',
+        'data' => array(
+          'format' => 'image/png',
+          'quality' => 100,
+        ),
+        'weight' => -10,
+      ),
       34 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => 399,
-          'height' => '',
-          'upscale' => 0,
+          'width' => '',
+          'height' => 205,
+          'upscale' => 1,
         ),
-        'weight' => -10,
+        'weight' => -9,
       ),
       36 => array(
         'name' => 'image_crop',
@@ -442,7 +450,7 @@ function image_styles_image_default_styles() {
           'height' => 205,
           'anchor' => 'right-center',
         ),
-        'weight' => -9,
+        'weight' => -8,
       ),
       33 => array(
         'name' => 'canvasactions_file2canvas',
@@ -453,7 +461,7 @@ function image_styles_image_default_styles() {
           'scale' => '',
           'path' => 'sites/all/themes/watermans_2013_10/images/team/people-overlay.png',
         ),
-        'weight' => -8,
+        'weight' => -7,
       ),
     ),
   );

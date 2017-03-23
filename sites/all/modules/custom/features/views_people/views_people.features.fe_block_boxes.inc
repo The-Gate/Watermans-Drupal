@@ -18,12 +18,7 @@ function views_people_default_fe_block_boxes() {
 <h3 class="blue">"A motivated and<br />
 <span class="red">dedicated team"</span></h3>
 
-<p class="left-border">Ducius dolo volora quam incimi, ipiduci tiurion ectiunti ipsae nobitatatem ipsaper itassi dellupti alitint, ad quat.</p>
-
-<div class="button redgrad gradient">
-<p><span class="hs-cta-wrapper"><span class="hs-cta-node"><a href="/the-watermans-team">Meet the team</a> </span> </span></p>
-</div>
-</div>
+<p class="left-border">Meet our exceptional team of highly qualified solicitors, and claims handlers. Specialising in personal injury claims, they work together and use their expertise to help you get the compensation you deserve.</p>
 ';
 
   $export['team_home_banner'] = $fe_block_boxes;
@@ -64,10 +59,10 @@ function views_people_default_fe_block_boxes() {
   $fe_block_boxes->machine_name = 'team_home_cta3';
   $fe_block_boxes->body = '<div class="cta-content">
 <div class="cta-title-wrap">
-<h3><a href="/the-watermans-team/firm-management">Firm management</a></h3>
+<h3><a href="/the-watermans-team/firm-management">Management</a></h3>
 </div>
 
-<p><a href="/the-watermans-team/firm-management">Meet Scott Whyte, our Managing Director</a></p>
+<p><a href="/the-watermans-team/firm-management">Meet our Managing Director</a></p>
 </div>
 ';
 
@@ -107,6 +102,19 @@ function views_people_default_fe_block_boxes() {
 ';
 
   $export['team_listing_glasgow'] = $fe_block_boxes;
+
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'People Listing - Firm Management Block';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'team_listing_management';
+  $fe_block_boxes->body = '<div class="cta-content">
+<div class="cta-title-wrap">
+<h3><a href="/the-watermans-team/firm-management">Management</a></h3>
+</div>
+</div>
+';
+
+  $export['team_listing_management'] = $fe_block_boxes;
 
   return $export;
 }

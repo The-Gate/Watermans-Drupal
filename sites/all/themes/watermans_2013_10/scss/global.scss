@@ -237,7 +237,7 @@ h1,
 #webform-component-ask-a-personal-injury-solicitor label,
 .askquestion_modal h2,
 .block-block-30  h2,
-.node-type-person h1#page-title,
+
 .block-field-job-title,
 .context-frequently-asked-questions h1{
     color:#841313;
@@ -269,6 +269,7 @@ h1,
 .region-sidebar-second .block-block-19 a,
 .region-sidebar-second .block-block-21 a,
 .region-sidebar-second .block-block-22 a,
+.region-sidebar-second .block-block-68 a,
 .region-menu-sub .block-menu-block .menu-name-menu-featured-menu li a,
 .context-total-care .region-menu-sub h2,
 .menu-block-11 li a:hover,
@@ -305,6 +306,7 @@ h1,
 .block-block-44,
 .block-block-45,
 .block-block-46,
+.node-type-person h1#page-title,
 .block-51 h2{
     color:#fff;
 }
@@ -806,9 +808,17 @@ h1{
     }
 
 }
-.view-client-testimonials .views-row{
-    text-align: center;
-    color: $red;
+.view-client-testimonials {
+
+    width:100%;
+    .views-row{
+        text-align: center;
+        color: $red;
+        width:100%;
+    }
+    .views_slideshow_slide {
+        width:100% !important;
+    }
 }
 .node-type-person .block-person-contact-block h2.block-title{
     line-height: 1;
@@ -979,6 +989,10 @@ h1{
     .block-block-37 .block-inner{
         background:url(../images/people-cat-firm-dev.png) no-repeat 50% 100%;
     }
+    .block-block-68 .block-inner{
+        background:url(../images/team/cta-r2-bg3.png) no-repeat 50% 0;
+    }
+    .block-block-68,
     .block-block-37,
     .block-block-19,
     .block-block-21,
@@ -1123,6 +1137,13 @@ h1{
             margin:0 25px;
         }
     }
+    .view-people-listing{
+        .cta{
+            .cta-title-wrap {
+                margin:182px 0 0 0;
+            }
+        }
+    }
 }
 
 .front,
@@ -1186,6 +1207,18 @@ h1{
             }
         }
     }
+    .view-people-listing{
+        .cta{
+            &.c-1,
+            &.c-2,
+            &.c-3{
+                p{
+                    padding: 10px 19px;
+                }
+            }
+
+        }
+    }
 }
 .front{
     .region-postscript-second-inner {
@@ -1232,6 +1265,7 @@ h1{
             font-size: 40px;
             border-bottom:0;
             margin-bottom:0;
+            color:#fff;
         }
         p{
             color: #fff;
@@ -1584,6 +1618,9 @@ h1{
 /* footer */
 .section-footer {
     margin-top:20px;
+    @media screen and (max-width: 479px)  {
+        margin-bottom:60px;
+    }
 }
 .region-footer-first{
     background-color:#0c7998;
@@ -1728,14 +1765,31 @@ h1{
 
     .block-block-2 p a{display:block;}
     .block-block-2 p a.footer-email{margin:10px 0 0;padding:0; border:none;}
-    .cta{margin-bottom:25px;}
+    .cta{
+        margin-bottom:25px;
+        margin-left:auto;
+        margin-right:auto;
+        .block-people-listing-block-1 &,
+        .block-people-listing-block-2 &,
+        .block-people-listing-block-3 &{
+            &:first-child{
+                margin-top:25px; 
+            }
+        }
+    }
     .block-blog-listing-block ul li .left-col img{width:100%; height:auto;}
     .region-footer-first-inner{padding:15px 20px;}
     #om-maximenu-main-menu{display:none;}
     .menu-block-7 {display:block;}
     /* sub menu */
     .block-block-17{display:none;}
-    .region-menu-sub-inner{border: 1px solid #000;}
+    .region-menu-sub-inner{
+        border: 1px solid #000;
+        .context-the-watermans-team &{
+            border:0;
+        }
+    }
+
     .region-menu-sub-inner .block-menu-block{margin:10px;}
     /* title */
     .view-header h3, .block-cck-blocks-field-job-title, h1#page-title {margin-top: 20px;}

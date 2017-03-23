@@ -38,7 +38,7 @@ function views_people_default_fe_block_settings() {
         'region' => 'postscript_second',
         'status' => 1,
         'theme' => 'watermans_2013_10',
-        'weight' => 0,
+        'weight' => -59,
       ),
     ),
     'title' => '<none>',
@@ -71,7 +71,7 @@ function views_people_default_fe_block_settings() {
         'region' => 'postscript_second',
         'status' => 1,
         'theme' => 'watermans_2013_10',
-        'weight' => 0,
+        'weight' => -58,
       ),
     ),
     'title' => '',
@@ -104,7 +104,7 @@ function views_people_default_fe_block_settings() {
         'region' => 'postscript_second',
         'status' => 1,
         'theme' => 'watermans_2013_10',
-        'weight' => 0,
+        'weight' => -57,
       ),
     ),
     'title' => '',
@@ -137,7 +137,7 @@ function views_people_default_fe_block_settings() {
         'region' => 'postscript_second',
         'status' => 1,
         'theme' => 'watermans_2013_10',
-        'weight' => 0,
+        'weight' => -56,
       ),
     ),
     'title' => '',
@@ -151,7 +151,8 @@ function views_people_default_fe_block_settings() {
     'machine_name' => 'team_listing_edinburgh',
     'module' => 'block',
     'node_types' => array(),
-    'pages' => 'the-watermans-team/*/*',
+    'pages' => 'the-watermans-team/*/*
+the-watermans-team/scott-whyte',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -217,7 +218,8 @@ function views_people_default_fe_block_settings() {
     'machine_name' => 'team_listing_glasgow',
     'module' => 'block',
     'node_types' => array(),
-    'pages' => 'the-watermans-team/*/*',
+    'pages' => 'the-watermans-team/*/*
+the-watermans-team/scott-whyte',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -477,7 +479,7 @@ function views_people_default_fe_block_settings() {
         'region' => 'postscript_second',
         'status' => 1,
         'theme' => 'watermans_2013_10',
-        'weight' => 0,
+        'weight' => -51,
       ),
     ),
     'title' => '',
@@ -510,11 +512,11 @@ function views_people_default_fe_block_settings() {
         'region' => 'postscript_second',
         'status' => 1,
         'theme' => 'watermans_2013_10',
-        'weight' => 0,
+        'weight' => -49,
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   $export['views-people_listing-block_3'] = array(
@@ -543,11 +545,11 @@ function views_people_default_fe_block_settings() {
         'region' => 'postscript_second',
         'status' => 1,
         'theme' => 'watermans_2013_10',
-        'weight' => 0,
+        'weight' => -50,
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   $export['views-person_contact-block'] = array(
@@ -578,7 +580,7 @@ function views_people_default_fe_block_settings() {
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'watermans_2013_10',
-        'weight' => -66,
+        'weight' => -67,
       ),
     ),
     'title' => '<none>',

@@ -15,6 +15,7 @@ features[fe_block_boxes][] = team_home_cta3
 features[fe_block_boxes][] = team_listing_edinburgh
 features[fe_block_boxes][] = team_listing_firm
 features[fe_block_boxes][] = team_listing_glasgow
+features[fe_block_boxes][] = team_listing_management
 features[fe_block_settings][] = block-team_home_banner
 features[fe_block_settings][] = block-team_home_cta1
 features[fe_block_settings][] = block-team_home_cta2
