@@ -146,12 +146,33 @@ body{margin-top:20px;}
 }
 
 /* people sub menu */
-.node-type-person .region-menu-sub-inner{height:169px;}
-.node-type-person .block-field-image, .node-type-person .block-cck-blocks-field-thumbnail,.node-type-person .block-person-contact-block{display: inline-block;vertical-align: top;}
-.node-type-person .block-field-image{width:497px;}
-.node-type-person .block-cck-blocks-field-thumbnail{width:220px;}
-.node-type-person .view-person-contact {margin-top:10px;width:166px;border:1px solid #878889;padding:16px 26px 16px 16px;background: #d8d9da; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q4ZDlkYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-                                        background: -moz-linear-gradient(top,  #d8d9da 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8d9da), color-stop(100%,#ffffff)); background: -webkit-linear-gradient(top,  #d8d9da 0%,#ffffff 100%); background: -o-linear-gradient(top,  #d8d9da 0%,#ffffff 100%); background: -ms-linear-gradient(top,  #d8d9da 0%,#ffffff 100%); background: linear-gradient(to bottom,  #d8d9da 0%,#ffffff 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d9da', endColorstr='#ffffff',GradientType=0 );}
+.node-type-person {
+    .block-multiblock-1,
+    .block-field-image,
+    .block-cck-blocks-field-thumbnail{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .block-multiblock-1{
+        padding:15px 0 10px 30px;
+        width:510px;
+        h1{
+            border:0;
+            padding:0;
+            margin:0;
+        }
+    }
+    .block-field-image{
+        width:540px;
+    }
+    .block-cck-blocks-field-thumbnail{
+        width:399px;
+        float:right;
+    }
+    .view-person-contact {
+
+    }
+}
 
 /* home CTA */
 .cta{display:inline-block; vertical-align: top;margin-right:20px;}
@@ -230,24 +251,18 @@ body{margin-top:20px;}
     }
 }
 
-
+.context-the-watermans-team,
 .front {
     .region-postscript-second-inner {
         margin-top:-10px;
         margin-bottom:15px;
         .cta{
-
             margin-right:14px;
             position:relative;
             &.c-3{
                 margin-right:0;
-
             }
             &.c-4{
-                height:421px;
-                .cta-content{
-                    height:421px;
-                }
                 h3{
                     margin-top:60px;
                     margin-left:47px;
@@ -257,7 +272,6 @@ body{margin-top:20px;}
                 }
                 .left-border{
                     margin-left:47px;
-                    max-width:570px;
                     color:#003766;
                 }
                 .button{
@@ -265,7 +279,65 @@ body{margin-top:20px;}
                     margin-left:47px;
                 }
             }
-            &.c-4 .cta-content {background:url(../images/cta-r2-bg4.png) no-repeat 0 0;}
+        }
+    }
+}
+.front{
+    .region-postscript-second-inner {
+        .cta{
+            &.c-4{
+                height:421px;
+                .left-border{
+                    max-width:570px;
+                }
+                .cta-content{
+                    height:421px;
+                    background:url(../images/cta-r2-bg4.png) no-repeat 0 0;
+                }
+            }
+        }
+    }
+}
+.page-node-17{
+    .region-postscript-second-inner {
+        .cta{
+            &.c-4{
+                height:404px;
+                margin-bottom:15px;
+                .left-border{
+                    max-width:300px;
+                }
+                .cta-content{
+                    height:404px;
+                    background:url(../images/team/home-banner.jpg) no-repeat 0 0;
+                }
+            }
+        }
+    }
+}
+.context-the-watermans-team {
+    .region-postscript-second-inner{
+        .view-people-listing{
+            .view-header{
+                height:155px;
+                background:url(../images/team/banner-bg-edinburgh.png) no-repeat 100% 0 #007398;
+                p{
+                    max-width:55%;
+                }
+            }
+            &.view-display-id-block_2{
+                .view-header{
+                    background:url(../images/team/banner-bg-glasgow.png) no-repeat 100% 0 #007398;
+                }
+
+            }
+            .cta{
+                margin-top:15px;
+                margin-right:9px;
+                &:nth-child(3n+3){
+                    margin-right:0;
+                }
+            }
         }
     }
 }
@@ -278,6 +350,8 @@ body{margin-top:20px;}
         }
     }
 }
+
+
 /* banner I have NO IDEA why changing the font family for the parent element makes this wirk in IE10, but it does?? */
 .view-banner-single,
 .view-banner{
@@ -754,13 +828,7 @@ body{margin-top:20px;}
     height: 150px !important;
 }
 
-.view-people-listing{
-    .views-field-nothing{
-        position:absolute;
-        top:65px;
-        left:70px;
-    }
-}
+
 .region-postscript-fourth-inner,
 .region-postscript-third-inner{
     .front &{

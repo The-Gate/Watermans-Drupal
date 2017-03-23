@@ -41,6 +41,7 @@ h1,h2, h3, h4, h5, h6,label{
 .field-name-field-about-me .field-label,
 .field-name-field-best-part-of-the-job .field-label,
 .field-name-field-hobbies-interests .field-label,
+.view-client-testimonials .view-header p,
 .block-field-job-title,
 .om-maximenu-middle-right .block.last h2,
 .om-maximenu-middle-right .block.first h2,
@@ -166,7 +167,8 @@ h1,
 .block-block-23 .phone h5,
 .field-name-field-about-me .field-label,
 .field-name-field-best-part-of-the-job .field-label,
-.field-name-field-hobbies-interests .field-label{
+.field-name-field-hobbies-interests .field-label,
+.view-client-testimonials .view-header p{
     font-size:24px;
 }
 /* 26px */
@@ -220,10 +222,26 @@ h1,
 .region-postscript-third-inner h3 a{
     color:#ee2842;
 }
+/* another red??? */
+.field-name-field-about-me .field-label,
+.field-name-field-best-part-of-the-job .field-label,
+.field-name-field-hobbies-interests .field-label,
+.view-client-testimonials .view-header p{
+    color:$red;
+}
 /* dark red */
 .block-client-block-48 h2.block-title,.block-views-vacancies-block h2.block-title,.block-block-33 h3,.region-postscript-first-inner .cta h3 a{color:#c51f3c;}
 /* dark red - people section / ask a question */
-.context-personal-injury-video-testimonials h1,.region-sidebar-second-inner .block-views-videos-block h2.block-title,#webform-component-ask-a-personal-injury-solicitor label,.askquestion_modal h2,.block-block-30  h2,.node-type-person h1#page-title,.block-field-job-title{color:#841313;}
+.context-personal-injury-video-testimonials h1,
+.region-sidebar-second-inner .block-views-videos-block h2.block-title,
+#webform-component-ask-a-personal-injury-solicitor label,
+.askquestion_modal h2,
+.block-block-30  h2,
+
+.block-field-job-title,
+.context-frequently-asked-questions h1{
+    color:#841313;
+}
 /* blue */
 .node-type-vacancy h1#page-title, .block-35 h2,.block-block-31 h2,.view-banner p{color:#003766;}
 /* lighter blue */
@@ -231,7 +249,12 @@ h1,
 /* green blue */
 .context-total-care .view-banner h3{color:#74c8bc;}
 /* light blue - people section */
-.node-type-news-item h1,.node-type-news-item h2,.node-type-news-item h3,.view-header,.context-frequently-asked-questions h1,.field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label{color:#0c7998;}
+.node-type-news-item h1,
+.node-type-news-item h2,
+.node-type-news-item h3,
+.view-header{
+    color:#0c7998;
+}
 /* grey */
 .breadcrumb li,.breadcrumb li a{color:#5f5f5f;}
 /* white */
@@ -246,6 +269,7 @@ h1,
 .region-sidebar-second .block-block-19 a,
 .region-sidebar-second .block-block-21 a,
 .region-sidebar-second .block-block-22 a,
+.region-sidebar-second .block-block-68 a,
 .region-menu-sub .block-menu-block .menu-name-menu-featured-menu li a,
 .context-total-care .region-menu-sub h2,
 .menu-block-11 li a:hover,
@@ -282,6 +306,7 @@ h1,
 .block-block-44,
 .block-block-45,
 .block-block-46,
+.node-type-person h1#page-title,
 .block-51 h2{
     color:#fff;
 }
@@ -580,6 +605,11 @@ h1{
 
     }
 }
+.node-type-person{
+    .region-menu-sub{
+        background:#007398;
+    }
+}
 
 .block-block-31{
     background: #fbfbfb; background: -moz-linear-gradient(top,  #fbfbfb 1%, #d8d9da 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fbfbfb), color-stop(100%,#d8d9da)); background: -webkit-linear-gradient(top,  #fbfbfb 1%,#d8d9da 100%); background: -o-linear-gradient(top,  #fbfbfb 1%,#d8d9da 100%); background: -ms-linear-gradient(top,  #fbfbfb 1%,#d8d9da 100%); background: linear-gradient(to bottom,  #fbfbfb 1%,#d8d9da 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#d8d9da',GradientType=0 );
@@ -723,83 +753,77 @@ h1{
 .block-block-15 img {max-width: 100%;width:100%; height: auto;}
 /* people */
 /* meet the team */
-.block-people-listing-block{margin-top:1em;}
-
-.view-people-listing {
-    position:relative;
-    ul { 
-        li {
-            position:relative;
-            list-style: none !important; 
-            width:100%;
-            display:block;
-            margin:0 0 10px !important;
-        }
+.node-type-person .block-system-main{
+    padding-top:20px;
+}
+.block-field-job-title{
+    text-transform: uppercase;
+    font-weight:700;
+}
+.field-name-field-about-me .field-label,
+.field-name-field-best-part-of-the-job .field-label,
+.field-name-field-hobbies-interests .field-label,
+.view-client-testimonials .view-header p{
+    font-weight:normal;
+    border-bottom:1px solid #929292;
+    margin-bottom:15px;
+}
+.view-person-contact{
+    margin-bottom:15px;
+    padding:16px 20px 0;
+    background: url(../images/team/person-contact-bg.gif) 100% 100% no-repeat #e50a35;
+    .view-header{
+        color: #fff;
     }
-    .views-field-field-thumbnail{
-        text-align:right;
-        background-size: cover !important;
-    }
-    .item-list{
-        .page-the-watermans-team-department.tid-27 &,
-        &:nth-of-type(1){
-            .views-field-field-thumbnail{
-                background: url('/sites/all/themes/watermans_2013_10/images/team-bg-1.jpg') 0 0 no-repeat;
+    span{
+        display: inline-block; 
+        vertical-align: middle;
+        margin-bottom:18px;
+        color:#fff;
+        font-size:12px;
+        a{
+            color: #fff;
+        }
 
-            }
-        }
-        .page-the-watermans-team-department.tid-7 &,
-        &:nth-of-type(2){
-            .views-field-field-thumbnail{
-                background: url('/sites/all/themes/watermans_2013_10/images/team-bg-2.jpg') 0 0 no-repeat;
-
-            }
-        }
-        .page-the-watermans-team-department.tid-8 &,
-        &:nth-of-type(3){
-            .views-field-field-thumbnail{
-                background: url('/sites/all/themes/watermans_2013_10/images/team-bg-3.jpg') 0 0 no-repeat;
-
-            }
-        }
+    }
+    div > span:last-of-type{
+        max-width: 150px;
+        overflow:hidden;
+    }
+    .email-title,
+    .phone-title,
+    .linked-title{
+        text-indent: -9999px; 
+        width:23px; 
+        height:23px; 
+    }
+    .email-title{
+        background: url(../images/icons_contact.png) no-repeat 0 0;
+    }
+    .phone-title{
+        background: url(../images/icons_contact.png) no-repeat 0 -23px;
+    }
+    .linked-title{
+        background: url(../images/icons_contact.png) no-repeat 0 -46px;
     }
 
-    .views-field-nothing{
-        .people-title-wrapper{
-        }
-        .people-list-title{
-            padding:7px 10px;
-            display:block;
-        }
-        .people-contact{
-            background: #fff;
-            display:inline-block;
-            padding:8px 10px;
-            min-width:130px;
-            a{
-                color: #067898;
-                font-weight:700;
-            }
-        }
+}
+.view-client-testimonials {
+
+    width:100%;
+    .views-row{
+        text-align: center;
+        color: $red;
+        width:100%;
     }
-    a {
-        display:block;
-    }
-    .item-list h3{
-        font-size:30px;
-        margin:12px 0 16px;
+    .views_slideshow_slide {
+        width:100% !important;
     }
 }
-
-.block-field-job-title{text-transform: uppercase;font-weight:700;}
-.field-name-field-about-me .field-label,.field-name-field-best-part-of-the-job .field-label,.field-name-field-hobbies-interests .field-label{border-bottom:1px solid #929292;margin-bottom:15px;}
-.group-person-contact{padding:17px 17px 20px;border:1px solid #929292;}
-.group-person-contact .field-name-field-email,.group-person-contact .field-name-field-link,.group-person-contact .field-name-field-phone{display: block;}
-.group-person-contact .field-name-field-email a {display: block; text-indent: -9999px; width:38px; height:38px; background: url(../images/icons_contact.png) no-repeat 0 0;}
-.group-person-contact .field-name-field-link a{display: block;background: url(../images/icons_contact.png) no-repeat 0 -39px;height:38px;padding-left:40px;line-height: 38px;}
-.group-person-contact .field-name-field-email .field-item:before {content:"Email";position:absolute; display:block;left:60px;line-height:38px;}
-.group-person-contact .field-name-field-phone .field-item{display: block;background: url(../images/icons_contact.png) no-repeat 0 -77px;height:38px;padding-left:40px;line-height: 38px;}
-.node-type-person .block-person-contact-block h2.block-title{line-height: 1; margin-bottom: 20px;}
+.node-type-person .block-person-contact-block h2.block-title{
+    line-height: 1;
+    margin-bottom: 20px;
+}
 
 /* title listings - news & FAQ */
 .view-news-listing .views-row, .block-news-listing-block .views-row{border-bottom:1px solid #929292;padding:20px 0;margin-bottom:12px;}
@@ -957,14 +981,18 @@ h1{
         background:url(../images/people-cat-court-dept.png) no-repeat 50% 100%;
     }
     .block-block-21 .block-inner{
-        background:url(../images/people-cat-accident.png) no-repeat 50% 100%;
+        background:url(../images/team/cta-r2-bg1.png) no-repeat 50% 100%;
     }
     .block-block-22 .block-inner{
-        background:url(../images/people-cat-rta-dept.png) no-repeat 50% 100%;
+        background:url(../images/team/cta-r2-bg2.png) no-repeat 50% 100%;
     }
     .block-block-37 .block-inner{
         background:url(../images/people-cat-firm-dev.png) no-repeat 50% 100%;
     }
+    .block-block-68 .block-inner{
+        background:url(../images/team/cta-r2-bg3.png) no-repeat 50% 0;
+    }
+    .block-block-68,
     .block-block-37,
     .block-block-19,
     .block-block-21,
@@ -1005,7 +1033,24 @@ h1{
             }
         }
     }
-
+    .cta{
+        position:relative;
+        .cta-title-wrap {
+            position:absolute;
+            bottom:0;
+            background:#c51f3c; 
+            padding:4px 10px; 
+            margin:15px 15px 10px 0;
+            display:inline-block;
+            h3{
+                border-left:2px solid #fff; 
+                margin:0;
+                padding-left:5px;
+                font-weight:300;
+                display:inline-block;
+            }
+        }
+    }
 }
 /* CTA Blocks */
 .region-postscript-first-inner {
@@ -1081,20 +1126,28 @@ h1{
             background:#c51f3c; 
             padding:4px 10px; 
             margin:15px 15px 10px 0;
-        }
-        .cta-title-wrap h3{
-            border-left:2px solid #fff; 
-            margin:0;
-            padding-left:5px;
-            font-weight:300;
+            h3{
+                border-left:2px solid #fff; 
+                margin:0;
+                padding-left:5px;
+                font-weight:300;
+            }
         }
         p{
             margin:0 25px;
         }
     }
+    .view-people-listing{
+        .cta{
+            .cta-title-wrap {
+                margin:182px 0 0 0;
+            }
+        }
+    }
 }
 
-.front {
+.front,
+.context-the-watermans-team{
     .region-postscript-second-inner {
         .cta{
             background:none;
@@ -1123,6 +1176,7 @@ h1{
                     background: rgba(23,103,135,.85);
                     margin:0;
                     padding: 19px 19px 15px;
+                    width:266px;
                     &:last-of-type{
                         &:after{
                             content:'';
@@ -1139,15 +1193,9 @@ h1{
             }
             &.c-4{
                 width:100%;
-                margin-top:15px;
                 margin-left:0;
                 h3{
                     font-weight: 400;
-                    color:#74c8bc;
-                    font-size: 46px;
-                    .blue{
-                        font-size:62px;
-                    }
                 }
 
                 .button{
@@ -1157,10 +1205,89 @@ h1{
                     }
                 }
             }
+        }
+    }
+    .view-people-listing{
+        .cta{
+            &.c-1,
+            &.c-2,
+            &.c-3{
+                p{
+                    padding: 10px 19px;
+                }
+            }
+
+        }
+    }
+}
+.front{
+    .region-postscript-second-inner {
+        .cta{
+            &.c-4{
+                margin-top:15px;
+                h3{
+                    font-size: 46px;
+                    color:#74c8bc;
+                    .blue{
+                        font-size:62px;
+                    }
+                }
+            }
             &.c-1 .cta-content {background:url(../images/cta-r2-bg1.png) no-repeat 0 0;}
             &.c-2 .cta-content {background:url(../images/cta-r2-bg2.png) no-repeat 0 0;}
             &.c-3 .cta-content {background:url(../images/cta-r2-bg3.png) no-repeat 0 0;}
         }
+    }
+}
+.page-node-17{
+    .region-postscript-second-inner {
+        .cta{
+            &.c-4{
+                h3{
+                    font-size: 54px;
+                    .red{
+                        font-size:48px;
+                    }
+                }
+            }
+            &.c-1 .cta-content {background:url(../images/team/cta-r2-bg1.png) no-repeat 0 0;}
+            &.c-2 .cta-content {background:url(../images/team/cta-r2-bg2.png) no-repeat 0 0;}
+            &.c-3 .cta-content {background:url(../images/team/cta-r2-bg3.png) no-repeat 0 0;}
+        }
+    }
+
+}
+.view-people-listing{
+    .view-header{
+        padding:25px 30px;
+        background:#007398;
+        h1{
+            font-size: 40px;
+            border-bottom:0;
+            margin-bottom:0;
+            color:#fff;
+        }
+        p{
+            color: #fff;
+            margin-bottom:0;
+            font-size:15px;
+        }
+    }
+    .cta-bg-wrapper{
+        z-index:0;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+    .cta-content{
+        z-index:10;
+        position: relative;
     }
 }
 .context-how-claim {
@@ -1463,9 +1590,37 @@ h1{
 .block-blog-listing-block ul li .right-col{width:195px}
 .region-postscript-fourth-inner h3, .region-postscript-third-inner h3{margin:0;}
 
+/* slideshow scroller */
+.skin-default{
+    .views-slideshow-controls-bottom{
+        text-align: center;     
+        margin-top:16px;   
+    }
+    .views-slideshow-pager-field-item{
+        display:inline-block;
+        .views-field-counter .views-content-counter{
+            display:block;
+            background:#99c7d6;
+            text-indent:-9999px;
+            display:block;
+            width:12px;
+            height:12px;
+            -webkit-border-radius:6px;
+            -moz-border-radius:6px;
+            border-radius:6px;
+        }
+        &.active .views-field-counter .views-content-counter{
+            background:#007398;
+        }
+    }
+}
+
 /* footer */
 .section-footer {
     margin-top:20px;
+    @media screen and (max-width: 479px)  {
+        margin-bottom:60px;
+    }
 }
 .region-footer-first{
     background-color:#0c7998;
@@ -1610,14 +1765,31 @@ h1{
 
     .block-block-2 p a{display:block;}
     .block-block-2 p a.footer-email{margin:10px 0 0;padding:0; border:none;}
-    .cta{margin-bottom:25px;}
+    .cta{
+        margin-bottom:25px;
+        margin-left:auto;
+        margin-right:auto;
+        .block-people-listing-block-1 &,
+        .block-people-listing-block-2 &,
+        .block-people-listing-block-3 &{
+            &:first-child{
+                margin-top:25px; 
+            }
+        }
+    }
     .block-blog-listing-block ul li .left-col img{width:100%; height:auto;}
     .region-footer-first-inner{padding:15px 20px;}
     #om-maximenu-main-menu{display:none;}
     .menu-block-7 {display:block;}
     /* sub menu */
     .block-block-17{display:none;}
-    .region-menu-sub-inner{border: 1px solid #000;}
+    .region-menu-sub-inner{
+        border: 1px solid #000;
+        .context-the-watermans-team &{
+            border:0;
+        }
+    }
+
     .region-menu-sub-inner .block-menu-block{margin:10px;}
     /* title */
     .view-header h3, .block-cck-blocks-field-job-title, h1#page-title {margin-top: 20px;}
