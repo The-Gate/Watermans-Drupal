@@ -22,10 +22,14 @@
  * the view is modified.
  */
 ?>
-<?php 
+<?php
+
 $search = '^^' . $row->node_title . '^^';
-$title = explode(' ',$row->node_title);
+$title = explode(' ', $row->node_title);
 $replace = $title[0];
 $output = str_replace($search, $replace, $output);
-print $output; 
+if ($row->_field_data['nid']['entity']->field_job_title['und'][0]['tid'] == 39) {
+  $output = str_replace("I'm a", "I'm an", $output);
+}
+print $output;
 ?>
