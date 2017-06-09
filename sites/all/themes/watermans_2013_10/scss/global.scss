@@ -75,6 +75,7 @@ h1,
 .block-block-43 p,
 .block-block-44 p,
 .block-block-45 p,
+.block-block-69 p,
 .block-46 h2
 {
     font-family: 'Quattrocento Sans';
@@ -130,6 +131,7 @@ h1,
 .block-block-43 p,
 .block-block-44 p,
 .block-block-45 p,
+.block-block-69 p,
 .block-46 h2,
 .block-51 h2{
     font-size:15px;
@@ -190,7 +192,8 @@ h1,
 h1,
 .block-block-43 h2,
 .block-block-44 h2,
-.block-block-45 h2{
+.block-block-45 h2,
+.block-block-69 h2{
     font-size:34px;
 }
 /* 46*/
@@ -306,6 +309,7 @@ h1,
 .block-block-44,
 .block-block-45,
 .block-block-46,
+.block-block-69,
 .node-type-person h1#page-title,
 .block-51 h2{
     color:#fff;
@@ -494,6 +498,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .block-block-43 h2,
 .block-block-44 h2,
 .block-block-45 h2,
+.block-block-69 h2,
 .block-46 h2,
 .block-51 h2{
     text-transform: capitalize;
@@ -1472,6 +1477,7 @@ h1{
                     width:100%;
                     height:100%;
                 }
+                min-height: 240px;
             }
             &.c-1 .cta-content {
                 background:url(../images/cta-sa-bg1.png) no-repeat 0 100%;
