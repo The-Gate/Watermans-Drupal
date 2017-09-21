@@ -3,76 +3,76 @@
 body{margin-top:20px;}
 
 .section-header{
-    z-index:1000;
+  z-index:1000;
 }
 .section-content{
-    z-index:500;
+  z-index:500;
 }
 .block-menu-block-14{
-    display:none;
+  display:none;
 }
 .block-om-maximenu-om-maximenu-1 {
-    display:block;z-index:500;
+  display:block;z-index:500;
 }
 /* forms */
 /* search */
 .region-branding-second-inner {margin:70px 15px 0 15px;}
 /* featured menu */
 .menu-block-11 li {
-    vertical-align: top;
-    width:19.95%;
-    display:inline-block;
-    margin:0;
-    margin-left:-4px !important;
-    &.first{
-        margin-left:0 !important;
-    }
+  vertical-align: top;
+  width:19.95%;
+  display:inline-block;
+  margin:0;
+  margin-left:-4px !important;
+  &.first{
+    margin-left:0 !important;
+  }
 }
 
 
 /* main menu */
 /* reset om styles */
 .om-maximenu ul.om-menu{
-    display:block;
-    width:100%;
-    background: #2c8ca6; 
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjOGNhNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI0NmE4ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzAzNTM3YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDM4NjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top,  #2c8ca6 0%, #246a8d 50%, #03537b 51%, #003867 100%); 
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c8ca6), color-stop(50%,#246a8d), color-stop(51%,#03537b), color-stop(100%,#003867)); background: -webkit-linear-gradient(top,  #2c8ca6 0%,#246a8d 50%,#03537b 51%,#003867 100%); background: -o-linear-gradient(top,  #2c8ca6 0%,#246a8d 50%,#03537b 51%,#003867 100%); background: -ms-linear-gradient(top,  #2c8ca6 0%,#246a8d 50%,#03537b 51%,#003867 100%); 
-    background: linear-gradient(to bottom,  #2c8ca6 0%,#246a8d 50%,#03537b 51%,#003867 100%);
+  display:block;
+  width:100%;
+  background: #2c8ca6; 
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjOGNhNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI0NmE4ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzAzNTM3YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDM4NjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #2c8ca6 0%, #246a8d 50%, #03537b 51%, #003867 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c8ca6), color-stop(50%,#246a8d), color-stop(51%,#03537b), color-stop(100%,#003867)); background: -webkit-linear-gradient(top,  #2c8ca6 0%,#246a8d 50%,#03537b 51%,#003867 100%); background: -o-linear-gradient(top,  #2c8ca6 0%,#246a8d 50%,#03537b 51%,#003867 100%); background: -ms-linear-gradient(top,  #2c8ca6 0%,#246a8d 50%,#03537b 51%,#003867 100%); 
+  background: linear-gradient(to bottom,  #2c8ca6 0%,#246a8d 50%,#03537b 51%,#003867 100%);
+  height:auto;
+  li.om-leaf {
     height:auto;
-    li.om-leaf {
-        height:auto;
-        .om-link{
-            font-size:12px; 
-            color: #fff;
-            padding:14px 28px;
-            border-right:1px solid #08253c;
-            border-left:1px solid #3e6b8e;
-            height:auto;
-            line-height:1;
-        }
-        &.first .om-link {
-            border-left:0;
-            padding:14px 21px 14px 31px;
-        }
-        &.last .om-link {
-            border-right:0;
-            padding:14px 31px;
-        }
+    .om-link{
+      font-size:12px; 
+      color: #fff;
+      padding:14px 28px;
+      border-right:1px solid #08253c;
+      border-left:1px solid #3e6b8e;
+      height:auto;
+      line-height:1;
     }
-    .leaf-types-of-accident > span:after{
-        content:'';
-        display:inline-block;
-        vertical-align: top;
-        width: 0; 
-        height: 0; 
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 8px solid #fff;
-        margin-left:18px;
-        margin-top:2px;
+    &.first .om-link {
+      border-left:0;
+      padding:14px 21px 14px 31px;
     }
+    &.last .om-link {
+      border-right:0;
+      padding:14px 31px;
+    }
+  }
+  .leaf-types-of-accident > span:after{
+    content:'';
+    display:inline-block;
+    vertical-align: top;
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #fff;
+    margin-left:18px;
+    margin-top:2px;
+  }
 }
 
 
@@ -84,31 +84,31 @@ body{margin-top:20px;}
 .om-maximenu ul.om-menu li.om-leaf .om-link:hover,
 .om-maximenu ul.om-menu li.om-leaf.active-trail .om-link,
 .om-maximenu ul.om-menu li.om-leaf.active .om-link{
-    color:#000;
-    background: #fafafa; 
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhZmFmYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOGQ5ZGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top,  #fafafa 0%, #d8d9da 100%); 
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#d8d9da)); 
-    background: -webkit-linear-gradient(top,  #fafafa 0%,#d8d9da 100%); 
-    background: -o-linear-gradient(top,  #fafafa 0%,#d8d9da 100%); 
-    background: -ms-linear-gradient(top,  #fafafa 0%,#d8d9da 100%); 
-    background: linear-gradient(to bottom,  #fafafa 0%,#d8d9da 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#d8d9da',GradientType=0 );
+  color:#000;
+  background: #fafafa; 
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhZmFmYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOGQ5ZGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #fafafa 0%, #d8d9da 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#d8d9da)); 
+  background: -webkit-linear-gradient(top,  #fafafa 0%,#d8d9da 100%); 
+  background: -o-linear-gradient(top,  #fafafa 0%,#d8d9da 100%); 
+  background: -ms-linear-gradient(top,  #fafafa 0%,#d8d9da 100%); 
+  background: linear-gradient(to bottom,  #fafafa 0%,#d8d9da 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#d8d9da',GradientType=0 );
 }
 
 /* main sub menu */
 .om-maximenu-no-style {
-    .om-maximenu-content {
-        position:absolute; 
-        left:0; 
-        top: 40px; 
-    }
-    .om-maximenu-middle{
-        background:transparent;
-    }
-    .om-maximenu-middle-right {
-        padding: 0;
-    }   
+  .om-maximenu-content {
+    position:absolute; 
+    left:0; 
+    top: 40px; 
+  }
+  .om-maximenu-middle{
+    background:transparent;
+  }
+  .om-maximenu-middle-right {
+    padding: 0;
+  }   
 }
 /*.om-menu li.om-leaf.active .om-maximenu-content {display:none !important;}*/
 
@@ -131,47 +131,47 @@ body{margin-top:20px;}
 .block-block-17,
 .block-block-id-17,
 .block-51{
-    .button{
-        margin-right:20px;
-        &.bluegrad {
-            margin-top:10px; 
-            margin-bottom:5px;
-        }
-        &.redgrad{
-            margin-bottom:30px;
-        }
+  .button{
+    margin-right:20px;
+    &.bluegrad {
+      margin-top:10px; 
+      margin-bottom:5px;
     }
+    &.redgrad{
+      margin-bottom:30px;
+    }
+  }
 
 
 }
 
 /* people sub menu */
 .node-type-person {
-    .block-multiblock-1,
-    .block-field-image,
-    .block-cck-blocks-field-thumbnail{
-        display: inline-block;
-        vertical-align: top;
+  .block-multiblock-1,
+  .block-field-image,
+  .block-cck-blocks-field-thumbnail{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .block-multiblock-1{
+    padding:15px 0 10px 30px;
+    width:510px;
+    h1{
+      border:0;
+      padding:0;
+      margin:0;
     }
-    .block-multiblock-1{
-        padding:15px 0 10px 30px;
-        width:510px;
-        h1{
-            border:0;
-            padding:0;
-            margin:0;
-        }
-    }
-    .block-field-image{
-        width:540px;
-    }
-    .block-cck-blocks-field-thumbnail{
-        width:399px;
-        float:right;
-    }
-    .view-person-contact {
+  }
+  .block-field-image{
+    width:540px;
+  }
+  .block-cck-blocks-field-thumbnail{
+    width:399px;
+    float:right;
+  }
+  .view-person-contact {
 
-    }
+  }
 }
 
 /* home CTA */
@@ -180,553 +180,559 @@ body{margin-top:20px;}
 .region-postscript-first-inner .cta .cta-content {min-height: 89px;}
 /* footer blocks */
 .block-block-3{
-    display:block;
-    width:100%;
-    text-align: center;
+  display:block;
+  width:100%;
+  text-align: center;
 
-    .footer-logo{
-        display:inline-block;
-        vertical-align: middle;
-        width:auto;
-        a{
-            display:block;
-            height:100%;
-            width:100%;
-        }
+  .footer-logo{
+    display:inline-block;
+    vertical-align: middle;
+    width:auto;
+    a{
+      display:block;
+      height:100%;
+      width:100%;
     }
-    .no-text{
-        text-indent: -9999px
-    }
-    .offset-text{
-        padding-left:48px;
-    }
+  }
+  .no-text{
+    text-indent: -9999px
+  }
+  .offset-text{
+    padding-left:48px;
+  }
 
 
-    .business-connect,
-    .mywatermans,
-    .about {
-        line-height: 37px;
-        height:37px;
-        font-size:15px;
-        margin:0 14px;
-    }
-    .business-connect{
-        background:url(../images/footer-logo-businessconnect.png) no-repeat 0 50%;
-    }
-    .mywatermans{
-        background:url(../images/footer-logo--mywatermans.png) no-repeat 0 50%;
-    }
-    .about {
-        background:url(../images/footer-logo--about.png) no-repeat 0 50%;
-    }    
-    .headway, 
-    .investorsinpeople, 
-    .lawaward{
-        margin:0 17px;
-    }
-    .headway{
-        background:url(../images/footer-logo-head.png) no-repeat 0 0;
-        width:55px;
-        height:54px;
-    } 
-    .investorsinpeople{
-        background:url(../images/footer-logo--investors.png) no-repeat 0 0;
-        width:100px;
-        height:32px;
+  .business-connect,
+  .mywatermans,
+  .about {
+    line-height: 37px;
+    height:37px;
+    font-size:15px;
+    margin:0 14px;
+  }
+  .business-connect{
+    background:url(../images/footer-logo-businessconnect.png) no-repeat 0 50%;
+  }
+  .mywatermans{
+    background:url(../images/footer-logo--mywatermans.png) no-repeat 0 50%;
+  }
+  .about {
+    background:url(../images/footer-logo--about.png) no-repeat 0 50%;
+  }    
+  .headway, 
+  .investorsinpeople, 
+  .lawaward{
+    margin:0 17px;
+  }
+  .headway{
+    background:url(../images/footer-logo-head.png) no-repeat 0 0;
+    width:55px;
+    height:54px;
+  } 
+  .investorsinpeople{
+    background:url(../images/footer-logo--investors.png) no-repeat 0 0;
+    width:100px;
+    height:32px;
 
-    }  
-    .roadpeace{
-        background:url(../images/footer-logo--road-peace.png) no-repeat 0 0;
-        width:52px;
-        height:54px;
+  }  
+  .roadpeace{
+    background:url(../images/footer-logo--road-peace.png) no-repeat 0 0;
+    width:52px;
+    height:54px;
 
-    }
+  }
 }
 
 .region-postscript-second-inner {
-    .cta,
-    .cta-content {
-        height:240px; 
-        overflow: hidden;
-    }
+  .cta,
+  .cta-content {
+    height:240px; 
+    overflow: hidden;
+  }
 }
 
 .context-the-watermans-team,
 .front {
-    .region-postscript-second-inner {
-        margin-top:-10px;
-        margin-bottom:15px;
-        .cta{
-            margin-right:14px;
-            position:relative;
-            &.c-3{
-                margin-right:0;
-            }
-            &.c-4{
-                h3{
-                    margin-top:60px;
-                    margin-left:47px;
-                    .blue{
-                        margin-left:35px;
-                    }
-                }
-                .left-border{
-                    margin-left:47px;
-                    color:#003766;
-                }
-                .button{
-                    width:136px;
-                    margin-left:47px;
-                }
-            }
+  .region-postscript-second-inner {
+    margin-top:-10px;
+    margin-bottom:15px;
+    .cta{
+      margin-right:14px;
+      position:relative;
+      &.c-3{
+        margin-right:0;
+      }
+      &.c-4{
+        h3{
+          margin-top:60px;
+          margin-left:47px;
+          .blue{
+            margin-left:35px;
+          }
         }
+        .left-border{
+          margin-left:47px;
+          color:#003766;
+        }
+        .button{
+          width:136px;
+          margin-left:47px;
+        }
+      }
     }
+  }
 }
 .front{
-    .region-postscript-second-inner {
-        .cta{
-            &.c-4{
-                height:421px;
-                .left-border{
-                    max-width:570px;
-                }
-                .cta-content{
-                    height:421px;
-                    background:url(../images/cta-r2-bg4.png) no-repeat 0 0;
-                }
-            }
+  .region-postscript-second-inner {
+    .cta{
+      &.c-4{
+        height:421px;
+        .left-border{
+          max-width:570px;
         }
+        .cta-content{
+          height:421px;
+          background:url(../images/cta-r2-bg4.png) no-repeat 0 0;
+        }
+      }
     }
+  }
 }
 .page-node-17{
-    .region-postscript-second-inner {
-        .cta{
-            &.c-4{
-                height:404px;
-                margin-bottom:15px;
-                .left-border{
-                    max-width:300px;
-                }
-                .cta-content{
-                    height:404px;
-                    background:url(../images/team/home-banner.jpg) no-repeat 0 0;
-                }
-            }
+  .region-postscript-second-inner {
+    .cta{
+      &.c-4{
+        height:404px;
+        margin-bottom:15px;
+        .left-border{
+          max-width:300px;
         }
+        .cta-content{
+          height:404px;
+          background:url(../images/team/home-banner.jpg) no-repeat 0 0;
+        }
+      }
     }
+  }
 }
 .context-the-watermans-team {
-    .region-postscript-second-inner{
-        .view-people-listing{
-            .view-header{
-                height:155px;
-                background:url(../images/team/banner-bg-edinburgh.png) no-repeat 100% 0 #007398;
-                p{
-                    max-width:55%;
-                }
-            }
-            &.view-display-id-block_2{
-                .view-header{
-                    background:url(../images/team/banner-bg-glasgow.png) no-repeat 100% 0 #007398;
-                }
-
-            }
-            .cta{
-                margin-top:15px;
-                margin-right:9px;
-                &:nth-child(3n+3){
-                    margin-right:0;
-                }
-            }
+  .region-postscript-second-inner{
+    .view-people-listing{
+      .view-header{
+        height:155px;
+        background:url(../images/team/banner-bg-edinburgh.png) no-repeat 100% 0 #007398;
+        p{
+          max-width:55%;
         }
+      }
+      &.view-display-id-block_2{
+        .view-header{
+          background:url(../images/team/banner-bg-glasgow.png) no-repeat 100% 0 #007398;
+        }
+
+      }
+      .cta{
+        margin-top:15px;
+        margin-right:9px;
+        &:nth-child(3n+3){
+          margin-right:0;
+        }
+      }
     }
+  }
+}
+.context-abuse-criminal-injury-claims{
+  .cta{
+    margin-top:15px;
+    margin-right:9px;
+  }
 }
 .context-how-claim{
-    .region-postscript-second-inner {
-        margin-top:-10px;
-        margin-bottom:15px;
-        .cta{
-            position:relative;
-        }
+  .region-postscript-second-inner {
+    margin-top:-10px;
+    margin-bottom:15px;
+    .cta{
+      position:relative;
     }
+  }
 }
 
 
 /* banner I have NO IDEA why changing the font family for the parent element makes this wirk in IE10, but it does?? */
 .view-banner-single,
 .view-banner{
-    font-family:Georgia, "Times New Roman", Times, serif; 
-    width:100%;
-    border-top:2px solid #c1c4c5; 
+  font-family:Georgia, "Times New Roman", Times, serif; 
+  width:100%;
+  border-top:2px solid #c1c4c5; 
+  position:relative; 
+  background: #efefef; 
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWZlZmVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q2ZDhkNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(45deg,  #efefef 0%, #d6d8d6 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#efefef), color-stop(100%,#d6d8d6));
+  background: -webkit-linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%);
+  background: -o-linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%);
+  background: -ms-linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%);
+  background: linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#d6d8d6',GradientType=1 );
+  margin-bottom:25px;
+  .views-field-field-content-left, 
+  .views-field-field-content-right {
+    font-family:Arial, Helvetica, sans-serif; 
     position:relative; 
-    background: #efefef; 
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWZlZmVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q2ZDhkNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-    background: -moz-linear-gradient(45deg,  #efefef 0%, #d6d8d6 100%);
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#efefef), color-stop(100%,#d6d8d6));
-    background: -webkit-linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%);
-    background: -o-linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%);
-    background: -ms-linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%);
-    background: linear-gradient(45deg,  #efefef 0%,#d6d8d6 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#d6d8d6',GradientType=1 );
-    margin-bottom:25px;
-    .views-field-field-content-left, 
-    .views-field-field-content-right {
-        font-family:Arial, Helvetica, sans-serif; 
-        position:relative; 
-        display: inline-block; 
-        width:375px; 
-        height:240px; 
-        margin:0; 
-        vertical-align:top;
-        p:last-child{
-            margin-bottom: 0;
-        }
+    display: inline-block; 
+    width:375px; 
+    height:240px; 
+    margin:0; 
+    vertical-align:top;
+    p:last-child{
+      margin-bottom: 0;
     }
-    .views-field-field-content-left{
-        padding:0 15px 0 10px;
-    }
-    .views-field-field-content-right {
-        padding:0 10px 0 15px; margin-left:-4px;
-    }
-    p.left-border {
-        margin-left: 110px;
-    }
+  }
+  .views-field-field-content-left{
+    padding:0 15px 0 10px;
+  }
+  .views-field-field-content-right {
+    padding:0 10px 0 15px; margin-left:-4px;
+  }
+  p.left-border {
+    margin-left: 110px;
+  }
 }
 .view-banner-single{
-    min-height:345px;
-    .views-row {
-        margin:0 37px;
-        padding-top:65px;
-        height:340px;
-    }
-    .views-field-field-content-left {
-        position: absolute;
-        top:65px;
-    }
-    .views-field-field-content-right{
-        display:none;
-    }
-    p.left-border {
-        margin-left: 0;
-        max-width:280px;
-        color:#003766;
-    }
-    .button{
-        width:136px;
-        margin-left: 0;
-    }
-    .banner-full-bg{
-        width: calc(100% + 74px);
-        left: -37px;
-        position: relative;
-        top: -65px;
-        height:410px;
-    }
+  min-height:345px;
+  .views-row {
+    margin:0 37px;
+    padding-top:65px;
+    height:340px;
+  }
+  .views-field-field-content-left {
+    position: absolute;
+    top:65px;
+  }
+  .views-field-field-content-right{
+    display:none;
+  }
+  p.left-border {
+    margin-left: 0;
+    max-width:280px;
+    color:#003766;
+  }
+  .button{
+    width:136px;
+    margin-left: 0;
+  }
+  .banner-full-bg{
+    width: calc(100% + 74px);
+    left: -37px;
+    position: relative;
+    top: -65px;
+    height:410px;
+  }
 }
 // hot to claim
 .view-display-id-block_1.view-banner-single{
-    background:#fff;
-    border-top:0;
-    .views-field-field-content-left{
-        width:530px; 
-        top:35px;
+  background:#fff;
+  border-top:0;
+  .views-field-field-content-left{
+    width:530px; 
+    top:35px;
+  }
+  .views-field-field-content-right{
+    width:335px; 
+  }
+  h3{
+    .pt1{
+      font-size:32px;
     }
-    .views-field-field-content-right{
-        width:335px; 
+    .pt2{
+      font-size:46px;
     }
-    h3{
-        .pt1{
-            font-size:32px;
-        }
-        .pt2{
-            font-size:46px;
-        }
+  }
+  li{
+    display:inline-block;
+    &:before{
+      content:'\00B7';
+      display:inline-block;
+      font-size:40px;
+      color:#b2002e;
+      vertical-align: middle;
     }
-    li{
-        display:inline-block;
-        &:before{
-            content:'\00B7';
-            display:inline-block;
-            font-size:40px;
-            color:#b2002e;
-            vertical-align: middle;
-        }
-    }
-    a.red{
-        color:#b2002e;
-        line-height:40px;
-    }
+  }
+  a.red{
+    color:#b2002e;
+    line-height:40px;
+  }
 }
 .view-banner{
-    .views_slideshow_cycle_main{
-        z-index:15; width:100%;
+  .views_slideshow_cycle_main{
+    z-index:15; width:100%;
+  }
+  .views_slideshow_slide{
+    margin:0 70px; 
+    height:345px; 
+    padding-top:65px;
+  }
+  .views-slideshow-cycle-main-frame{ 
+    width:100% !important;
+    overflow: hidden;
+  }
+  .banner-full-bg{
+    width: calc(100% + 140px);
+    left: -70px;
+    position: relative;
+    top: -65px;
+    height:410px;
+  }
+  .views-slideshow-controls-top{
+    position:absolute;
+    top:175px;
+    z-index:10;
+    height:0;
+    width:100%;
+    .views_slideshow_controls_text_pause{
+      display:none;
     }
-    .views_slideshow_slide{
-        margin:0 70px; 
-        height:345px; 
-        padding-top:65px;
+    .views-slideshow-controls-text-previous,
+    .views-slideshow-controls-text-next{
+      position:absolute;
+      display:block; 
+      height:70px; 
+      width:70px;
+      a{
+        text-indent:-9999px; 
+        display: block; 
+        height: 100%;
+        width: 100%;
+        background: url(../images/banner-controls.gif) no-repeat;
+      }
     }
-    .views-slideshow-cycle-main-frame{ 
-        width:100% !important;
-        overflow: hidden;
+    .views-slideshow-controls-text-previous{
+      left:0;
+      a{
+        background-position: 0 0;
+      }
     }
-    .banner-full-bg{
-        width: calc(100% + 140px);
-        left: -70px;
+    .views-slideshow-controls-text-next{
+      right:0;
+      a{
+        background-position: -80px 0;
+      }
+    }
+  }
+  .views-slideshow-controls-text{
+    z-index:10;
+  }
+
+  .views-slideshow-controls-bottom{
+    position:absolute; 
+    bottom:20px; 
+    width:100%; 
+    text-align: center;
+    z-index:20;
+    .views-slideshow-pager-field-item{
+      display:inline-block;
+      .views-field-counter .views-content-counter{
+        display:block;
+        background:#FFF;
+        text-indent:-9999px;
+        display:block;
+        width:12px;
+        height:12px;
+        -webkit-border-radius:6px;
+        -moz-border-radius:6px;
+        border-radius:6px;
+      }
+    }
+    .views-slideshow-pager-field-item.active .views-field-counter .views-content-counter{
+      background:#ee2842;
+    }
+  }
+  .banner-full-bg{
+    &.waterAm-background{
+      background: url(/sites/all/themes/watermans_2013_10/images/waterAm-banner-bg.png) no-repeat top center #003666;
+      &.fc-opener{
+        background: url(/sites/all/themes/watermans_2013_10/images/waterAm-banner-bg-opener.jpg) no-repeat top center #003666;
+      }
+      .logo{
+        background: url(/sites/all/themes/watermans_2013_10/images/waterAm-banner-logo.png) no-repeat bottom center;
+        width:341px;
+        height:93px;
+        margin:0 auto;
+        padding-top:21px;
+        text-indent:-9999px;
+        a{
+          display: block;
+          height:100%;
+          width:100%;
+        }
+      }
+    }
+    &.bc-bg{
+      background: url(/sites/all/themes/watermans_2013_10/images/bg-bc.png) no-repeat top center;
+      .logo{
+        background: url(/sites/all/themes/watermans_2013_10/images/icon-business-connect.png) no-repeat bottom center;
+        width:134px;
+        height:134px;
         position: relative;
-        top: -65px;
-        height:410px;
+        margin-left:70px;
+        margin-top:100px;
+        text-indent:-9999px;
+        display:inline-block;
+        vertical-align: top;
+      }
     }
-    .views-slideshow-controls-top{
+    .bc-wrapper{
+      display:inline-block;
+      vertical-align: top;
+      &.position-1{
+        background: url(/sites/all/themes/watermans_2013_10/images/bc-banner-header.png) no-repeat top left;
+        width:412px;
+        padding-top:110px;
+        margin-top:100px;
+        margin-left:23px;
+      }
+      &.position-2{
+        background: url(/sites/all/themes/watermans_2013_10/images/bc-person-1.png) no-repeat bottom right;
         position:absolute;
-        top:175px;
-        z-index:10;
-        height:0;
-        width:100%;
-        .views_slideshow_controls_text_pause{
-            display:none;
+        bottom:0;
+        right:0;
+        width:300px;
+        height:388px;
+        .bc-wrapper-block-wrapper{
+          width:190px;
+          position:relative;
+          margin-left:75px;
+          top:290px;
         }
-        .views-slideshow-controls-text-previous,
-        .views-slideshow-controls-text-next{
-            position:absolute;
-            display:block; 
-            height:70px; 
-            width:70px;
-            a{
-                text-indent:-9999px; 
-                display: block; 
-                height: 100%;
-                width: 100%;
-                background: url(../images/banner-controls.gif) no-repeat;
-            }
-        }
-        .views-slideshow-controls-text-previous{
-            left:0;
-            a{
-                background-position: 0 0;
-            }
-        }
-        .views-slideshow-controls-text-next{
-            right:0;
-            a{
-                background-position: -80px 0;
-            }
-        }
+      }
     }
-    .views-slideshow-controls-text{
-        z-index:10;
+    .waterAm-wrapper{
+      display:inline-block;
+      vertical-align: bottom;
+      bottom:0;
+      position:absolute;
+      .waterAm-block-wrapper{
+        width:190px;
+        position:relative;
+        margin:0 auto;
+      }
+      &.person-1{
+        background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-1.png) no-repeat bottom center;
+        width:298px;
+        height:321px;
+        .waterAm-block-wrapper{
+          top:205px;
+        }
+      }
+      &.person-2{
+        .waterAm-block-wrapper{
+          top:168px;
+        }
+        &.position-1{  
+          background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-2-pos-1.png) no-repeat bottom center;
+          width:343px;
+          height:296px;            
+        }
+        &.position-2{
+          background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-2.png) no-repeat bottom center;
+          width:314px;
+          height:265px;
+          left:310px;                
+        }
+      }
+      &.person-3{
+        .waterAm-block-wrapper{
+          top:211px;
+        }
+        &.position-1{  
+          background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-3-pos-1.png) no-repeat bottom center;
+          width:267px;
+          height:328px;            
+        }
+        &.position-3{
+          background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-3.png) no-repeat bottom center;
+          width:266px;
+          height:327px;
+          right:0;               
+        }
+      }
+      &.person-4{
+        .waterAm-block-wrapper{
+          top:211px;
+        }
+        &.position-1{  
+          background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-4.png) no-repeat bottom center;
+          width:267px;
+          height:328px;            
+        }
+      }
+      &.sa-video-frame {
+        &.position-2{
+          bottom:60px;
+          left:305px;  
+        }
+      }
+      &.sa-bio {
+        width:190px;
+        color:#fff;
+        &.tinted{
+          width:430px;
+          bottom:50px;
+          padding:20px;
+          background:rgba(23,103,135,0.85);
+          .banner-cta-text{
+            border-left:solid 2px #fff;
+            padding-left:20px;
+          }
+          a{
+            display:block;
+            &:after{
+              content:'';
+              display: inline-block;
+              position:relative;
+              top:3px;
+              margin-left:10px;
+              height:16px;
+              width:16px;
+              background:url(../images/arrow-right-circled.png) no-repeat 0 0;
+            }
+          }
+        }
+        h4,
+        p{
+          color:#fff;
+        }
+        &.position-3{
+          bottom:60px;
+          right:100px;  
+        }
+      }
     }
 
-    .views-slideshow-controls-bottom{
-        position:absolute; 
-        bottom:20px; 
-        width:100%; 
-        text-align: center;
-        z-index:20;
-        .views-slideshow-pager-field-item{
-            display:inline-block;
-            .views-field-counter .views-content-counter{
-                display:block;
-                background:#FFF;
-                text-indent:-9999px;
-                display:block;
-                width:12px;
-                height:12px;
-                -webkit-border-radius:6px;
-                -moz-border-radius:6px;
-                border-radius:6px;
-            }
-        }
-        .views-slideshow-pager-field-item.active .views-field-counter .views-content-counter{
-            background:#ee2842;
-        }
-    }
-    .banner-full-bg{
-        &.waterAm-background{
-            background: url(/sites/all/themes/watermans_2013_10/images/waterAm-banner-bg.png) no-repeat top center #003666;
-            &.fc-opener{
-                background: url(/sites/all/themes/watermans_2013_10/images/waterAm-banner-bg-opener.jpg) no-repeat top center #003666;
-            }
-            .logo{
-                background: url(/sites/all/themes/watermans_2013_10/images/waterAm-banner-logo.png) no-repeat bottom center;
-                width:341px;
-                height:93px;
-                margin:0 auto;
-                padding-top:21px;
-                text-indent:-9999px;
-                a{
-                    display: block;
-                    height:100%;
-                    width:100%;
-                }
-            }
-        }
-        &.bc-bg{
-            background: url(/sites/all/themes/watermans_2013_10/images/bg-bc.png) no-repeat top center;
-            .logo{
-                background: url(/sites/all/themes/watermans_2013_10/images/icon-business-connect.png) no-repeat bottom center;
-                width:134px;
-                height:134px;
-                position: relative;
-                margin-left:70px;
-                margin-top:100px;
-                text-indent:-9999px;
-                display:inline-block;
-                vertical-align: top;
-            }
-        }
-        .bc-wrapper{
-            display:inline-block;
-            vertical-align: top;
-            &.position-1{
-                background: url(/sites/all/themes/watermans_2013_10/images/bc-banner-header.png) no-repeat top left;
-                width:412px;
-                padding-top:110px;
-                margin-top:100px;
-                margin-left:23px;
-            }
-            &.position-2{
-                background: url(/sites/all/themes/watermans_2013_10/images/bc-person-1.png) no-repeat bottom right;
-                position:absolute;
-                bottom:0;
-                right:0;
-                width:300px;
-                height:388px;
-                .bc-wrapper-block-wrapper{
-                    width:190px;
-                    position:relative;
-                    margin-left:75px;
-                    top:290px;
-                }
-            }
-        }
-        .waterAm-wrapper{
-            display:inline-block;
-            vertical-align: bottom;
-            bottom:0;
-            position:absolute;
-            .waterAm-block-wrapper{
-                width:190px;
-                position:relative;
-                margin:0 auto;
-            }
-            &.person-1{
-                background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-1.png) no-repeat bottom center;
-                width:298px;
-                height:321px;
-                .waterAm-block-wrapper{
-                    top:205px;
-                }
-            }
-            &.person-2{
-                .waterAm-block-wrapper{
-                    top:168px;
-                }
-                &.position-1{  
-                    background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-2-pos-1.png) no-repeat bottom center;
-                    width:343px;
-                    height:296px;            
-                }
-                &.position-2{
-                    background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-2.png) no-repeat bottom center;
-                    width:314px;
-                    height:265px;
-                    left:310px;                
-                }
-            }
-            &.person-3{
-                .waterAm-block-wrapper{
-                    top:211px;
-                }
-                &.position-1{  
-                    background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-3-pos-1.png) no-repeat bottom center;
-                    width:267px;
-                    height:328px;            
-                }
-                &.position-3{
-                    background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-3.png) no-repeat bottom center;
-                    width:266px;
-                    height:327px;
-                    right:0;               
-                }
-            }
-            &.person-4{
-                .waterAm-block-wrapper{
-                    top:211px;
-                }
-                &.position-1{  
-                    background: url(/sites/all/themes/watermans_2013_10/images/waterAm-person-4.png) no-repeat bottom center;
-                    width:267px;
-                    height:328px;            
-                }
-            }
-            &.sa-video-frame {
-                &.position-2{
-                    bottom:60px;
-                    left:305px;  
-                }
-            }
-            &.sa-bio {
-                width:190px;
-                color:#fff;
-                &.tinted{
-                    width:430px;
-                    bottom:50px;
-                    padding:20px;
-                    background:rgba(23,103,135,0.85);
-                    .banner-cta-text{
-                        border-left:solid 2px #fff;
-                        padding-left:20px;
-                    }
-                    a{
-                        display:block;
-                        &:after{
-                            content:'';
-                            display: inline-block;
-                            position:relative;
-                            top:3px;
-                            margin-left:10px;
-                            height:16px;
-                            width:16px;
-                            background:url(../images/arrow-right-circled.png) no-repeat 0 0;
-                        }
-                    }
-                }
-                h4,
-                p{
-                    color:#fff;
-                }
-                &.position-3{
-                    bottom:60px;
-                    right:100px;  
-                }
-            }
-        }
-
-    }
+  }
 }
 
 .context-total-care {
-    .view-banner{
-        background: url(../images/total-care-slideshow-bg.jpg);
-    }
-    .views-field-field-content-left{
-        width:415px;
-    }
-    .views_slideshow_slide{
-        margin:0 50px;
-    }
-    h3 .blue{
-        margin-left:60px;
-    }
-    p.left-border{
-        margin-left:75px;
-    }
+  .view-banner{
+    background: url(../images/total-care-slideshow-bg.jpg);
+  }
+  .views-field-field-content-left{
+    width:415px;
+  }
+  .views_slideshow_slide{
+    margin:0 50px;
+  }
+  h3 .blue{
+    margin-left:60px;
+  }
+  p.left-border{
+    margin-left:75px;
+  }
 }
 .context-business-connect{
-    .views-slideshow-controls-bottom {
-        display:none;
-    }
+  .views-slideshow-controls-bottom {
+    display:none;
+  }
 }
 /* sub menu */
 .region-menu-sub-inner .block-35,
@@ -747,28 +753,28 @@ body{margin-top:20px;}
 .block-block-46,
 .block-block-69,
 .region-menu-sub-inner .block-51{
-    display:inline-block;
-    vertical-align: top;
+  display:inline-block;
+  vertical-align: top;
 }
 .block-block-43,
 .block-block-44,
 .block-block-45,
 .block-block-69{
-    h2{
-        margin-top:42px;
-    }
+  h2{
+    margin-top:42px;
+  }
 }
 .block-block-43{
-    background: url('/sites/all/themes/watermans_2013_10/images/SA-news-bg-person-1.png') no-repeat left bottom;
+  background: url('/sites/all/themes/watermans_2013_10/images/SA-news-bg-person-1.png') no-repeat left bottom;
 }
 .block-block-44{
-    background: url('/sites/all/themes/watermans_2013_10/images/SA-news-bg-person-2.png') no-repeat left bottom;
+  background: url('/sites/all/themes/watermans_2013_10/images/SA-news-bg-person-2.png') no-repeat left bottom;
 }
 .block-block-45{
-    background: url('/sites/all/themes/watermans_2013_10/images/SA-news-bg-person-3.png') no-repeat left bottom;
+  background: url('/sites/all/themes/watermans_2013_10/images/SA-news-bg-person-3.png') no-repeat left bottom;
 }
 .block-block-69{
-    background: url('/sites/all/themes/watermans_2013_10/images/SA-news-bg-person-4.png') no-repeat left bottom;
+  background: url('/sites/all/themes/watermans_2013_10/images/SA-news-bg-person-4.png') no-repeat left bottom;
 }
 
 
@@ -779,12 +785,12 @@ body{margin-top:20px;}
 .om-maximenu-middle-right .block.first,
 .region-menu-sub-inner .block-menu-block,
 .block-block-16{
-    h2{
-        margin:21px 20px 0;
-    }
+  h2{
+    margin:21px 20px 0;
+  }
 }
 .context-ask-question .block-block-32 .block-inner{
-    padding:21px 20px 0;
+  padding:21px 20px 0;
 }
 .block-views-id--exp-people_listing-page_1 form label,
 .block-views-id--exp-videos-page_1 label,
@@ -796,14 +802,14 @@ body{margin-top:20px;}
 .block-17 h2,
 .block--exp-news-listing-page-1 h2,
 .block-51 h2{
-    margin:35px 20px 0 0;
+  margin:35px 20px 0 0;
 }
 .block-46 h2{
-    margin:55px 20px 0 0;
+  margin:55px 20px 0 0;
 }
 .block-views-id--exp-people_listing-page_1 form label,
 .block-views-exp-people-listing-page-1 label {
-    margin-top:26px;
+  margin-top:26px;
 }
 .block-views-id--exp-people_listing-page_1 form label,
 .block-views-id--exp-videos-page_1 label,
@@ -814,18 +820,18 @@ body{margin-top:20px;}
 .block-block-20 h2,
 .block--exp-news-listing-page-1 h2,
 .block-46 h2{
-    margin-bottom:10px;
+  margin-bottom:10px;
 }
 
 .om-maximenu-middle-right .block.first .menu-block-wrapper,
 .region-menu-sub-inner .menu-block-wrapper{
-    margin:15px 20px;
-    li{
-        display:inline-block; 
-        vertical-align: top;
-        margin-right:-4px; 
-        padding:0;
-    }
+  margin:15px 20px;
+  li{
+    display:inline-block; 
+    vertical-align: top;
+    margin-right:-4px; 
+    padding:0;
+  }
 }
 
 .leaf-our-team .block-views-id--exp-people_listing-page_1 h2{display:none;}
@@ -837,25 +843,25 @@ body{margin-top:20px;}
 .node-type-vacancy .block-client-block-48 .block-inner,.page-node-48 .block-system-main .block-inner,.page-node-178 .block-system-main .block-inner{padding:25px 20px;}
 /* right sub menu */
 .region-sidebar-second .block-menu-block .block-title-wrapper{
-    height:120px;
-    position:relative;
-    h2{
-        position:absolute;
-        bottom:0;
-    }
+  height:120px;
+  position:relative;
+  h2{
+    position:absolute;
+    bottom:0;
+  }
 }
 
 /* right sidebar */
 .node-type-person .region-sidebar-second {padding-top:20px;}
 .region-sidebar-second .region-sidebar-second-inner{
-    & > .block-block-18:first-child,
-        & > .block-block-52:first-child,
-        & > .block-block-55:first-child,
-        & > .block-block-56:first-child,
-        & > .block-block-57:first-child,
-        & > .block-block-58:first-child    {
-        margin-top:20px;
-    }
+  & > .block-block-18:first-child,
+    & > .block-block-52:first-child,
+    & > .block-block-55:first-child,
+    & > .block-block-56:first-child,
+    & > .block-block-57:first-child,
+    & > .block-block-58:first-child    {
+    margin-top:20px;
+  }
 }
 .region-sidebar-second-inner .block-views-videos-block h2.block-title{line-height: 18px;border-bottom: 2px solid #929292;padding:15px 0 12px;margin-bottom: 20px;}
 /* content CTA*/
@@ -866,157 +872,157 @@ body{margin-top:20px;}
 .region-footer-first .block-menu-block{display:inline-block; vertical-align: top;}
 /* hubspot - ask a question form*/
 .hs-form #type_your_question-0994e525-c95b-499d-b18a-d39bba4f58aa{
-    height: 150px !important;
+  height: 150px !important;
 }
 
 
 .region-postscript-fourth-inner,
 .region-postscript-third-inner{
-    .front &{
-        margin-bottom:0px;
-    }
+  .front &{
+    margin-bottom:0px;
+  }
 }
 
 /* HOW TO CLAIM POP UPS */
 .context-how-claim {
-    .region-postscript-second-inner {
-        .cta{
-            width:463px;
-        }
+  .region-postscript-second-inner {
+    .cta{
+      width:463px;
+    }
+  }
+
+  #cboxPrevious{
+    left:-29px;
+  }
+  #cboxNext{
+    right:-29px;
+  }
+  .popup-bg{
+    height:303px;
+    width:624px;
+  }
+
+  .text-wrapper{
+    padding:34px 28px;
+    h3,p{
+      width:300px;
     }
 
-    #cboxPrevious{
-        left:-29px;
+
+    .button {
+      width:190px;
     }
-    #cboxNext{
-        right:-29px;
+  }
+
+  #cat-1-1-content{
+    background:url(../images/claim-home/dt-pop-01.jpg) no-repeat 0 0;  .text-wrapper p{
+      padding-left:45px;
+      width:255px;
     }
-    .popup-bg{
-        height:303px;
-        width:624px;
+  }
+
+  #cat-1-2-content{
+    background:url(../images/claim-home/dt-pop-02.jpg) no-repeat 0 0;
+    .text-wrapper {
+      .line1{
+        padding-left:340px;
+        width:195px;
+      }
+      p,
+      .line2{
+        padding-left:349px;
+        width:195px;
+      }
+    }
+  }
+  #cat-1-3-content{
+    background:url(../images/claim-home/dt-pop-03.jpg) no-repeat 0 0;
+  }    
+  #cat-2-1-content{
+    background:url(../images/claim-home/dt-pop-04.jpg) no-repeat 0 0;
+    .text-wrapper {
+      h3,
+      p{
+        padding-left:305px;
+        width:275px;
+      }
+    }
+  }
+  #cat-2-2-content{
+    background:url(../images/claim-home/dt-pop-05.jpg) no-repeat 0 0;
+  }
+  #cat-2-3-content{
+    background:url(../images/claim-home/dt-pop-06.jpg) no-repeat 0 0;
+    .text-wrapper {
+      h3,
+      p{
+        padding-left:260px;
+        width:320px;
+      }
+    }
+  }
+  #cat-2-4-content{
+    background:url(../images/claim-home/dt-pop-07.jpg) no-repeat 0 0;
+    .button {
+      width:110px;
+    }
+  }
+  #cat-3-1-content{
+    background:url(../images/claim-home/dt-pop-08.jpg) no-repeat 0 0;
+  }
+  #cat-3-2-content{
+    background:url(../images/claim-home/dt-pop-09.jpg) no-repeat 0 0;
+    .text-wrapper {
+      h3,
+      p{
+        padding-left:280px;
+        width:300px;
+      }
+      .line2{
+        padding-left:50px;
+      }
+    }
+  }
+  #cat-3-3-content{
+    background:url(../images/claim-home/dt-pop-10.jpg) no-repeat 0 0;
+  }
+  #cat-3-4-content{
+    background:url(../images/claim-home/dt-pop-11.jpg) no-repeat 0 0;
+    .text-wrapper  {
+      h3,
+      p{
+        padding-left:285px;
+        width:300px;
+      }
+      .button{
+        margin-left: 285px;
+        width:210px;
+      }
     }
 
-    .text-wrapper{
-        padding:34px 28px;
-        h3,p{
-            width:300px;
-        }
-
-
-        .button {
-            width:190px;
-        }
+  }
+  #cat-4-1-content{
+    background:url(../images/claim-home/dt-pop-12.jpg) no-repeat 0 0;
+    .text-wrapper p{
+      width:250px;
     }
-
-    #cat-1-1-content{
-        background:url(../images/claim-home/dt-pop-01.jpg) no-repeat 0 0;  .text-wrapper p{
-            padding-left:45px;
-            width:255px;
-        }
+  }
+  #cat-4-2-content{
+    background:url(../images/claim-home/dt-pop-13.jpg) no-repeat 0 0;
+    .text-wrapper {
+      h3,
+      p{
+        padding-left:290px;
+        width:280px;
+      }
     }
-
-    #cat-1-2-content{
-        background:url(../images/claim-home/dt-pop-02.jpg) no-repeat 0 0;
-        .text-wrapper {
-            .line1{
-                padding-left:340px;
-                width:195px;
-            }
-            p,
-            .line2{
-                padding-left:349px;
-                width:195px;
-            }
-        }
+  }
+  #cat-4-3-content{
+    background:url(../images/claim-home/dt-pop-14.jpg) no-repeat 0 0;
+    .text-wrapper {
+      .button{
+        width:115px;
+      }
     }
-    #cat-1-3-content{
-        background:url(../images/claim-home/dt-pop-03.jpg) no-repeat 0 0;
-    }    
-    #cat-2-1-content{
-        background:url(../images/claim-home/dt-pop-04.jpg) no-repeat 0 0;
-        .text-wrapper {
-            h3,
-            p{
-                padding-left:305px;
-                width:275px;
-            }
-        }
-    }
-    #cat-2-2-content{
-        background:url(../images/claim-home/dt-pop-05.jpg) no-repeat 0 0;
-    }
-    #cat-2-3-content{
-        background:url(../images/claim-home/dt-pop-06.jpg) no-repeat 0 0;
-        .text-wrapper {
-            h3,
-            p{
-                padding-left:260px;
-                width:320px;
-            }
-        }
-    }
-    #cat-2-4-content{
-        background:url(../images/claim-home/dt-pop-07.jpg) no-repeat 0 0;
-        .button {
-            width:110px;
-        }
-    }
-    #cat-3-1-content{
-        background:url(../images/claim-home/dt-pop-08.jpg) no-repeat 0 0;
-    }
-    #cat-3-2-content{
-        background:url(../images/claim-home/dt-pop-09.jpg) no-repeat 0 0;
-        .text-wrapper {
-            h3,
-            p{
-                padding-left:280px;
-                width:300px;
-            }
-            .line2{
-                padding-left:50px;
-            }
-        }
-    }
-    #cat-3-3-content{
-        background:url(../images/claim-home/dt-pop-10.jpg) no-repeat 0 0;
-    }
-    #cat-3-4-content{
-        background:url(../images/claim-home/dt-pop-11.jpg) no-repeat 0 0;
-        .text-wrapper  {
-            h3,
-            p{
-                padding-left:285px;
-                width:300px;
-            }
-            .button{
-                margin-left: 285px;
-                width:210px;
-            }
-        }
-
-    }
-    #cat-4-1-content{
-        background:url(../images/claim-home/dt-pop-12.jpg) no-repeat 0 0;
-        .text-wrapper p{
-            width:250px;
-        }
-    }
-    #cat-4-2-content{
-        background:url(../images/claim-home/dt-pop-13.jpg) no-repeat 0 0;
-        .text-wrapper {
-            h3,
-            p{
-                padding-left:290px;
-                width:280px;
-            }
-        }
-    }
-    #cat-4-3-content{
-        background:url(../images/claim-home/dt-pop-14.jpg) no-repeat 0 0;
-        .text-wrapper {
-            .button{
-                width:115px;
-            }
-        }
-    }
+  }
 }
