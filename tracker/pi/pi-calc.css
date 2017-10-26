@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-body{font-family: 'Quattrocento Sans', sans-serif;}
+body{font-family: 'Quattrocento Sans', sans-serif; margin:10px 0px !important}
 #piWrapper, .thankyou{
 	background:url(images/PI-bk.jpg) repeat-x;	
 	height:800px;
@@ -15,8 +15,8 @@ body{font-family: 'Quattrocento Sans', sans-serif;}
 	float:left;
 	border:2px solid #C00;
 	padding:0;
-	position:relative;
-	min-width:280px;
+	position:absolute;
+	min-width:260px;
 	overflow:hidden;
 	background-color:#fff;
 	z-index:999;
@@ -27,6 +27,17 @@ body{font-family: 'Quattrocento Sans', sans-serif;}
 	text-transform:uppercase;
 	font-size:1em;
 	}
+	#formWrapper #formLists .injuryList h3.ui-state-hover{
+		color:#000000;
+	}
+#formWrapper h4{
+	margin:0;
+	text-transform:uppercase;
+	font-size:1em;
+	display:block;
+	border-bottom:2px solid #C00;
+	padding-top:10px;
+	}	
 #instText{
 	color:white;
 	font-size:1.3em;
@@ -136,24 +147,29 @@ width:40%;
 	color:#999;
 	margin:5px 0;	
 }
-.reset{
+.backBtn{
 	float:right;
 	margin:10px;
 	text-decoration:none;
-	color:#666;
+	color:#C00;
+	font-weight:700;
 	text-transform:uppercase;
-	font-size:0.8em;
-	background:url(images/reset-button.png) no-repeat right center;
+	font-size:0.9em;
+	background:url(images/back-button-sprite.png) no-repeat left top;
 	padding:0 20px;
 	position:relative;
-	z-index:999;	
+	z-index:999;
+}
+.backBtn:hover{
+	color:#000000;
+	background-position:left bottom;
 }
 
 /*Right Body */
 
 #rightBody{
 	width:50%;
-	float:left;
+	float:right;
 	min-width:250px;
 	position:relative;
 }
@@ -219,43 +235,123 @@ width:40%;
 }
 #manhead, #manheadFixed{
 	background:url(images/man/man_head.png) no-repeat left top;	
-	width:80px;
-	height:113px;
-	left:67px;	
+	width:71px;
+	height:107px;
+	left:71px;
+	top:3px;	
 }
 #manupperBody, #manupperBodyFixed{
 	background:url(images/man/man_body.png) no-repeat left top;	
-	width:176px;
-	height:295px;
-	top:93px;	
+	width:162px;
+	height:255px;
+	top:99px;
+	left:4px;	
 }
-#manarm, #manarmFixed{
-	background:url(images/man/man_arm.png) no-repeat left top;	
-	width:59px;
-	height:296px;
-	top:106px;
-	left:146px;	
+#manarmRight, #manarmRightFixed{
+	background:url(images/man/man_arm_right.png) no-repeat left top;	
+	width:42px;
+	height:207px;
+	top:117px;
+	left:160px;	
 }
-#manhand, #manhandFixed{
-	background:url(images/man/man_hand.png) no-repeat left top;	
-	width:33px;
-	height:105px;
-	top:302px;
-	left:172px;	
+#manarmLeft, #manarmLeftFixed{
+	background:url(images/man/man_arm_left.png) no-repeat left top;	
+	width:49px;
+	height:202px;
+	top:117px;
+	left:7px;	
+}
+#manhandRight, #manhandRightFixed{
+	background:url(images/man/man_hand_right.png) no-repeat left top;	
+	width:24px;
+	height:76px;
+	top:312px;
+	left:178px;	
+}
+#manhandLeft, #manhandLeftFixed{
+	background:url(images/man/man_hand_left.png) no-repeat left top;	
+	width:25px;
+	height:66px;
+	top:310px;
+	left:4px;	
 }
 #manlowerBody, #manlowerBodyFixed{
 	background:url(images/man/man_legs.png) no-repeat left top;	
-	width:174px;
-	height:414px;
-	top:272px;
-	left:17px;	
+	width:137px;
+	height:353px;
+	top:292px;
+	left:38px;	
 }
-#manfoot, #manfootFixed{
-	background:url(images/man/man_foot.png) no-repeat left top;	
-	width:64px;
-	height:60px;
-	top:626px;
-	left:127px;	
+#manfootRight, #manfootRightFixed{
+	background:url(images/man/man_foot_right.png) no-repeat left top;	
+	width:52px;
+	height:47px;
+	top:634px;
+	left:135px;	
+}
+#manfootLeft, #manfootLeftFixed{
+	background:url(images/man/man_foot_left.png) no-repeat left top;	
+	width:56px;
+	height:47px;
+	top:633px;
+	left:22px;	
+}
+
+/* LeftBody, initial Menu that coinsides with the diagram */
+#leftBody{
+	width:40%;
+	float:left;
+	border:2px solid #C00;
+	padding:0;
+	position:absolute;
+	min-width:260px;
+	overflow:hidden;
+	background-color:#fff;
+	z-index:999;
+}
+#leftBody h3{
+	margin:0;
+	text-transform:uppercase;
+	font-size:1em;
+	font-weight:700;
+	border-bottom:2px solid #C00;
+}
+#leftBody h3 a{
+	text-decoration:none;
+	color:#000000;
+	display:block;
+	width:100%;
+	height:100%;
+	padding:10px;
+	background:url(images/mainMenuSprite.png) no-repeat bottom right;
+}
+#leftBody h3 a:hover{
+	color:#fff !important;
+	background-color:#c00 !important;
+	background-position:top right;
+}
+
+#leftBody .questionCTA, #formWrapper .questionCTA{
+	text-align:center;
+	display:block !important;
+	font-size:18px;
+	line-height:26px;
+}
+#formWrapper .questionCTA{
+	border-top: 2px solid #C00;
+}
+#leftBody .questionCTA a, #formWrapper .questionCTA a{
+	width:100%;
+	height:100%;
+	display:block;
+}
+#leftBody .questionCTA a img, #formWrapper .questionCTA a img{
+	width:100%;
+	height:auto;
+	max-width:500px;
+}
+#leftBody .ui-accordion .questionCTA.ui-accordion-icons, #formWrapper .ui-accordion .questionCTA.ui-accordion-icons{
+	background:none !important;
 }
 
 /* Accordian Override */
@@ -310,15 +406,22 @@ font-family: 'Quattrocento Sans', sans-serif;
 	margin:20px auto;
 	display:block;
 }
-@media only screen and (min-width: 940px) {
-		#rightBody{
-	float:right;
-		}
-		#formWrapper{
-	width:40%;
-	}
-	#instText{
-	width:280px;
+/* Hubspot form */
+.thankyou{
+	text-align:center;
+	color:#fff !important;	
 }
 
+@media only screen and (min-width: 940px) {
+
+	#rightBody{float:right;}
+	#formWrapper{width:40%;}
+	#instText{width:280px;}
+
+}
+@media only screen and (max-width:767px){
+	
+	#rightBody{display:none !important;}
+	#leftBody, #formWrapper{width:100%; position:relative; float:none;}
+	
 }

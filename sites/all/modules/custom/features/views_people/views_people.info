@@ -23,6 +23,7 @@ features[fe_block_settings][] = block-team_home_cta3
 features[fe_block_settings][] = block-team_listing_edinburgh
 features[fe_block_settings][] = block-team_listing_firm
 features[fe_block_settings][] = block-team_listing_glasgow
+features[fe_block_settings][] = block-team_listing_management
 features[fe_block_settings][] = cck_blocks-field_image
 features[fe_block_settings][] = cck_blocks-field_job_title
 features[fe_block_settings][] = cck_blocks-field_thumbnail
