@@ -1,10 +1,10 @@
 <?php
 
 if (isset($_POST['email'])) {
-  // EDIT THE 2 LINES BELOW AS REQUIRED
-//  $email_to = "firstresponse@watermans.ws";
+  $email_to = "firstresponse@watermans.ws";
 //  $email_to = "callum@sakurabrae.co.uk";
-  $email_to = "kate.brown@thegateworldwide.com";
+//  $email_to = "kate.brown@thegateworldwide.com";
+//  $email_to = "katebrown3@me.com";
   $email_subject = "The following enquiry was made through the Personal Injury Calculator at watermans.co.uk";
 
   function died($error) {
@@ -58,8 +58,12 @@ if (isset($_POST['email'])) {
         'Reply-To: ' . $email_from . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
-    mail($email_to, $email_subject, $email_message, $headers);
-    echo('<script type="text/javascript">this.location="/tracker/pi/thankyou.html";</script>');
+    if (mail($email_to, $email_subject, $email_message, $headers)) {
+      echo('<script type="text/javascript">this.location="/tracker/pi/thankyou.html";</script>');
+    }
+    else {
+      echo('mail() error;');
+    }
   }
 }
 ?>

@@ -892,6 +892,12 @@ h1{
 .block-faq-block h2,.view-id-faq .view-content h3{font-weight: 700;border-bottom:1px solid #929292;padding-bottom:5px;}
 .page-frequently-asked-questions-category .view-id-faq .view-content h3{display:none;}
 .view-faq .views-field-body{margin:15px 0;}
+/* contact us page*/
+.page-node-178{
+    .block-system.block-main{
+        display:none;
+    }
+}
 /* contact us & careers contact us [page-node-48] & vacancies */
 .page-node-48 .block-system-main h2,.context-contact-us .block-system-main h2{margin-bottom:0;}
 .block-client-block-48 .webform-component,.page-node-48 .webform-component,.context-contact-us .webform-component{margin-bottom:15px;}
@@ -906,6 +912,7 @@ h1{
 .block-client-block-48 h2.block-title{margin-bottom:1em;}
 .webform-component-managed_file input[type="submit"]{float:right;}
 /* ask a question form */
+.context-contact-us,
 .context-ask-question {
     .block-webform {
         background: #ebebeb;
@@ -931,7 +938,7 @@ h1{
 .node-type-vacancy .block-client-block-48 .form-actions.form-wrapper,.page-node-48  .block-system-main .form-actions.form-wrapper,.context-contact-us  .block-system-main .form-actions.form-wrapper,.context-ask-question .block-webform .form-actions.form-wrapper{text-align: right;margin-top:25px;}
 .node-type-vacancy .block-client-block-48 input[type="submit"],
 .page-node-48  .block-system-main input[type="submit"],
-.context-contact-us .block-system-main input[type="submit"], 
+.context-contact-us .block-webform input[type="submit"], 
 .context-ask-question .block-webform input[type="submit"]{ 
     background: #2c8ca6; 
     background: -moz-linear-gradient(top,  #2c8ca6 0%, #246a8d 50%, #03537b 51%, #003867 100%); 

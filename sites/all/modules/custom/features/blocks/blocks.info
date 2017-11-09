@@ -58,5 +58,7 @@ features[fe_block_settings][] = views-news_listing-block_9
 features[fe_block_settings][] = views-vacancies-block
 features[fe_block_settings][] = views-videos-block
 features[fe_block_settings][] = views-videos-block_1
+features[fe_block_settings][] = webform-client-block-296
+features[fe_block_settings][] = webform-client-block-297
 features[fe_block_settings][] = webform-client-block-48
 features[features_api][] = api:2
